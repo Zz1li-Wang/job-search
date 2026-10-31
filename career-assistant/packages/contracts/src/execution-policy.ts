@@ -1,7 +1,7 @@
 /** 跨服务共享的固定执行边界；工具上限变化须同步数据库CHECK与授权Schema。 */
 export const EXECUTION_POLICY = Object.freeze({
   /** 同一运行包含失败在内的工具调用上限。 */
-  maxToolCalls: 8,
+  maxToolCalls: 25,
   /** Agent推理与工具循环的总时限。 */
   agentTimeoutMs: 120000,
   /** 后端运行及短期授权的最长有效租约。 */

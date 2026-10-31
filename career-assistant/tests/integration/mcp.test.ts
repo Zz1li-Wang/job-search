@@ -102,6 +102,7 @@ it('MCP-03 get_job_evidence返回实际正文观察版本', async () => {
 });
 it('MCP-04 evaluate_eligibility保持后端待核验结论', async () => {
   await seed();
+  await seed();
   const f = await fixture(),
     jobs = (await (await f.request('/jobs?limit=1')).json()).payload,
     job = (await (await f.request('/jobs/' + jobs.entries[0].id)).json())
@@ -170,13 +171,24 @@ it('MCP-08 propose_profile_update仅产生待确认草稿且幂等', async () =>
 });
 it('MCP运行授权绑定删除屏障及持久化调用上限', async () => {
   const f = await fixture();
-  for (let i = 0; i < 8; i++)
+  for (let i = 0; i < 25; i++)
     expect((await f.tool('get_profile')).response.isError).not.toBe(true);
-  const ninth = await f.tool('get_profile');
-  expect(ninth.response.isError).toBe(true);
-  expect(ninth.payload.error).toMatchObject({ code: 'TOOL_BUDGET_EXHAUSTED' });
+  const excess = await f.tool('get_profile');
+  expect(excess.response.isError).toBe(true);
+  expect(excess.payload.error).toMatchObject({ code: 'TOOL_BUDGET_EXHAUSTED' });
   await f.request(`/runs/${f.run.id}/cancel`, 'POST', {});
   await expect(f.tool('get_profile')).rejects.toThrow();
+});
+it('并发MCP调用仍严格限制为25次', async () => {
+  const f = await fixture();
+  const results = await Promise.all(
+    Array.from({ length: 30 }, () => f.tool('get_profile')),
+  );
+  expect(results.filter((r) => !r.response.isError)).toHaveLength(25);
+  const refused = results.filter((r) => r.response.isError);
+  expect(refused).toHaveLength(5);
+  for (const r of refused)
+    expect(r.payload.error).toMatchObject({ code: 'TOOL_BUDGET_EXHAUSTED' });
 });
 it('内部事件序号幂等与伪造引用拒绝及终结后防写', async () => {
   const f = await fixture();

@@ -147,5 +147,6 @@ export const ExtractionFailureCodeSchema = z.enum([
   'MODEL_INTERRUPTED', // 运行中断或结果未知，不自动重复调用。
   'MODEL_OUTPUT_INVALID', // 返回JSON、字段或日期格式不符合契约。
   'TOOL_UNAUTHORIZED', // 原文工具授权失效或不属于本次运行。
-  'TOOL_BUDGET_EXHAUSTED', // 输入/工具预算超限，应缩小资料或重新发起。
+  'TOOL_BUDGET_EXHAUSTED', // 工具次数超限，应缩小范围或重新发起。
+  'MODEL_CONTEXT_EXCEEDED', // 输入上下文过长，应精简资料或问题。
 ]);

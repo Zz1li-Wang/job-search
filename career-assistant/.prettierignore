@@ -12,3 +12,4 @@ playwright-report
 
 # 实际导出数据保留原始字节以核对manifest摘要。
 docs/ingestion/source-data*.json
+docs/delivery/ingestion-expansion/*.json

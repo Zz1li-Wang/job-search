@@ -25,6 +25,7 @@ const RESUME_ERROR_LABEL: Readonly<Record<string, string>> = {
   MODEL_INTERRUPTED: '模型结果未知，可明确选择重新解析',
   MODEL_UNAVAILABLE: '模型服务暂不可用',
   MODEL_OUTPUT_INVALID: '模型返回的资料格式无效，请重新解析或手动核对画像',
+  MODEL_CONTEXT_EXCEEDED: '资料和上下文过长，请精简简历文字后重新解析',
   TOOL_UNAUTHORIZED: '原任务授权已失效，请重新发起解析',
 };
 export function ResumePanel() {

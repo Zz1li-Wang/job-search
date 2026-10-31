@@ -1,0 +1,801 @@
+{
+  "numTotalTestSuites": 21,
+  "numPassedTestSuites": 21,
+  "numFailedTestSuites": 0,
+  "numPendingTestSuites": 0,
+  "numTotalTests": 61,
+  "numPassedTests": 61,
+  "numFailedTests": 0,
+  "numPendingTests": 0,
+  "numTodoTests": 0,
+  "snapshot": {
+    "added": 0,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0,
+    "didUpdate": false
+  },
+  "startTime": 1793425396024,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "fullName": "模型SSE跨网络块和中文字符分割保留文本与工具参数",
+          "status": "passed",
+          "title": "模型SSE跨网络块和中文字符分割保留文本与工具参数",
+          "duration": 68.45954099999994,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "模型异常与断流不能伪装完成",
+          "status": "passed",
+          "title": "模型异常与断流不能伪装完成",
+          "duration": 14.848322999999937,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "上下文超限使用独立错误码且不发送模型请求",
+          "status": "passed",
+          "title": "上下文超限使用独立错误码且不发送模型请求",
+          "duration": 2.5377169999999296,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793425397054,
+      "endTime": 1793425397139.5376,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/unit/agent.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["认证DTO与领域规则"],
+          "fullName": "认证DTO与领域规则 密码按Unicode码点校验而不裁剪，拒绝额外身份字段",
+          "status": "passed",
+          "title": "密码按Unicode码点校验而不裁剪，拒绝额外身份字段",
+          "duration": 13.376485000000002,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["认证DTO与领域规则"],
+          "fullName": "认证DTO与领域规则 生产Origin禁止HTTP，秘密不能为空",
+          "status": "passed",
+          "title": "生产Origin禁止HTTP，秘密不能为空",
+          "duration": 5.864255999999841,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["认证DTO与领域规则"],
+          "fullName": "认证DTO与领域规则 其他浏览器不能消费挑战，答错和到期尝试均消费",
+          "status": "passed",
+          "title": "其他浏览器不能消费挑战，答错和到期尝试均消费",
+          "duration": 3.932115999999951,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["认证DTO与领域规则"],
+          "fullName": "认证DTO与领域规则 改密版本不可覆盖，删除账号不能使用旧凭据",
+          "status": "passed",
+          "title": "改密版本不可覆盖，删除账号不能使用旧凭据",
+          "duration": 5.196107999999867,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["认证DTO与领域规则"],
+          "fullName": "认证DTO与领域规则 会话到期、撤销、错误账号及旧epoch均不可用",
+          "status": "passed",
+          "title": "会话到期、撤销、错误账号及旧epoch均不可用",
+          "duration": 5.562014999999974,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["认证DTO与领域规则"],
+          "fullName": "认证DTO与领域规则 不存在用户名同样失败冷却，冷却边界恢复",
+          "status": "passed",
+          "title": "不存在用户名同样失败冷却，冷却边界恢复",
+          "duration": 4.488311999999951,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["认证DTO与领域规则"],
+          "fullName": "认证DTO与领域规则 固定窗口按来源和操作区分，满额不再递增",
+          "status": "passed",
+          "title": "固定窗口按来源和操作区分，满额不再递增",
+          "duration": 4.067135999999891,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793425398014,
+      "endTime": 1793425398057.0671,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/unit/auth-domain.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["真实密码与图片适配器"],
+          "fullName": "真实密码与图片适配器 正式scrypt参数随机盐、正确错误密码和畸形参数拒绝",
+          "status": "passed",
+          "title": "正式scrypt参数随机盐、正确错误密码和畸形参数拒绝",
+          "duration": 3331.3450729999995,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["真实密码与图片适配器"],
+          "fullName": "真实密码与图片适配器 计算门容量和失败释放许可",
+          "status": "passed",
+          "title": "计算门容量和失败释放许可",
+          "duration": 7.335414000000128,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["真实密码与图片适配器"],
+          "fullName": "真实密码与图片适配器 生产随机源、HMAC用途隔离、PNG可解码且无文字块",
+          "status": "passed",
+          "title": "生产随机源、HMAC用途隔离、PNG可解码且无文字块",
+          "duration": 25.13158999999996,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793425398955,
+      "endTime": 1793425402319.1316,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/unit/auth-security.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["配置与健康契约"],
+          "fullName": "配置与健康契约 默认端口与显式配置通过，启动拒绝错误协议及端口",
+          "status": "passed",
+          "title": "默认端口与显式配置通过，启动拒绝错误协议及端口",
+          "duration": 11.962790000000041,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["配置与健康契约"],
+          "fullName": "配置与健康契约 无效配置仅暴露字段名，不含密钥或输入值",
+          "status": "passed",
+          "title": "无效配置仅暴露字段名，不含密钥或输入值",
+          "duration": 3.9570330000001377,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["配置与健康契约"],
+          "fullName": "配置与健康契约 存活不调用依赖；依赖抛错只产生不可用状态",
+          "status": "passed",
+          "title": "存活不调用依赖；依赖抛错只产生不可用状态",
+          "duration": 1.6239470000000438,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["配置与健康契约"],
+          "fullName": "配置与健康契约 Agent仅访问业务健康接口，不访问模型，并拒绝伪造健康正文",
+          "status": "passed",
+          "title": "Agent仅访问业务健康接口，不访问模型，并拒绝伪造健康正文",
+          "duration": 6.43517299999985,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["幂等领域对象"],
+          "fullName": "幂等领域对象 重放保留首次结果，不同内容拒绝",
+          "status": "passed",
+          "title": "重放保留首次结果，不同内容拒绝",
+          "duration": 1.930779000000257,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["幂等领域对象"],
+          "fullName": "幂等领域对象 构造校验和快照复制维护领域不变量",
+          "status": "passed",
+          "title": "构造校验和快照复制维护领域不变量",
+          "duration": 1.4405460000002677,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793425398749,
+      "endTime": 1793425398776.4404,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/unit/config-domain.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["健康接口逐操作契约"],
+          "fullName": "健康接口逐操作契约 HEALTH-01 API存活与请求标识",
+          "status": "passed",
+          "title": "HEALTH-01 API存活与请求标识",
+          "duration": 356.311606,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["健康接口逐操作契约"],
+          "fullName": "健康接口逐操作契约 HEALTH-02 API就绪与依赖故障",
+          "status": "passed",
+          "title": "HEALTH-02 API就绪与依赖故障",
+          "duration": 76.01268800000003,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["健康接口逐操作契约"],
+          "fullName": "健康接口逐操作契约 HEALTH-03 Agent存活认证与重复读取",
+          "status": "passed",
+          "title": "HEALTH-03 Agent存活认证与重复读取",
+          "duration": 62.7431610000001,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["健康接口逐操作契约"],
+          "fullName": "健康接口逐操作契约 HEALTH-04 Agent就绪认证作用域及降级",
+          "status": "passed",
+          "title": "HEALTH-04 Agent就绪认证作用域及降级",
+          "duration": 82.57801600000016,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["健康接口逐操作契约"],
+          "fullName": "健康接口逐操作契约 未知路径与非法请求标识返回安全契约",
+          "status": "passed",
+          "title": "未知路径与非法请求标识返回安全契约",
+          "duration": 20.99836100000016,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "JSON语法错误与超限正文分别返回400和413且不泄漏内容",
+          "status": "passed",
+          "title": "JSON语法错误与超限正文分别返回400和413且不泄漏内容",
+          "duration": 53.89136499999995,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793425397479,
+      "endTime": 1793425398133.8914,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/unit/http.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["采集领域契约与状态"],
+          "fullName": "采集领域契约与状态 刷新分钟额度与岗位60秒间隔由领域规则判断边界",
+          "status": "passed",
+          "title": "刷新分钟额度与岗位60秒间隔由领域规则判断边界",
+          "duration": 13.643803000000162,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集领域契约与状态"],
+          "fullName": "采集领域契约与状态 发现页数及游标必须受版本保护，不允许额外身份",
+          "status": "passed",
+          "title": "发现页数及游标必须受版本保护，不允许额外身份",
+          "duration": 5.230332999999973,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集领域契约与状态"],
+          "fullName": "采集领域契约与状态 租约到期旧token不可提交，重新领取递增围栏",
+          "status": "passed",
+          "title": "租约到期旧token不可提交，重新领取递增围栏",
+          "duration": 9.20267899999999,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集领域契约与状态"],
+          "fullName": "采集领域契约与状态 领取后新刷新需要后继，而领取前请求已覆盖",
+          "status": "passed",
+          "title": "领取后新刷新需要后继，而领取前请求已覆盖",
+          "duration": 1.896349999999984,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集领域契约与状态"],
+          "fullName": "采集领域契约与状态 可重试失败退避并封顶，人工恢复保留累计尝试",
+          "status": "passed",
+          "title": "可重试失败退避并封顶，人工恢复保留累计尝试",
+          "duration": 2.756020000000035,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集领域契约与状态"],
+          "fullName": "采集领域契约与状态 来源访问受限暂停，不自动作为成功或关闭",
+          "status": "passed",
+          "title": "来源访问受限暂停，不自动作为成功或关闭",
+          "duration": 1.8345999999999094,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集领域契约与状态"],
+          "fullName": "采集领域契约与状态 检查点只接受当前周期和版本",
+          "status": "passed",
+          "title": "检查点只接受当前周期和版本",
+          "duration": 4.931046000000151,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集领域契约与状态"],
+          "fullName": "采集领域契约与状态 条件树前置拒绝过深与错误类型，未知不被消除",
+          "status": "passed",
+          "title": "条件树前置拒绝过深与错误类型，未知不被消除",
+          "duration": 14.196506,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集领域契约与状态"],
+          "fullName": "采集领域契约与状态 成功获取时间与核验分开，日期截止当天及过期均不新鲜",
+          "status": "passed",
+          "title": "成功获取时间与核验分开，日期截止当天及过期均不新鲜",
+          "duration": 36.58906200000001,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793425398013,
+      "endTime": 1793425398104.589,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/unit/ingestion-domain.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["来源解析与访问边界"],
+          "fullName": "来源解析与访问边界 无岗位链接但未明确空结果时不能成功结束扫描",
+          "status": "passed",
+          "title": "无岗位链接但未明确空结果时不能成功结束扫描",
+          "duration": 18.086974000000055,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["来源解析与访问边界"],
+          "fullName": "来源解析与访问边界 列表只取实际岗位链接并识别下一页，不把社招过滤掉",
+          "status": "passed",
+          "title": "列表只取实际岗位链接并识别下一页，不把社招过滤掉",
+          "duration": 9.54413999999997,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["来源解析与访问边界"],
+          "fullName": "来源解析与访问边界 来源详情单位采用明确雇主标记，不猜测相邻文本",
+          "status": "passed",
+          "title": "来源详情单位采用明确雇主标记，不猜测相邻文本",
+          "duration": 14.308168000000023,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["来源解析与访问边界"],
+          "fullName": "来源解析与访问边界 HTTP200登录和会员页不能变成空列表成功",
+          "status": "passed",
+          "title": "HTTP200登录和会员页不能变成空列表成功",
+          "duration": 1.9676889999998366,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["来源解析与访问边界"],
+          "fullName": "来源解析与访问边界 正文去除脚本表单和账户区域，保留缺失与原文链接",
+          "status": "passed",
+          "title": "正文去除脚本表单和账户区域，保留缺失与原文链接",
+          "duration": 28.203179999999975,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["来源解析与访问边界"],
+          "fullName": "来源解析与访问边界 限定源站origin、路径和参数，不接受内网和任意查询",
+          "status": "passed",
+          "title": "限定源站origin、路径和参数，不接受内网和任意查询",
+          "duration": 5.573969000000034,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793425398012,
+      "endTime": 1793425398090.574,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/unit/ingestion-source.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["岗位资格三态领域"],
+          "fullName": "岗位资格三态领域 AND OR保留未知，未知不能自动满足",
+          "status": "passed",
+          "title": "AND OR保留未知，未知不能自动满足",
+          "duration": 4.146565999999893,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["岗位资格三态领域"],
+          "fullName": "岗位资格三态领域 应届在读可满足明确允许预计毕业的社招学历，而不能冒充已获学历",
+          "status": "passed",
+          "title": "应届在读可满足明确允许预计毕业的社招学历，而不能冒充已获学历",
+          "duration": 18.786612000000105,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["岗位资格三态领域"],
+          "fullName": "岗位资格三态领域 不同教育记录的学历和专业不能拼接满足",
+          "status": "passed",
+          "title": "不同教育记录的学历和专业不能拼接满足",
+          "duration": 5.913577999999916,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["岗位资格三态领域"],
+          "fullName": "岗位资格三态领域 豁免与排除范围明确，未声明作用的旧例外保持未知",
+          "status": "passed",
+          "title": "豁免与排除范围明确，未声明作用的旧例外保持未知",
+          "duration": 4.61440400000015,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["岗位资格三态领域"],
+          "fullName": "岗位资格三态领域 实习不默认算正式工作，重叠完整月份不重复累计",
+          "status": "passed",
+          "title": "实习不默认算正式工作，重叠完整月份不重复累计",
+          "duration": 2.5880319999998846,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["岗位资格三态领域"],
+          "fullName": "岗位资格三态领域 闰日生日缺乏计算约定时保留边界不确定",
+          "status": "passed",
+          "title": "闰日生日缺乏计算约定时保留边界不确定",
+          "duration": 3.137760999999955,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["岗位资格三态领域"],
+          "fullName": "岗位资格三态领域 未提供证书不等于没有，用户明确否认才不符",
+          "status": "passed",
+          "title": "未提供证书不等于没有，用户明确否认才不符",
+          "duration": 1.06488800000011,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793425398025,
+      "endTime": 1793425398066.065,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/unit/jobs-domain.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["私有文件端口"],
+          "fullName": "私有文件端口 私有权限、重复创建拒绝、读取与幂等删除",
+          "status": "passed",
+          "title": "私有权限、重复创建拒绝、读取与幂等删除",
+          "duration": 20.58674800000017,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["私有文件端口"],
+          "fullName": "私有文件端口 目录穿越和符号链接无法读取",
+          "status": "passed",
+          "title": "目录穿越和符号链接无法读取",
+          "duration": 5.5528679999999895,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793425398015,
+      "endTime": 1793425398041.553,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/unit/private-files.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["架构和日志质量门禁"],
+          "fullName": "架构和日志质量门禁 正确边界通过，静态和动态导入共用规则",
+          "status": "passed",
+          "title": "正确边界通过，静态和动态导入共用规则",
+          "duration": 649.9978059999999,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["架构和日志质量门禁"],
+          "fullName": "架构和日志质量门禁 已实现接口均有关联测试",
+          "status": "passed",
+          "title": "已实现接口均有关联测试",
+          "duration": 620.945819,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["架构和日志质量门禁"],
+          "fullName": "架构和日志质量门禁 新增接口漏登记时质量检查失败，不能仅靠清单自身完整",
+          "status": "passed",
+          "title": "新增接口漏登记时质量检查失败，不能仅靠清单自身完整",
+          "duration": 907.5389410000002,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["架构和日志质量门禁"],
+          "fullName": "架构和日志质量门禁 日志不输出敏感头、正文或异常详情",
+          "status": "passed",
+          "title": "日志不输出敏感头、正文或异常详情",
+          "duration": 8.250828000000183,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793425398305,
+      "endTime": 1793425400493.2507,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/unit/quality.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "fullName": "简历本地提取保留段落并拒绝编码伪装与扫描件",
+          "status": "passed",
+          "title": "简历本地提取保留段落并拒绝编码伪装与扫描件",
+          "duration": 12.269398000000137,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "模型画像逐字段证据不可捏造或声称完整",
+          "status": "passed",
+          "title": "模型画像逐字段证据不可捏造或声称完整",
+          "duration": 3.55567300000007,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "草稿确认拒绝未来生日和过时版本",
+          "status": "passed",
+          "title": "草稿确认拒绝未来生日和过时版本",
+          "duration": 18.29709200000002,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "明确的当前在岗事实可以作为带证据草稿提取",
+          "status": "passed",
+          "title": "明确的当前在岗事实可以作为带证据草稿提取",
+          "duration": 1.7077269999999771,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "正式文档适配器提取有效PDF与DOCX并拒绝无文字PDF",
+          "status": "passed",
+          "title": "正式文档适配器提取有效PDF与DOCX并拒绝无文字PDF",
+          "duration": 538.9498729999998,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "日期格式规范不放宽日历或精度规则，也不补齐未知月日",
+          "status": "passed",
+          "title": "日期格式规范不放宽日历或精度规则，也不补齐未知月日",
+          "duration": 3.976929000000382,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "日期对象证据转值定位且明确字段引用优先，仍须通过原文核验",
+          "status": "passed",
+          "title": "日期对象证据转值定位且明确字段引用优先，仍须通过原文核验",
+          "duration": 147.78639900000007,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "内部提取失败只信任受限错误信封，未知或畸形响应保持结果未知",
+          "status": "passed",
+          "title": "内部提取失败只信任受限错误信封，未知或畸形响应保持结果未知",
+          "duration": 72.5057039999997,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793425398011,
+      "endTime": 1793425398811.5056,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/unit/resume.test.ts"
+    }
+  ]
+}

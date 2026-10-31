@@ -1,0 +1,67 @@
+{
+  "checkedAt": "2026-10-31T13:38:08+08:00",
+  "target": "47.95.166.110",
+  "composeProject": "career-assistant-server",
+  "method": "Read-only SSH: container status, recent service logs, PostgreSQL read-only transactions, public HTTPS readiness, and local source inspection.",
+  "publicReadinessHttpStatus": 200,
+  "containers": {
+    "api": "running, healthy",
+    "agent": "running, healthy",
+    "database": "running, healthy",
+    "worker": "running",
+    "web": "running"
+  },
+  "recentFailedChatRuns": [
+    {
+      "runId": "11975905-3d88-41e4-b20b-38365fb05fcd",
+      "startedAt": "2026-10-31T13:34:45.995+08:00",
+      "failedAt": "2026-10-31T13:34:56.411+08:00",
+      "attempt": 1,
+      "errorCode": "TOOL_BUDGET_EXHAUSTED",
+      "persistedToolCalls": 8,
+      "lastSequence": 85
+    },
+    {
+      "runId": "52d89d84-48bd-4cab-bec9-fcefe80e4957",
+      "startedAt": "2026-10-31T13:35:10.524+08:00",
+      "failedAt": "2026-10-31T13:35:18.679+08:00",
+      "attempt": 2,
+      "errorCode": "TOOL_BUDGET_EXHAUSTED",
+      "persistedToolCalls": 8,
+      "lastSequence": 90
+    }
+  ],
+  "findings": [
+    {
+      "finding": "Both recent failed chats consumed the full eight-call tool budget. This is the chat execution budget, distinct from source-fetch request quotas.",
+      "evidence": "agent_runs rows and persisted failed run_events"
+    },
+    {
+      "finding": "The agent keeps offering tools at the limit and throws on an additional requested call. It has no budget-aware final-answer phase.",
+      "source": "packages/agent-core/src/runtime.ts:229-270"
+    },
+    {
+      "finding": "The chat page maps every nonempty errorCode to the same instruction to check materials or retry; it does not explain this failure.",
+      "source": "apps/web/src/workspace/chat.tsx:255"
+    },
+    {
+      "finding": "Chat failures are persisted via callbacks, but AgentRuntime's rejection handler does not log their code or run ID. HTTP 200 callbacks and healthy containers therefore do not prove successful chats.",
+      "source": "apps/agent/src/app.ts:115-122; packages/agent-core/src/runtime.ts:360-367"
+    }
+  ],
+  "otherObservedState": {
+    "liveResumes": { "ready": 1 },
+    "sourceTasks": {
+      "succeeded": 61,
+      "queued": 2,
+      "pausedWithSourceBudgetExhausted": 2
+    },
+    "mcpGet405": "The API deliberately returns 405 for authenticated GET /mcp; this is also seen alongside successful chats and does not establish their failure cause."
+  },
+  "limitations": [
+    "Individual tool names and arguments are not retained in the inspected runtime logs, so this investigation does not identify which exact tool sequence consumed the budget.",
+    "The same error code also covers excessive serialized model input; full budget consumption is confirmed, but the exact throwing branch cannot be proven from these stored records alone.",
+    "No new model inference, source request, production restart, configuration change, or code deployment was performed.",
+    "This is a diagnosis, not a completed fix or production acceptance."
+  ]
+}

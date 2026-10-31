@@ -11,12 +11,28 @@ import {
   RunEventSchema,
   JobCardSchema,
   EligibilitySchema,
+  EXECUTION_POLICY,
   type EligibilityDto,
 } from '@career/contracts';
 import { WorkspaceGate, WorkspaceNav, ErrorNotice } from './shared.js';
 import { workspaceRequest, VoidResponse } from './api.js';
 import { useAuth } from '../auth/context.js';
 import { ResumePanel } from './resumes.js';
+function runFailureMessage(code: string): string {
+  const messages: Record<string, string> = {
+    TOOL_BUDGET_EXHAUSTED: `本轮查询已达到${EXECUTION_POLICY.maxToolCalls}次工具调用上限，回答未完成。请缩小岗位范围或拆分问题后重新提问。`,
+    MODEL_CONTEXT_EXCEEDED:
+      '本轮对话和查询资料过长，回答未完成。请新建咨询或缩小问题范围。',
+    MODEL_UNAVAILABLE: '模型服务暂不可用，请稍后重试。',
+    MODEL_INTERRUPTED: '模型回答中断，结果可能不完整，请确认后重试。',
+    MODEL_OUTPUT_INVALID: '模型返回的内容未通过校验，请调整问题后重试。',
+    TOOL_UNAUTHORIZED: '本轮工具授权已失效，请刷新页面并重新提问。',
+    INVALID_EVIDENCE: '回答中的引用未通过核验，请缩小岗位范围后重新提问。',
+  };
+  return (
+    messages[code] ?? '本轮回答未完成，请稍后重试；持续失败时请联系维护人员。'
+  );
+}
 export function ChatPage() {
   const [params, setParams] = useSearchParams();
   const isResumesOpen = params.get('resumes') === 'open';
@@ -252,7 +268,7 @@ export function ChatPage() {
                     } as Record<string, string>
                   )[run.status]
                 }
-                {run.errorCode ? '，请检查资料或明确重试' : ''}
+                {run.errorCode ? `：${runFailureMessage(run.errorCode)}` : ''}
               </p>
             )}
             {cards.map((card) => (

@@ -1,0 +1,7 @@
+FROM career-assistant:server-candidate AS runtime
+USER root
+COPY --chown=node:node . /app
+RUN for task_package in packages/config packages/testing packages/contracts packages/observability packages/agent-core packages/business apps/api apps/agent apps/worker; do node node_modules/typescript/bin/tsc -p "$task_package/tsconfig.build.json" || exit 1; done && cd apps/web && node ../../node_modules/vite/bin/vite.js build
+USER node
+FROM career-assistant-web:server-candidate AS web
+COPY --from=runtime /app/apps/web/dist /srv

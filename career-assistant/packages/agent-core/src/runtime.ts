@@ -54,7 +54,7 @@ export async function streamModel(
     JSON.stringify({ messages, tools }).length >
     EXECUTION_POLICY.modelInputCharacters
   )
-    throw new AgentFailure('TOOL_BUDGET_EXHAUSTED');
+    throw new AgentFailure('MODEL_CONTEXT_EXCEEDED');
   const url = new URL('/chat/completions', config.MODEL_BASE_URL);
   const response = await send(url, {
     method: 'POST',
@@ -68,7 +68,7 @@ export async function streamModel(
       stream: true,
       thinking: { type: 'disabled' },
       max_tokens: EXECUTION_POLICY.modelOutputTokens,
-      ...(tools.length ? { tools } : {}),
+      ...(tools.length ? { tools } : { tool_choice: 'none' }),
     }),
     signal,
     redirect: 'error',
@@ -226,10 +226,20 @@ export class AgentEngine {
         : 0;
       const decisions: ('eligible' | 'not_eligible' | 'pending')[] = [];
       for (let round = 0; round <= EXECUTION_POLICY.maxToolCalls; round++) {
+        const remaining = EXECUTION_POLICY.maxToolCalls - totalCalls;
         const response = await streamModel(
           this.config,
-          messages,
-          tools,
+          [
+            ...messages,
+            {
+              role: 'system',
+              content:
+                remaining > 0
+                  ? `本轮工具调用总上限${EXECUTION_POLICY.maxToolCalls}次，包含自动读取画像和失败调用，当前剩余${remaining}次。规划查询范围，避免重复查询，取得必要依据后直接回答。`
+                  : '本轮工具额度已用完，工具已关闭。请根据已经取得的资料完成回答，明确未完成查询和待核验项，不得声称未执行的工具已成功，也不得推断资格符合。',
+            },
+          ],
+          remaining > 0 ? tools : [],
           signal,
           (text) => emit({ type: 'text_delta', text }),
           this.send,
@@ -259,6 +269,7 @@ export class AgentEngine {
           });
           return;
         }
+        if (remaining === 0) throw new AgentFailure('TOOL_BUDGET_EXHAUSTED');
         messages.push({
           role: 'assistant',
           content: response.text || null,
@@ -266,13 +277,27 @@ export class AgentEngine {
         });
         for (const call of response.calls) {
           signal.throwIfAborted();
-          if (++totalCalls > EXECUTION_POLICY.maxToolCalls)
-            throw new AgentFailure('TOOL_BUDGET_EXHAUSTED');
           if (
             !list.tools.some((t) => t.name === call.function.name) ||
             !call.id
           )
             throw new AgentFailure('TOOL_UNAUTHORIZED');
+          // 为同批未执行调用补协议结果，再在下一轮关闭工具并收尾。
+          if (totalCalls >= EXECUTION_POLICY.maxToolCalls) {
+            messages.push({
+              role: 'tool',
+              tool_call_id: call.id,
+              content: JSON.stringify({
+                error: {
+                  code: 'TOOL_BUDGET_EXHAUSTED',
+                  message:
+                    '本调用未执行，本轮工具次数已达上限，请根据已有证据完成回答',
+                },
+              }),
+            });
+            continue;
+          }
+          totalCalls++;
           let reply: string;
           try {
             const args: unknown = JSON.parse(call.function.arguments || '{}');
@@ -363,7 +388,14 @@ export class AgentEngine {
           type: 'failed',
           errorCode:
             error instanceof AgentFailure ? error.code : 'MODEL_UNAVAILABLE',
-          isRetryable: true,
+          isRetryable: !(
+            error instanceof AgentFailure &&
+            [
+              'TOOL_BUDGET_EXHAUSTED',
+              'MODEL_CONTEXT_EXCEEDED',
+              'TOOL_UNAUTHORIZED',
+            ].includes(error.code)
+          ),
         }).catch(() => {});
       throw error;
     } finally {

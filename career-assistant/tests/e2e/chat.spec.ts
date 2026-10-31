@@ -46,6 +46,19 @@ test('E2E-CHAT 浏览器多轮问答经独立Agent和真实MCP后持久化', asy
       }),
     ).toBeVisible();
     expect(model.calls()).toBe(2);
+    model.setMode('tool_budget');
+    await page.getByLabel('你的求职问题').fill('继续查找并整理已有结果');
+    await page.getByRole('button', { name: '发送', exact: true }).click();
+    await expect(
+      page.getByText('已根据本轮查询结果完成整理，未查询的条件仍待核验。', {
+        exact: true,
+      }),
+    ).toBeVisible();
+    model.setMode('ignore_tool_limit');
+    await page.getByLabel('你的求职问题').fill('检查工具超限错误提示');
+    await page.getByRole('button', { name: '发送', exact: true }).click();
+    await expect(page.getByRole('status')).toContainText('25次工具调用上限');
+    await expect(page.getByRole('status')).not.toContainText('请检查资料');
   } finally {
     await stopProcess(agent);
     await api.close();

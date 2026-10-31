@@ -289,3 +289,57 @@ it('重试原失败运行的重复请求复用首次子运行', async () => {
   expect((await a.json()).payload.id).toBe((await b.json()).payload.id);
   expect(f.model.calls()).toBe(1);
 });
+
+it.each(['tool_budget', 'tool_batch_budget'] as const)(
+  '工具25次及同批超额收尾：%s',
+  async (mode) => {
+    const f = await fixture();
+    f.model.setMode(mode);
+    const c = await create(f),
+      r = await send(f, c.id);
+    await f.runtime.chatServices.dispatcher.tick();
+    const result = await waitRun(f, r.id);
+    expect(result.status).toBe('completed');
+    expect(result.errorCode).toBeNull();
+    const db = new Client({ connectionString: isolatedDatabaseUrl() });
+    await db.connect();
+    try {
+      const stored = await db.query(
+        'SELECT tool_calls FROM agent_runs WHERE id=$1',
+        [r.id],
+      );
+      expect(stored.rows[0].tool_calls).toBe(25);
+    } finally {
+      await db.end();
+    }
+    const messages = MessageSchema.array().parse(
+      (await (await f.request(`/conversations/${c.id}/messages`)).json())
+        .payload,
+    );
+    expect(messages.at(-1)?.text).toContain('未查询的条件仍待核验');
+  },
+);
+
+it('模型无视关闭工具时明确失败且不执行第26次', async () => {
+  const f = await fixture();
+  f.model.setMode('ignore_tool_limit');
+  const c = await create(f),
+    r = await send(f, c.id);
+  await f.runtime.chatServices.dispatcher.tick();
+  const result = await waitRun(f, r.id);
+  expect(result.status).toBe('failed');
+  expect(result.errorCode).toBe('TOOL_BUDGET_EXHAUSTED');
+  const db = new Client({ connectionString: isolatedDatabaseUrl() });
+  await db.connect();
+  try {
+    const stored = await db.query(
+      'SELECT tool_calls FROM agent_runs WHERE id=$1',
+      [r.id],
+    );
+    expect(stored.rows[0].tool_calls).toBe(25);
+  } finally {
+    await db.end();
+  }
+  const events = await (await f.request(`/runs/${r.id}/events`)).text();
+  expect(events).toContain('"isRetryable":false');
+});

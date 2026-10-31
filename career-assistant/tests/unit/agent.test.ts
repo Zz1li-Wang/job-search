@@ -1,5 +1,6 @@
 import { it, expect } from 'vitest';
 import { streamModel, AgentFailure } from '@career/agent-core';
+import { EXECUTION_POLICY } from '@career/contracts';
 const config = {
   MODEL_BASE_URL: 'http://127.0.0.1',
   MODEL_API_KEY: 'local-fixture',
@@ -88,4 +89,27 @@ it('模型异常与断流不能伪装完成', async () => {
       async () => new Response('unavailable', { status: 503 }),
     ),
   ).rejects.toBeInstanceOf(AgentFailure);
+});
+
+it('上下文超限使用独立错误码且不发送模型请求', async () => {
+  let requests = 0;
+  await expect(
+    streamModel(
+      config,
+      [
+        {
+          role: 'user',
+          content: '长'.repeat(EXECUTION_POLICY.modelInputCharacters),
+        },
+      ],
+      [],
+      new AbortController().signal,
+      async () => {},
+      async () => {
+        requests++;
+        return new Response();
+      },
+    ),
+  ).rejects.toMatchObject({ code: 'MODEL_CONTEXT_EXCEEDED' });
+  expect(requests).toBe(0);
 });

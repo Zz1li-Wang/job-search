@@ -10,6 +10,7 @@ export const BUSINESS_MESSAGES = {
   MODEL_UNAVAILABLE: '模型服务暂不可用，请稍后显式重试',
   MODEL_INTERRUPTED: '模型执行结果未知，请确认后再重试',
   MODEL_OUTPUT_INVALID: '模型返回的结构或字段格式无效，请核对资料或显式重试',
+  MODEL_CONTEXT_EXCEEDED: '本轮资料和上下文过长，请精简资料或缩小问题范围',
   TOOL_BUDGET_EXHAUSTED: '本轮工具次数已达上限',
   FILE_UNSUPPORTED: '仅支持文本PDF、DOCX和UTF-8 TXT',
   FILE_INVALID: '文件内容与格式不符或已损坏',

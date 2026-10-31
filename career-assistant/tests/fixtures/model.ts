@@ -11,12 +11,17 @@ export async function startModelFixture() {
     | 'dated_parent'
     | 'paraphrased_description'
     | 'fabricated_description'
+    | 'tool_budget'
+    | 'tool_batch_budget'
+    | 'ignore_tool_limit'
     | 'http_error' = 'normal';
   const server = createServer(async (request, response) => {
     let body = '';
     for await (const chunk of request) body += String(chunk);
     const input = JSON.parse(body) as {
       messages: { role: string; content: string }[];
+      tools?: unknown[];
+      tool_choice?: string;
     };
     calls++;
     if (mode === 'http_error') {
@@ -31,6 +36,26 @@ export async function startModelFixture() {
     response.writeHead(200, { 'Content-Type': 'text/event-stream' });
     const emit = (delta: unknown) =>
       response.write(`data: ${JSON.stringify({ choices: [{ delta }] })}\n\n`);
+    if (
+      ['tool_budget', 'tool_batch_budget', 'ignore_tool_limit'].includes(mode)
+    ) {
+      if (input.tool_choice === 'none' && mode !== 'ignore_tool_limit') {
+        emit({ content: '已根据本轮查询结果完成整理，未查询的条件仍待核验。' });
+      } else {
+        emit({
+          tool_calls: Array.from(
+            { length: mode === 'tool_batch_budget' ? 16 : 1 },
+            (_, index) => ({
+              index,
+              id: `budget-${calls}-${index}`,
+              function: { name: 'get_profile', arguments: '{}' },
+            }),
+          ),
+        });
+      }
+      response.end('data: [DONE]\n\n');
+      return;
+    }
     if (mode === 'broken') {
       emit({ content: '尚未完成的回答' });
       response.end();

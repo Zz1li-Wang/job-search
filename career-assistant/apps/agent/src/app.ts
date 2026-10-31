@@ -117,8 +117,16 @@ export class AgentRuntime {
       () => {
         if (run.status === 'running') run.status = 'completed';
       },
-      () => {
+      (error: unknown) => {
         if (run.status === 'running') run.status = 'failed';
+        this.logger.warn(
+          {
+            runId: input.runId,
+            code:
+              error instanceof AgentFailure ? error.code : 'MODEL_UNAVAILABLE',
+          },
+          'chat_run_failed',
+        );
       },
     );
     return this.state(input.runId);

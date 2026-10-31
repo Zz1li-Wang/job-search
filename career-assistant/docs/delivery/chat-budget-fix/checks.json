@@ -1,0 +1,28 @@
+{
+  "unit": 61,
+  "integration": 130,
+  "e2e": 18,
+  "totalTests": 209,
+  "containerChecks": 12,
+  "modelCalls": 0,
+  "sourceRequests": 0,
+  "secretScan": {
+    "privateValuesChecked": 9,
+    "findings": 0
+  },
+  "checks": [
+    "build",
+    "lint",
+    "typecheck",
+    "format",
+    "architecture",
+    "interfaces",
+    "maintenance",
+    "git diff --check"
+  ],
+  "notes": [
+    "Initial full integration run had one authentication cleanup failure; focused authentication rerun and final full run passed without changing authentication code.",
+    "Focused MCP testing exposed an existing dependency on previously seeded jobs; MCP-04 now creates its own jobs.",
+    "Canonical Docker build could not reach its configured loopback proxy. Release images reuse verified prior runtime dependencies with unchanged lockfile and compile current source directly using TypeScript/Vite."
+  ]
+}
