@@ -8,6 +8,7 @@ import os
 from pathlib import Path
 import re
 import tempfile
+import unicodedata
 from datetime import datetime, timezone
 
 
@@ -24,7 +25,10 @@ REDACTIONS = (
     (re.compile(r"(?im)^(\s*(?:Cookie|Set-Cookie|Authorization)\s*:\s*).+$"), r"\1[REDACTED]"),
     (re.compile(r'''(?im)^(\s*(?:MODEL_API_KEY|SOURCE_COOKIE|PASSWORD|API_KEY)\s*=\s*).+$'''), r"\1[REDACTED]"),
     (re.compile(r'''(?i)\b((?:__Host-|__Secure-)?[A-Za-z0-9_.-]*(?:session|auth|token)[A-Za-z0-9_.-]*)=([^;\s"']+)'''), r"\1=[REDACTED]"),
+    (re.compile(r'''((?:密钥密码|密钥口令|私钥密码|私钥口令)\s*(?:为|是|[:：=])?\s*)([^\s"'<>，。；]+)'''), r"\1[REDACTED]"),
+    (re.compile(r'''(?i)(["']?chars["']?\s*:\s*["'])([^"'\n]+)(["'])'''), r"\1[REDACTED_STDIN]\3"),
 )
+DECLARED_CREDENTIAL = re.compile(r'''(?:密钥密码|密钥口令|私钥密码|私钥口令)\s*(?:为|是|[:：=])?\s*([^\s"'<>，。；]+)''')
 
 
 class ExportError(Exception):
@@ -32,8 +36,9 @@ class ExportError(Exception):
 
 
 class Redactor:
-    def __init__(self):
+    def __init__(self, declared_credentials=()):
         self.counts = collections.Counter()
+        self.declared_credentials = {unicodedata.normalize("NFKC", value) for value in declared_credentials}
 
     def clean(self, value, key=None):
         if key and SENSITIVE_KEY.fullmatch(key) and value:
@@ -45,6 +50,12 @@ class Redactor:
             return [self.clean(child) for child in value]
         if not isinstance(value, str):
             return value
+        if unicodedata.normalize("NFKC", value.strip()) in self.declared_credentials:
+            self.counts["declared_credential"] += 1
+            return "[REDACTED]"
+        if key == "chars" and value:
+            self.counts["terminal_input"] += 1
+            return "[REDACTED_STDIN]"
         # 工具输出经常把JSON嵌在字符串中，先解析再按字段脱敏。
         if value.lstrip().startswith(("{", "[")):
             try:
@@ -102,7 +113,14 @@ def export_session(source: Path, archive: Path):
         raise ExportError("missing_session_date")
     records, messages = [], []
     excluded = collections.Counter()
-    redactor = Redactor()
+    declared_credentials = []
+    for _, entry in parsed_lines:
+        payload = entry.get("payload", {})
+        if entry.get("type") == "response_item" and payload.get("type") == "message" and payload.get("role") == "user":
+            for part in payload.get("content", []):
+                if part.get("type") == "input_text" and isinstance(part.get("text"), str):
+                    declared_credentials.extend(DECLARED_CREDENTIAL.findall(part["text"]))
+    redactor = Redactor(declared_credentials)
     for number, entry in parsed_lines:
         payload = entry.get("payload", {})
         kind = payload.get("type")

@@ -63,6 +63,23 @@ class ConversationExportTests(unittest.TestCase):
         self.assertEqual(manifest["exported_message_count"], 2)
         self.assertIn("later-final", self.output("dialogue.md"))
 
+    def test_declared_private_key_passphrase_and_terminal_input_are_redacted(self):
+        declared = "ｆｉｃｔｉｏｎａｌｐａｓｓ"
+        repeated = "fictionalpass"
+        self.write([
+            self.message("user", "密钥密码" + declared),
+            self.message("user", repeated),
+            {"type": "response_item", "payload": {"type": "custom_tool_call", "name": "functions.exec", "input": 'await tools.write_stdin({session_id: 1, chars: "' + repeated + '\\n"})'}},
+            {"type": "response_item", "payload": {"type": "function_call", "name": "write_stdin", "arguments": json.dumps({"session_id": 1, "chars": repeated + "\n"})}},
+        ])
+        original = self.source.read_bytes()
+        sync.export_session(self.source, self.archive)
+        for name in ["dialogue.md", "collaboration.jsonl"]:
+            exported = self.output(name)
+            self.assertNotIn(declared, exported)
+            self.assertNotIn(repeated, exported)
+        self.assertEqual(self.source.read_bytes(), original)
+
     def test_corrupt_middle_preserves_prior_export(self):
         self.write([self.message("user", "original")])
         sync.export_session(self.source, self.archive)
