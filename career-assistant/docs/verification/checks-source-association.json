@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-10-30T06:52:02.913213+00:00",
+  "reportRunId": "d9206958-625a-440e-b8b2-137ba2c11a13",
+  "requestCount": 4,
+  "sourceCumulativeAttempts": 26,
+  "modelCumulativeAttempts": 5,
+  "newModelRequests": 0,
+  "requestStartGapsSeconds": [
+    1.005,
+    1.005,
+    1.006
+  ],
+  "associationChecks": {
+    "announcementToJobLinks": 2,
+    "jobToAnnouncementLinks": 2,
+    "companyAndTitleConsistent": true,
+    "originalUrlBaseConsistent": true,
+    "externalOriginalFetched": false
+  },
+  "priorManifestDigestsVerified": true,
+  "sourceCodeUnchangedSinceTests": true,
+  "sourceCodeSha256": {
+    "tools/verification/domain.ts": "9c744dc57477be248d19c36e190dee379bd9230346091f1b263ccee83fd4c7f7",
+    "tools/verification/model.ts": "bdc56f5c13f241c166a7d9c8b038f84d26f2d9025e150a1e4b77892c25a73598",
+    "tools/verification/dto.ts": "f6d61447c54d9af95124cfa4891e40c55b67fa7119ba7d28a695aa5a71f11257",
+    "tools/verification/model-probe.ts": "1fd9618ecc1a9d68b7f59128e711020230afce823949653ebc3d35da79aa7738",
+    "tools/verification/deepseek.ts": "971397a4e1cf7169ba7b1c0398c749b8c730535eb20145dae8a9bc8631e95e5a",
+    "tools/verification/model-ledger.ts": "4ef3530cf68cfb44a258259fe183a8793bb7c660947959cecbd00997839b0662",
+    "tools/verification/service.ts": "68e89c23f3aeb356f27f7ad4ec4d9215634345afe56dd3f4af06362daa1d991b",
+    "tools/verification/model.test.ts": "d38fcec0e8589836582befbf997785c777b7dd6b9f56669e526178b8028b6eb2",
+    "tools/verification/model-contracts.ts": "df644914198082ba7c9a8ebbb5694d555bbd34b5c47066be9d7bdbf3c53bc72c",
+    "tools/verification/cli.ts": "205f1bccf598bdebb6142405374db44eeeb161119b3a6a93befccb9099b0fc81",
+    "tools/verification/source.ts": "fc38af8a280564d98bd3fc4270fa6328dfdcc52964d21f3494a73965cb8d3f83",
+    "tools/verification/fixtures.ts": "f112936be2f4453081a28013aef15c57744b0d2dbac0d27ad84a7998940be4e3",
+    "tools/verification/model-evidence.ts": "ed8de2b16d8d615b728ee6cee8f04a25d592445b031c155d5cf1f226f0da8311",
+    "tools/verification/error-codes.ts": "287d5f04588ae3352c7f105508ffe476d8594e4af81706d348dcfd13e1493b72",
+    "tools/verification/report-store.ts": "ce702e51e4b9e214ef2ab6241f381bdf8edd3067594c07b164ea2a3d717a5d43",
+    "tools/verification/documents.ts": "c14e3f98dd8fa10f3c04eb922e981430a8cd15727fc869c1c4705ec0307761a5",
+    "tools/verification/verification.test.ts": "5a0a4ac373697b91e5825d92e434642def3b08c5c538a57e86213e09e53ae4dd",
+    "tools/verification/session-cli.ts": "393db1a381f483c66d61d3993c5fcf5d09618ef46fd0e800a894ed8e7eb3eeb5",
+    "tools/verification/session-dto.ts": "3ceb6c71b2a29e6a07f6c29c50c6b2d832cbcf3a5abf98c64055cde4c686bcc8",
+    "tools/verification/session-page.ts": "e099109026a9367a5cb04141043ebbe07f594aa53928d06b51da576a0b16d7b5",
+    "tools/verification/session-reader.ts": "6d5828f405a5b9bea0707fa93151bb1d970b462a0908ebf5d835c25a7fe14c24",
+    "tools/verification/session-service.ts": "cb1aa00f6c120e724a0bc09537143458d6a47d1ab0e775ccb196e576b9eae728",
+    "tools/verification/session-store.ts": "1c68f8f371b4c2c81ebba38f1c1def4eeb8cc5b221ccc87fa4ceaa0e33bb6401",
+    "tools/verification/session.test.ts": "5c5fa338536fa9f6e2cd789baa5b57d1f205bf649e929e1a703f8dbd9e89b223"
+  },
+  "testBaseline": {
+    "report": "tests-session-retest.json",
+    "passed": 77,
+    "rerunThisTurn": false,
+    "reason": "本轮只用现有适配器补充真实取样与文档，验证器源码未变；逐文件SHA256核对既有通过基线。"
+  },
+  "gitDiffCheck": "not_run_no_repository",
+  "newArtifactsSha256": {
+    "docs/verification/d9206958-625a-440e-b8b2-137ba2c11a13/report.json": "242d7a84f1f56a31c66fa642773a3dec75dba740c668655ffbe20b2910ecce68",
+    "docs/verification/d9206958-625a-440e-b8b2-137ba2c11a13/manifest.json": "fa3c6f65f1372d105d5c760ff842839e1ddd726242b5f0c6547ff3bf4f838fb9",
+    "docs/verification/d9206958-625a-440e-b8b2-137ba2c11a13/association-evidence.json": "cf0c9f1b98ad3dac16102c8d145896135944556c1088d796cb5f040a07045bdd"
+  },
+  "changedDocumentLinksChecked": 45,
+  "changedDocumentWhitespaceAndFences": "passed"
+}

@@ -1,0 +1,6 @@
+FICTIONAL TEST RESUME
+Name: Test Student
+Education: Bachelor, Computer Science, Expected graduation: 2027-06
+Internship: Example Lab, 2026-07 to 2026-08
+Certificate: English CET-6
+正式工作经历：无。实习不能当作正式工作年限。

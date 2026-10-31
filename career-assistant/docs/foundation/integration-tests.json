@@ -1,0 +1,95 @@
+{
+  "numTotalTestSuites": 2,
+  "numPassedTestSuites": 2,
+  "numFailedTestSuites": 0,
+  "numPendingTestSuites": 0,
+  "numTotalTests": 5,
+  "numPassedTests": 5,
+  "numFailedTests": 0,
+  "numPendingTests": 0,
+  "numTodoTests": 0,
+  "snapshot": {
+    "added": 0,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0,
+    "didUpdate": false
+  },
+  "startTime": 1793345755002,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["真实PostgreSQL Repository与UnitOfWork"],
+          "fullName": "真实PostgreSQL Repository与UnitOfWork Entity映射、提交及数据库关闭重连后持久化",
+          "status": "passed",
+          "title": "Entity映射、提交及数据库关闭重连后持久化",
+          "duration": 148.220016,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["真实PostgreSQL Repository与UnitOfWork"],
+          "fullName": "真实PostgreSQL Repository与UnitOfWork 事务抛错回滚，提交后上下文和伪造上下文都拒绝使用",
+          "status": "passed",
+          "title": "事务抛错回滚，提交后上下文和伪造上下文都拒绝使用",
+          "duration": 9.563810000000046,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["真实PostgreSQL Repository与UnitOfWork"],
+          "fullName": "真实PostgreSQL Repository与UnitOfWork 两个独立连接并发插入，同键只创建一次并返回首次结果",
+          "status": "passed",
+          "title": "两个独立连接并发插入，同键只创建一次并返回首次结果",
+          "duration": 9.886927000000014,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["真实PostgreSQL Repository与UnitOfWork"],
+          "fullName": "真实PostgreSQL Repository与UnitOfWork 同键不同请求的领域冲突不覆盖结果，不同作用域可分别写入",
+          "status": "passed",
+          "title": "同键不同请求的领域冲突不覆盖结果，不同作用域可分别写入",
+          "duration": 16.802502000000004,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["真实PostgreSQL Repository与UnitOfWork"],
+          "fullName": "真实PostgreSQL Repository与UnitOfWork 迁移包含公共任务和审计表，任务事件唯一约束真实生效",
+          "status": "passed",
+          "title": "迁移包含公共任务和审计表，任务事件唯一约束真实生效",
+          "duration": 16.662848999999994,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793345755327,
+      "endTime": 1793345755528.6628,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/integration/persistence.test.ts"
+    }
+  ]
+}

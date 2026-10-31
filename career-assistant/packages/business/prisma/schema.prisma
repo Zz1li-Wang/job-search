@@ -1,0 +1,854 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/infrastructure/generated"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+/// 请求幂等记录只保存摘要及结果引用，业务用例决定是否允许复用。
+model IdempotencyRecord {
+  /// 用户或服务身份与操作组成的隔离作用域。
+  scope             String   @db.VarChar(100)
+  /// 调用方提供的请求幂等标识。
+  key               String   @db.Uuid
+  /// 相同键不同摘要由领域对象拒绝。
+  requestHash       String   @map("request_hash") @db.Char(64)
+  /// 首次成功结果的引用，不存原始个人数据。
+  responseReference String   @map("response_reference") @db.VarChar(200)
+  /// 首次登记时刻，不随重放刷新。
+  createdAt         DateTime @map("created_at") @db.Timestamptz(3)
+
+  @@id([scope, key])
+  @@map("idempotency_records")
+}
+
+/// 提交后任务登记基础表，执行器在采集及异步任务模块实现。
+model TaskOutbox {
+  /// 稳定任务标识。
+  id                String    @id @db.Uuid
+  /// 去重键，防止同一业务事件重复登记。
+  eventKey          String    @unique @map("event_key") @db.VarChar(200)
+  /// 业务任务种类，执行模块负责校验。
+  kind              String    @db.VarChar(100)
+  /// 业务资源引用，不保存凭据或敏感正文。
+  resourceReference String    @map("resource_reference") @db.VarChar(200)
+  /// 最早可执行时刻。
+  availableAt       DateTime  @map("available_at") @db.Timestamptz(3)
+  /// 成功完成时刻；空表示尚未完成。
+  completedAt       DateTime? @map("completed_at") @db.Timestamptz(3)
+
+  /// 活跃采集任务自然合并键；SQL部分唯一索引只作用于活跃状态。
+  dedupeKey                String?         @map("dedupe_key") @db.VarChar(200)
+  /// 来源分类，历史非采集任务为空。
+  sourceKey                String?         @map("source_key") @db.VarChar(100)
+  /// 经领域Schema校验的执行目标。
+  target                   Json?
+  /// 可领取、执行、等待重试、暂停、失败或成功。
+  status                   String          @default("queued") @db.VarChar(32)
+  /// 数字较小优先，回填仍保留公平领取机会。
+  priority                 Int             @default(4)
+  /// 累计领取次数，人工恢复不重置历史。
+  attempt                  Int             @default(0)
+  /// 人工恢复后增加自动尝试上限。
+  attemptLimit             Int             @default(3) @map("attempt_limit")
+  /// 每次领取递增以阻止迟到执行者写入。
+  fencingToken             Int             @default(0) @map("fencing_token")
+  /// 非空时为执行租约截止时间。
+  leaseUntil               DateTime?       @map("lease_until") @db.Timestamptz(3)
+  /// 最近状态变化时间。
+  updatedAt                DateTime        @default(now()) @map("updated_at") @db.Timestamptz(3)
+  /// 最近刷新请求时刻。
+  requestedAt              DateTime        @default(now()) @map("requested_at") @db.Timestamptz(3)
+  /// 刷新请求累计代次。
+  refreshGeneration        Int             @default(0) @map("refresh_generation")
+  /// 领取时已经覆盖的请求代次。
+  claimedRefreshGeneration Int             @default(0) @map("claimed_refresh_generation")
+  /// 用户可见的稳定失败分类。
+  errorCode                String?         @map("error_code") @db.VarChar(100)
+  /// 覆盖领取后新请求的后继任务。
+  successorTaskId          String?         @map("successor_task_id") @db.Uuid
+  /// 每次领取的执行记录。
+  attempts                 TaskAttempt[]
+  /// 请求该公共任务的账号关联。
+  requesters               TaskRequester[]
+
+  @@index([status, availableAt, priority])
+  @@index([availableAt])
+  @@map("task_outbox")
+}
+
+/// 基础审计只保存操作者引用和动作名，业务字段随具体模块扩展。
+model AuditEvent {
+  /// 不可重复的审计事件标识。
+  id             String   @id @db.Uuid
+  /// 受信操作者引用。
+  actorReference String   @map("actor_reference") @db.VarChar(200)
+  /// 具有业务语义的动作名。
+  action         String   @db.VarChar(100)
+  /// 实际动作时刻。
+  occurredAt     DateTime @map("occurred_at") @db.Timestamptz(3)
+
+  @@map("audit_events")
+}
+
+/// 用户名唯一，密码摘要仅在内部领域和持久化使用。
+model User {
+  /// 账号稳定标识。
+  id                 String             @id @db.Uuid
+  /// 规范化小写用户名。
+  usernameNormalized String             @unique @map("username_normalized") @db.VarChar(32)
+  /// 包含算法和参数的密码摘要。
+  passwordHash       String             @map("password_hash") @db.VarChar(512)
+  /// 改密后递增以撤销全部旧授权。
+  authEpoch          Int                @map("auth_epoch")
+  /// 首次注册时间。
+  createdAt          DateTime           @map("created_at") @db.Timestamptz(3)
+  /// 最近一次账号变化时间。
+  updatedAt          DateTime           @map("updated_at") @db.Timestamptz(3)
+  /// 删除屏障，本模块不提供删除操作。
+  deletedAt          DateTime?          @map("deleted_at") @db.Timestamptz(3)
+  /// 所属会话关系，仅持久化内部使用。
+  sessions           Session[]
+  /// 仅限账号查询自己请求过的公共任务。
+  taskRequests       TaskRequester[]
+  /// 当前正式画像，只能由后续显式确认流程写入。
+  profile            Profile?
+  /// 用户私有资格记录。
+  eligibilityChecks  EligibilityCheck[]
+  /// 清空个人数据后递增，禁止旧运行读取或恢复资料。
+  personalDataEpoch  Int                @default(0) @map("personal_data_epoch")
+  /// 私有会话。
+  conversations      Conversation[]
+  /// 模型运行授权及状态。
+  agentRuns          AgentRun[]
+  /// 本人文件。
+  resumes            Resume[]
+  /// 未确认画像草稿。
+  profileDrafts      ProfileDraft[]
+  /// 本人收藏。
+  favorites          Favorite[]
+  /// 手动投递记录。
+  jobApplications    JobApplication[]
+
+  @@map("users")
+}
+
+/// 仅保存会话HMAC，原始Cookie不落库。
+model Session {
+  /// 会话标识。
+  id          String    @id @db.Uuid
+  /// 所属用户标识。
+  userId      String    @map("user_id") @db.Uuid
+  /// 随机令牌的HMAC摘要。
+  tokenDigest String    @unique @map("token_digest") @db.Char(64)
+  /// 创建时认证版本。
+  authEpoch   Int       @map("auth_epoch")
+  /// 固定到期时间。
+  expiresAt   DateTime  @map("expires_at") @db.Timestamptz(3)
+  /// 撤销时间，不因重放刷新。
+  revokedAt   DateTime? @map("revoked_at") @db.Timestamptz(3)
+  /// 会话创建时间。
+  createdAt   DateTime  @map("created_at") @db.Timestamptz(3)
+  /// 内部外键关系。
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([expiresAt])
+  @@index([userId])
+  @@map("sessions")
+}
+
+/// 一次性浏览器绑定的图片挑战，不保存答案。
+model CaptchaChallenge {
+  /// 挑战标识。
+  id            String    @id @db.Uuid
+  /// 浏览器归属摘要。
+  visitorDigest String    @map("visitor_digest") @db.Char(64)
+  /// 绑定挑战的答案摘要。
+  answerDigest  String    @map("answer_digest") @db.Char(64)
+  /// 到期边界。
+  expiresAt     DateTime  @map("expires_at") @db.Timestamptz(3)
+  /// 首次尝试时刻，错误答案也消费。
+  consumedAt    DateTime? @map("consumed_at") @db.Timestamptz(3)
+  /// 创建时间。
+  createdAt     DateTime  @map("created_at") @db.Timestamptz(3)
+
+  @@index([expiresAt])
+  @@map("captcha_challenges")
+}
+
+/// 不存在的用户名同样计入失败和冷却，避免存在性差异。
+model AuthAttempt {
+  /// 规范化用户名HMAC。
+  identityDigest      String    @id @map("identity_digest") @db.Char(64)
+  /// 连续失败数。
+  consecutiveFailures Int       @map("consecutive_failures")
+  /// 可再次验证密码的时刻。
+  cooldownUntil       DateTime? @map("cooldown_until") @db.Timestamptz(3)
+  /// 最后尝试结果时间。
+  updatedAt           DateTime  @map("updated_at") @db.Timestamptz(3)
+
+  @@map("auth_attempts")
+}
+
+/// 多进程共享的固定分钟窗口，原子计数。
+model AuthRateBucket {
+  /// 验证码、凭据或改密范围。
+  scope         String   @db.VarChar(32)
+  /// 网络来源HMAC摘要。
+  subjectDigest String   @map("subject_digest") @db.Char(64)
+  /// 固定窗口起点。
+  windowStart   DateTime @map("window_start") @db.Timestamptz(3)
+  /// 已允许请求数。
+  attemptCount  Int      @map("attempt_count")
+  /// 窗口过期时间。
+  expiresAt     DateTime @map("expires_at") @db.Timestamptz(3)
+
+  @@id([scope, subjectDigest, windowStart])
+  @@index([expiresAt])
+  @@map("auth_rate_buckets")
+}
+
+/// 采集领域持久化映射，业务行为位于独立Entity。
+model SourceStream {
+  /// 来源与扫描流唯一键。
+  id                String   @id @db.VarChar(200)
+  /// 新增或历史扫描流。
+  streamKey         String   @map("stream_key") @db.VarChar(32)
+  /// 扫描周期。
+  generation        Int
+  /// 下一待登记页。
+  checkpoint        Int
+  /// 游标并发版本。
+  checkpointVersion Int      @map("checkpoint_version")
+  /// 下一扫描目标时间。
+  nextDiscoveryAt   DateTime @map("next_discovery_at") @db.Timestamptz(3)
+  /// 来源暂停分类。
+  pauseReason       String?  @map("pause_reason") @db.VarChar(100)
+  /// 状态并发版本。
+  stateVersion      Int      @map("state_version")
+
+  @@map("source_streams")
+}
+
+/// 采集领域持久化映射，业务行为位于独立Entity。
+model SourceResource {
+  /// 稳定来源资源。
+  id               String             @id @db.Uuid
+  /// 来源允许键。
+  sourceKey        String             @map("source_key") @db.VarChar(100)
+  /// 岗位或公告。
+  kind             String             @db.VarChar(32)
+  /// 不透明源站ID。
+  sourceId         String             @map("source_id") @db.VarChar(200)
+  /// 受控来源URL。
+  canonicalUrl     String             @map("canonical_url") @db.VarChar(4000)
+  /// 当前内容版本引用。
+  currentVersionId String?            @map("current_version_id") @db.Uuid
+  /// 最近尝试。
+  lastAttemptAt    DateTime?          @map("last_attempt_at") @db.Timestamptz(3)
+  /// 最近有效正文获取。
+  lastFetchedAt    DateTime?          @map("last_fetched_at") @db.Timestamptz(3)
+  /// 下一复查目标时间。
+  nextRefreshAt    DateTime           @map("next_refresh_at") @db.Timestamptz(3)
+  /// 核验指针版本。
+  reviewVersion    Int                @default(0) @map("review_version")
+  /// 现行核验指针。
+  currentReviewId  String?            @map("current_review_id") @db.Uuid
+  /// 状态CAS版本。
+  stateVersion     Int                @default(0) @map("state_version")
+  /// 历史不可变正文版本。
+  versions         SourceVersion[]
+  /// 实际获取观察。
+  observations     FetchObservation[]
+  /// 岗位稳定身份。
+  job              Job?
+  /// 程序字段草稿。
+  drafts           RequirementDraft[]
+
+  @@unique([sourceKey, kind, sourceId])
+  @@index([nextRefreshAt])
+  @@map("source_resources")
+}
+
+/// 采集领域持久化映射，业务行为位于独立Entity。
+model Job {
+  /// 稳定岗位UUID。
+  id         String              @id @db.Uuid
+  /// 来源岗位资源。
+  resourceId String              @unique @map("resource_id") @db.Uuid
+  /// 岗位对应资源关系。
+  resource   SourceResource      @relation(fields: [resourceId], references: [id], onDelete: Restrict)
+  /// 已发现关联公告及入口。
+  links      JobEvidenceLink[]
+  /// 完整性核验历史。
+  reviews    RequirementReview[]
+  /// 不可变首次收录时间，用于稳定排序。
+  recordedAt DateTime            @default(now()) @map("recorded_at") @db.Timestamptz(3)
+
+  @@index([recordedAt, id])
+  @@map("jobs")
+}
+
+/// 采集领域持久化映射，业务行为位于独立Entity。
+model SourceSnapshot {
+  /// 快照标识亦为私有存储键。
+  id              String          @id @db.Uuid
+  /// 去敏正文内容摘要。
+  sanitizedDigest String          @map("sanitized_digest") @db.Char(64)
+  /// 实际保存字节数。
+  byteLength      Int             @map("byte_length")
+  /// 去敏快照格式。
+  format          String          @db.VarChar(32)
+  /// 写入完成时间。
+  createdAt       DateTime        @map("created_at") @db.Timestamptz(3)
+  /// 引用快照的不可变版本。
+  versions        SourceVersion[]
+
+  @@map("source_snapshots")
+}
+
+/// 采集领域持久化映射，业务行为位于独立Entity。
+model SourceVersion {
+  /// 不可变正文版本。
+  id            String             @id @db.Uuid
+  /// 所属来源资源。
+  resourceId    String             @map("resource_id") @db.Uuid
+  /// 语义正文摘要。
+  materialHash  String             @map("material_hash") @db.Char(64)
+  /// 经独立领域Schema校验的正文与字段。
+  body          Json
+  /// 解析规则版本。
+  parserVersion String             @map("parser_version") @db.VarChar(100)
+  /// 去敏正文快照。
+  snapshotId    String             @map("snapshot_id") @db.Uuid
+  /// 首次创建时间。
+  createdAt     DateTime           @map("created_at") @db.Timestamptz(3)
+  /// 资源外键。
+  resource      SourceResource     @relation(fields: [resourceId], references: [id], onDelete: Restrict)
+  /// 私有快照外键。
+  snapshot      SourceSnapshot     @relation(fields: [snapshotId], references: [id], onDelete: Restrict)
+  /// 引用此正文的观察。
+  observations  FetchObservation[]
+
+  @@unique([resourceId, materialHash])
+  @@map("source_versions")
+}
+
+/// 采集领域持久化映射，业务行为位于独立Entity。
+model FetchObservation {
+  /// 观察唯一标识。
+  id            String         @id @db.Uuid
+  /// 所属资源。
+  resourceId    String         @map("resource_id") @db.Uuid
+  /// 所见内容版本。
+  versionId     String         @map("version_id") @db.Uuid
+  /// 成功执行尝试防重键。
+  attemptId     String         @unique @map("attempt_id") @db.Uuid
+  /// 实际成功响应状态。
+  httpStatus    Int            @map("http_status")
+  /// 实际获取时刻。
+  fetchedAt     DateTime       @map("fetched_at") @db.Timestamptz(3)
+  /// 未落盘响应的字节摘要。
+  rawDigest     String         @map("raw_digest") @db.Char(64)
+  /// 解析版本。
+  parserVersion String         @map("parser_version") @db.VarChar(100)
+  /// 来源资源关系。
+  resource      SourceResource @relation(fields: [resourceId], references: [id], onDelete: Restrict)
+  /// 不可变正文关系。
+  version       SourceVersion  @relation(fields: [versionId], references: [id], onDelete: Restrict)
+
+  @@map("fetch_observations")
+}
+
+/// 采集领域持久化映射，业务行为位于独立Entity。
+model JobEvidenceLink {
+  /// 关联记录标识。
+  id                 String  @id @db.Uuid
+  /// 岗位UUID。
+  jobId              String  @map("job_id") @db.Uuid
+  /// 允许来源内关联资源，外站入口为空。
+  resourceId         String? @map("resource_id") @db.Uuid
+  /// 原文实际出现URL。
+  url                String  @db.VarChar(4000)
+  /// 公告或外站入口。
+  relationKind       String  @map("relation_kind") @db.VarChar(32)
+  /// 发现关联时岗位正文版本。
+  associationVersion String  @map("association_version") @db.Uuid
+  /// 单向发现或双向验证。
+  associationStatus  String  @map("association_status") @db.VarChar(32)
+  /// 稳定岗位关系。
+  job                Job     @relation(fields: [jobId], references: [id], onDelete: Restrict)
+
+  @@unique([jobId, url, associationVersion])
+  @@map("job_evidence_links")
+}
+
+/// 采集领域持久化映射，业务行为位于独立Entity。
+model RequirementDraft {
+  /// 字段草稿标识。
+  id            String         @id @db.Uuid
+  /// 岗位资源。
+  resourceId    String         @map("resource_id") @db.Uuid
+  /// 草稿依赖正文。
+  jobVersionId  String         @unique @map("job_version_id") @db.Uuid
+  /// 字段候选及定位，不是已核验条件。
+  fields        Json
+  /// 抽取规则版本。
+  parserVersion String         @map("parser_version") @db.VarChar(100)
+  /// 来源关系。
+  resource      SourceResource @relation(fields: [resourceId], references: [id], onDelete: Restrict)
+
+  @@map("requirement_drafts")
+}
+
+/// 采集领域持久化映射，业务行为位于独立Entity。
+model RequirementReview {
+  /// 不可变审阅ID。
+  id             String    @id @db.Uuid
+  /// 审阅岗位。
+  jobId          String    @map("job_id") @db.Uuid
+  /// 岗位正文依赖。
+  jobVersionId   String    @map("job_version_id") @db.Uuid
+  /// 递增核验指针版本。
+  reviewVersion  Int       @map("review_version")
+  /// 经过DTO与领域证据校验的条件和依赖向量。
+  content        Json
+  /// 同内容和观察重放摘要。
+  reviewDigest   String    @map("review_digest") @db.Char(64)
+  /// 完整性校验结论。
+  isComplete     Boolean   @map("is_complete")
+  /// 最早依赖观察与审阅时间。
+  verifiedAt     DateTime? @map("verified_at") @db.Timestamptz(3)
+  /// 实际审阅时刻。
+  reviewedAt     DateTime  @map("reviewed_at") @db.Timestamptz(3)
+  /// 服务器受信运营身份。
+  actorReference String    @map("actor_reference") @db.VarChar(200)
+  /// 岗位外键。
+  job            Job       @relation(fields: [jobId], references: [id], onDelete: Restrict)
+
+  @@unique([jobId, reviewVersion])
+  @@unique([jobId, reviewDigest])
+  @@map("requirement_reviews")
+}
+
+/// 采集领域持久化映射，业务行为位于独立Entity。
+model TaskAttempt {
+  /// 执行尝试UUID。
+  id          String     @id @db.Uuid
+  /// 父任务。
+  taskId      String     @map("task_id") @db.Uuid
+  /// 累计执行序号。
+  attempt     Int
+  /// 本次执行围栏。
+  token       Int
+  /// 领取时刻。
+  startedAt   DateTime   @map("started_at") @db.Timestamptz(3)
+  /// 提交或失败时刻。
+  endedAt     DateTime?  @map("ended_at") @db.Timestamptz(3)
+  /// 脱敏执行结果。
+  resultCode  String?    @map("result_code") @db.VarChar(100)
+  /// 重试目标时间。
+  nextRetryAt DateTime?  @map("next_retry_at") @db.Timestamptz(3)
+  /// 父任务关系。
+  task        TaskOutbox @relation(fields: [taskId], references: [id], onDelete: Restrict)
+
+  @@unique([taskId, attempt])
+  @@map("task_attempts")
+}
+
+/// 采集领域持久化映射，业务行为位于独立Entity。
+model TaskRequester {
+  /// 请求当前公共任务的账号。
+  userId String     @map("user_id") @db.Uuid
+  /// 已关联公共任务。
+  taskId String     @map("task_id") @db.Uuid
+  /// 公共任务关系。
+  task   TaskOutbox @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  /// 用户归属外键。
+  user   User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([userId, taskId])
+  @@map("task_requesters")
+}
+
+/// 采集领域持久化映射，业务行为位于独立Entity。
+model SourceRequestBudget {
+  /// 获准运行与来源预算键。
+  id    String @id @db.VarChar(200)
+  /// 获准最多请求次数。
+  limit Int
+  /// 已原子预留次数，只增不减。
+  used  Int    @default(0)
+
+  @@map("source_request_budgets")
+}
+
+/// 采集领域持久化映射，业务行为位于独立Entity。
+model DomainPermit {
+  /// 主机与在途许可槽。
+  id          String    @id @db.VarChar(200)
+  /// 允许下一次启动时间。
+  nextStartAt DateTime  @map("next_start_at") @db.Timestamptz(3)
+  /// 当前许可到期。
+  leaseUntil  DateTime? @map("lease_until") @db.Timestamptz(3)
+  /// 许可执行者。
+  owner       String?   @db.Uuid
+  /// robots缓存或主机启动串行状态。
+  state       Json?
+
+  @@map("domain_permits")
+}
+
+/// 采集领域持久化映射，业务行为位于独立Entity。
+model ExportRun {
+  /// 固定导出ID。
+  id             String   @id @db.Uuid
+  /// 创建幂等键。
+  operationKey   String   @unique @map("operation_key") @db.Uuid
+  /// 一致视图时间。
+  snapshotAt     DateTime @map("snapshot_at") @db.Timestamptz(3)
+  /// 固定导出序列上界。
+  cutoffSequence BigInt   @map("cutoff_sequence")
+  /// 导出范围摘要。
+  scopeHash      String   @map("scope_hash") @db.Char(64)
+  /// 待写文件或已完成。
+  status         String   @db.VarChar(32)
+  /// 已发布文件摘要。
+  manifestDigest String?  @map("manifest_digest") @db.Char(64)
+  /// 固定公共记录条目，无个人数据。
+  entries        Json
+  /// 公共记录计数。
+  recordCount    Int      @map("record_count")
+
+  @@map("export_runs")
+}
+
+/// 正式画像当前版本，无行表示从未确认。
+model Profile {
+  /// 唯一所有者。
+  userId      String   @id @map("user_id") @db.Uuid
+  /// 每次确认递增。
+  version     Int
+  /// 经独立领域Schema校验的确认事实。
+  content     Json
+  /// 最后显式确认时间。
+  confirmedAt DateTime @map("confirmed_at") @db.Timestamptz(3)
+  /// 版本变更时间。
+  updatedAt   DateTime @map("updated_at") @db.Timestamptz(3)
+  /// 账号归属。
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("profiles")
+}
+
+/// 不可变私有资格记录，读取时对照当前依赖。
+model EligibilityCheck {
+  /// 核验标识。
+  id             String   @id @db.Uuid
+  /// 记录所有者。
+  userId         String   @map("user_id") @db.Uuid
+  /// 目标岗位。
+  jobId          String   @map("job_id") @db.Uuid
+  /// 正文依赖。
+  jobVersionId   String   @map("job_version_id") @db.Uuid
+  /// 正式画像版本，0为无记录。
+  profileVersion Int      @map("profile_version")
+  /// 人工核验版本。
+  reviewVersion  Int      @map("review_version")
+  /// 公告关联及证据摘要。
+  dependencyHash String   @map("dependency_hash") @db.Char(64)
+  /// 规则引擎版本。
+  rulesVersion   String   @map("rules_version") @db.VarChar(100)
+  /// 首次计算时间。
+  evaluatedAt    DateTime @map("evaluated_at") @db.Timestamptz(3)
+  /// 经领域Schema校验的最小决策快照。
+  decision       Json
+  /// 所有者外键。
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, id])
+  @@index([jobId, evaluatedAt])
+  @@map("eligibility_checks")
+}
+
+/// 单会话至多一个活跃运行，删除立即撤销可见性。
+model Conversation {
+  /// 会话UUID。
+  id          String     @id @db.Uuid
+  /// 所有者。
+  userId      String     @map("user_id") @db.Uuid
+  /// 展示标题。
+  title       String     @db.VarChar(100)
+  /// 创建时间。
+  createdAt   DateTime   @map("created_at") @db.Timestamptz(3)
+  /// 逻辑删除时间。
+  deletedAt   DateTime?  @map("deleted_at") @db.Timestamptz(3)
+  /// 本会话唯一活跃运行。
+  activeRunId String?    @map("active_run_id") @db.Uuid
+  /// 账号外键。
+  user        User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  /// 会话消息。
+  messages    Message[]
+  /// 运行历史。
+  runs        AgentRun[]
+
+  @@index([userId, createdAt, id])
+  @@map("conversations")
+}
+
+/// 用户和助手消息；客户端ID仅用于用户消息幂等。
+model Message {
+  /// 消息UUID。
+  id              String       @id @db.Uuid
+  /// 所属会话。
+  conversationId  String       @map("conversation_id") @db.Uuid
+  /// 用户提供幂等ID；助手消息为空。
+  clientMessageId String?      @map("client_message_id") @db.Uuid
+  /// 同ID内容差异检测。
+  requestHash     String?      @map("request_hash") @db.Char(64)
+  /// 用户或助手。
+  role            String       @db.VarChar(20)
+  /// 消息正文，不写应用日志。
+  text            String
+  /// 关联运行。
+  runId           String?      @map("run_id") @db.Uuid
+  /// 提交、完成或失败状态。
+  status          String       @db.VarChar(32)
+  /// 经过工具核验的引用值对象。
+  citations       Json
+  /// 提交时间。
+  createdAt       DateTime     @map("created_at") @db.Timestamptz(3)
+  /// 会话关系。
+  conversation    Conversation @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+
+  @@unique([conversationId, clientMessageId])
+  @@index([conversationId, createdAt, id])
+  @@map("messages")
+}
+
+/// 可靠模型运行，文件解析与聊天共享授权生命周期。
+model AgentRun {
+  /// 运行UUID。
+  id                String        @id @db.Uuid
+  /// 所有者。
+  userId            String        @map("user_id") @db.Uuid
+  /// 聊天会话，文件解析为空。
+  conversationId    String?       @map("conversation_id") @db.Uuid
+  /// chat或resume。
+  kind              String        @default("chat") @db.VarChar(20)
+  /// 文件提取限定资源。
+  resourceId        String?       @map("resource_id") @db.Uuid
+  /// 执行状态。
+  status            String        @db.VarChar(32)
+  /// 显式执行尝试序号。
+  attempt           Int
+  /// 并发控制版本。
+  version           Int
+  /// 最后提交事件序号。
+  lastSequence      Int           @map("last_sequence")
+  /// 脱敏错误码。
+  errorCode         String?       @map("error_code") @db.VarChar(100)
+  /// 发起认证版本。
+  authEpoch         Int           @map("auth_epoch")
+  /// 发起个人数据屏障。
+  personalDataEpoch Int           @map("personal_data_epoch")
+  /// 持久化工具调用次数。
+  toolCalls         Int           @default(0) @map("tool_calls")
+  /// 创建时间。
+  createdAt         DateTime      @map("created_at") @db.Timestamptz(3)
+  /// 最近变更。
+  updatedAt         DateTime      @map("updated_at") @db.Timestamptz(3)
+  /// 派发及授权租约。
+  leaseUntil        DateTime?     @map("lease_until") @db.Timestamptz(3)
+  /// 原运行，不自动收费重试。
+  parentRunId       String?       @map("parent_run_id") @db.Uuid
+  /// 所有者关系。
+  user              User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  /// 可选聊天会话。
+  conversation      Conversation? @relation(fields: [conversationId], references: [id], onDelete: Cascade)
+  /// 已提交流事件。
+  events            RunEvent[]
+
+  @@index([status, createdAt])
+  @@map("agent_runs")
+}
+
+/// 回调持久化后才允许SSE发布。
+model RunEvent {
+  /// 运行ID。
+  runId     String   @map("run_id") @db.Uuid
+  /// 严格递增事件序号。
+  sequence  Int
+  /// 类型化事件联合。
+  payload   Json
+  /// 同序号内容幂等摘要。
+  hash      String   @db.Char(64)
+  /// 实际提交时刻。
+  createdAt DateTime @map("created_at") @db.Timestamptz(3)
+  /// 运行关系。
+  run       AgentRun @relation(fields: [runId], references: [id], onDelete: Cascade)
+
+  @@id([runId, sequence])
+  @@map("run_events")
+}
+
+/// 原文文件及本地提取结果，仅本人可读。
+model Resume {
+  /// 私有资源ID。
+  id          String    @id @db.Uuid
+  /// 所有者。
+  userId      String    @map("user_id") @db.Uuid
+  /// 用户标题。
+  title       String    @db.VarChar(100)
+  /// 本地支持的格式。
+  format      String    @db.VarChar(10)
+  /// 私有存储引用，禁止输出。
+  fileKey     String?   @map("file_key") @db.VarChar(200)
+  /// 用户内去重摘要。
+  contentHash String    @map("content_hash") @db.Char(64)
+  /// 文件与删除版本。
+  version     Int
+  /// 解析生命周期。
+  status      String    @db.VarChar(32)
+  /// 当前解析运行。
+  activeRunId String?   @map("active_run_id") @db.Uuid
+  /// 本次提取草稿。
+  draftId     String?   @map("draft_id") @db.Uuid
+  /// 安全失败分类。
+  errorCode   String?   @map("error_code") @db.VarChar(100)
+  /// 提取原文定位。
+  spans       Json?
+  /// 登记时刻。
+  createdAt   DateTime  @map("created_at") @db.Timestamptz(3)
+  /// 逻辑删除屏障。
+  deletedAt   DateTime? @map("deleted_at") @db.Timestamptz(3)
+  /// 所有者外键。
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt, id])
+  @@index([status])
+  @@map("resumes")
+}
+
+/// 模型或用户产生的待确认草稿，正式画像另表保存。
+model ProfileDraft {
+  /// 草稿标识。
+  id                      String    @id @db.Uuid
+  /// 所有者。
+  userId                  String    @map("user_id") @db.Uuid
+  /// 草稿版本。
+  version                 Int
+  /// 正式版本基线。
+  baseProfileVersion      Int       @map("base_profile_version")
+  /// 待确认事实。
+  content                 Json
+  /// 未确认或确认。
+  status                  String    @db.VarChar(20)
+  /// 来源简历引用，删除后保留失效说明。
+  sourceResumeId          String?   @map("source_resume_id") @db.Uuid
+  /// 来源版本。
+  sourceResumeVersion     Int?      @map("source_resume_version")
+  /// 原文逐字段证据。
+  evidence                Json
+  /// 首次确认版本。
+  confirmedProfileVersion Int?      @map("confirmed_profile_version")
+  /// 首次确认返回快照。
+  confirmedContent        Json?     @map("confirmed_content")
+  /// 首次确认时间。
+  confirmedAt             DateTime? @map("confirmed_at") @db.Timestamptz(3)
+  /// 建立时间。
+  createdAt               DateTime  @map("created_at") @db.Timestamptz(3)
+  /// 所有者外键。
+  user                    User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, id])
+  @@map("profile_drafts")
+}
+
+/// 收藏自然键确保重复添加安全。
+model Favorite {
+  /// 所有者。
+  userId    String   @map("user_id") @db.Uuid
+  /// 目标岗位。
+  jobId     String   @map("job_id") @db.Uuid
+  /// 收藏时标题快照。
+  title     String
+  /// 收藏时间。
+  createdAt DateTime @map("created_at") @db.Timestamptz(3)
+  /// 所有者外键。
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([userId, jobId])
+  @@map("favorites")
+}
+
+/// 手动投递进度，模型无写入工具。
+model JobApplication {
+  /// 记录标识。
+  id         String               @id @db.Uuid
+  /// 所有者。
+  userId     String               @map("user_id") @db.Uuid
+  /// 目标岗位。
+  jobId      String               @map("job_id") @db.Uuid
+  /// 创建时标题快照。
+  title      String
+  /// 用户记录状态。
+  status     String               @db.VarChar(32)
+  /// 实际发生日期。
+  actionDate String?              @map("action_date") @db.VarChar(10)
+  /// 用户私有备注。
+  note       String
+  /// 乐观版本。
+  version    Int
+  /// 建立时间。
+  createdAt  DateTime             @map("created_at") @db.Timestamptz(3)
+  /// 修改时间。
+  updatedAt  DateTime             @map("updated_at") @db.Timestamptz(3)
+  /// 所有者外键。
+  user       User                 @relation(fields: [userId], references: [id], onDelete: Cascade)
+  /// 每次变更的原子历史。
+  history    ApplicationHistory[]
+
+  @@unique([userId, jobId])
+  @@map("job_applications")
+}
+
+/// 与主记录同事务写入的手动修正历史。
+model ApplicationHistory {
+  /// 历史UUID。
+  id            String         @id @db.Uuid
+  /// 所属投递记录。
+  applicationId String         @map("application_id") @db.Uuid
+  /// 主记录对应版本。
+  version       Int
+  /// 当时状态。
+  status        String         @db.VarChar(32)
+  /// 当时日期。
+  actionDate    String?        @map("action_date") @db.VarChar(10)
+  /// 当时备注。
+  note          String
+  /// 记录时间。
+  createdAt     DateTime       @map("created_at") @db.Timestamptz(3)
+  /// 主记录外键。
+  application   JobApplication @relation(fields: [applicationId], references: [id], onDelete: Cascade)
+
+  @@unique([applicationId, version])
+  @@map("application_history")
+}
+
+/// 删除访问屏障已提交的凭据，不保留被删个人正文。
+model DeletionRequest {
+  /// 请求ID。
+  id          String   @id @db.Uuid
+  /// 已认证发起者，账号删除后仍保留UUID审计引用。
+  userId      String   @map("user_id") @db.Uuid
+  /// 删除范围。
+  scope       String   @db.VarChar(20)
+  /// 本地撤销时刻，文件清理另查补偿任务。
+  requestedAt DateTime @map("requested_at") @db.Timestamptz(3)
+
+  @@index([userId, id])
+  @@map("deletion_requests")
+}

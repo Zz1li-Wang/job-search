@@ -1,0 +1,23 @@
+{
+  "startedAt": "2026-10-31T03:56:55.177Z",
+  "project": "career-delivery-42a1c12e",
+  "checks": [
+    "Compose生产配置校验",
+    "HTTPS静态前端",
+    "API及全部持久化迁移就绪",
+    "公网内部入口拒绝",
+    "公网MCP入口拒绝",
+    "真实生产验证码入口",
+    "生产镜像PDF与DOCX真实提取",
+    "API重启与Worker共享私有持久卷",
+    "一致窗口数据库与文件备份",
+    "备份恢复后数据库标记存在",
+    "备份恢复后私有文件存在",
+    "服务器覆盖配置恢复后保持业务停止以核对额度和删除屏障"
+  ],
+  "externalModelCalls": 0,
+  "externalSourceCalls": 0,
+  "success": true,
+  "cleanupSucceeded": true,
+  "endedAt": "2026-10-31T03:58:15.783Z"
+}

@@ -1,0 +1,242 @@
+{
+  "startedAt": "2026-10-30T09:24:16.195Z",
+  "steps": [
+    {
+      "name": "generate",
+      "command": ["pnpm", "db:generate"],
+      "exitCode": 0,
+      "durationMs": 1779
+    },
+    {
+      "name": "build",
+      "command": ["pnpm", "build"],
+      "exitCode": 0,
+      "durationMs": 11740
+    },
+    {
+      "name": "format",
+      "command": ["pnpm", "format:check"],
+      "exitCode": 0,
+      "durationMs": 3238
+    },
+    {
+      "name": "lint",
+      "command": ["pnpm", "lint"],
+      "exitCode": 0,
+      "durationMs": 2291
+    },
+    {
+      "name": "typecheck",
+      "command": ["pnpm", "typecheck"],
+      "exitCode": 0,
+      "durationMs": 5975
+    },
+    {
+      "name": "architecture",
+      "command": ["pnpm", "check:architecture"],
+      "exitCode": 0,
+      "durationMs": 695
+    },
+    {
+      "name": "interfaces",
+      "command": ["pnpm", "check:interfaces"],
+      "exitCode": 0,
+      "durationMs": 890
+    },
+    {
+      "name": "unit",
+      "command": [
+        "pnpm",
+        "exec",
+        "vitest",
+        "run",
+        "--config",
+        "vitest.config.ts",
+        "--reporter=json",
+        "--outputFile=.artifacts/unit.json"
+      ],
+      "exitCode": 0,
+      "durationMs": 6323
+    },
+    {
+      "name": "integration",
+      "command": ["pnpm", "test:integration"],
+      "exitCode": 0,
+      "durationMs": 18972
+    },
+    {
+      "name": "e2e",
+      "command": ["pnpm", "test:e2e"],
+      "exitCode": 0,
+      "durationMs": 47809
+    },
+    {
+      "name": "verification",
+      "command": ["pnpm", "test:verification"],
+      "exitCode": 0,
+      "durationMs": 7563
+    },
+    {
+      "name": "verificationFormat",
+      "command": ["pnpm", "--prefix", "tools/verification", "format:check"],
+      "exitCode": 0,
+      "durationMs": 1771
+    },
+    {
+      "name": "verificationLint",
+      "command": ["pnpm", "--prefix", "tools/verification", "lint"],
+      "exitCode": 0,
+      "durationMs": 1925
+    },
+    {
+      "name": "verificationTypes",
+      "command": ["pnpm", "--prefix", "tools/verification", "typecheck"],
+      "exitCode": 0,
+      "durationMs": 3730
+    },
+    {
+      "name": "gitWhitespace",
+      "command": ["git", "diff", "--check"],
+      "exitCode": 0,
+      "durationMs": 19
+    },
+    {
+      "name": "gitStagedWhitespace",
+      "command": ["git", "diff", "--cached", "--check"],
+      "exitCode": 0,
+      "durationMs": 7
+    }
+  ],
+  "externalRequestLedgersUnchanged": true,
+  "endedAt": "2026-10-30T09:26:22.984Z",
+  "testSummary": {
+    "unit": 27,
+    "postgresAndHttpIntegration": 27,
+    "browserAndProcessE2e": 5,
+    "historicalVerificationRegression": 77,
+    "total": 136,
+    "failures": 0,
+    "implementedHttpOperations": 10,
+    "authOperations": 6
+  },
+  "executionEnvironment": {
+    "node": "v24.19.0",
+    "pnpm": "12.4.2",
+    "postgres": "17",
+    "prisma": "7.10.1",
+    "pngjs": "7.0.0",
+    "reactRouterDom": "7.18.5",
+    "browser": "Chromium 156.0.8078.4",
+    "browserLibraryPath": "/tmp/career-browser-deps/usr/lib/x86_64-linux-gnu",
+    "browserFontConfig": "/tmp/career-browser-fonts/fonts.conf"
+  },
+  "boundaries": [
+    "全部真实数据库测试在独立临时career_test库执行，未操作现有pgsql-local。",
+    "浏览器E2E使用测试专用进程注入可控验证码与Clock，密码使用真实scrypt。",
+    "生产入口没有测试验证码答案或绕过验证环境开关，没有新增调试HTTP入口。",
+    "原始会话令牌只进入Set-Cookie，数据库存HMAC，不进入公开payload。",
+    "密码及网络资料不进入日志，正式生产HTTPS和远端发布尚未执行。"
+  ],
+  "sourceCodeSha256": {
+    "apps/agent/package.json": "d9943100e05a266c308bb0553d22d40611115ec2d8a057c06ffab961c5c8c879",
+    "apps/agent/src/main.ts": "b79c962b450189df4f5f4b87dfbbeb16e3d2773d900f25df5255509072da3b6d",
+    "apps/agent/tsconfig.build.json": "b1df01c7b3ffbfde2f65f433286f600e3ff181d47db39bce8337daea3c30a2c7",
+    "apps/api/package.json": "abf7727721d3a2520603ab6092e053226a962f30a33a67142f7fdd4324079224",
+    "apps/api/src/app.ts": "577aaf967467932176bbcae35a51a414bcc85145c5c9e047014fc571f7274a41",
+    "apps/api/src/auth/module.ts": "ed9c294071502f27a7e1268e2051266ac3130cc6044d0453225e29e93a22c53c",
+    "apps/api/src/auth/protocol.ts": "72dad665a33829757412be13a32d10091a7294d5db99b3515925de1fa4d1f63c",
+    "apps/api/src/main.ts": "f7d15a20ea2e6dff93408fd4ea6ea24faf6a7df14deb5462cf3fce0253978c19",
+    "apps/api/tsconfig.build.json": "b1df01c7b3ffbfde2f65f433286f600e3ff181d47db39bce8337daea3c30a2c7",
+    "apps/web/package.json": "8cd173a4ae34e8085309043277930e261a327ebd765edd4684ea170f1420eb48",
+    "apps/web/src/auth/api.ts": "aedd3ad4e2ede8137b55083a1d585a3a013d62f747506bed7c80cec6d451619f",
+    "apps/web/src/auth/context.tsx": "1e0c10d53c36fad09da55658f908e1c70ab2a63276cde8380f286d83944602ca",
+    "apps/web/src/auth/pages.tsx": "fa2658bcf80fd7c05b5570c78258d031ff30a64a9b6aeeaf094a7668653c5bcf",
+    "apps/web/src/env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "apps/web/src/main.tsx": "5c860fb0d2a0b799474f638761badcaca418eac219e95da69f8448bc253f39be",
+    "apps/web/vite.config.ts": "80e0e306968261257a96d65b8bf0a3cd02009fb00df0f8704d42e445118ce8cb",
+    "apps/worker/package.json": "dd6a030eeb0817b20cefbeeb3daf22a0ac7985ba0fe527858dd589b09f50b4af",
+    "apps/worker/src/main.ts": "b755e20ca1ee2c2d192f49cb30a14da3312c3353d21477d4de3e6286a8b96835",
+    "apps/worker/tsconfig.build.json": "b1df01c7b3ffbfde2f65f433286f600e3ff181d47db39bce8337daea3c30a2c7",
+    "eslint.config.mjs": "30f29bf03e1ee02df63f7cd13b0f6bb03dfe9a0af4d1b93f96e199e5b5b29c5f",
+    "package.json": "ab4a31c4ce2dbdae1e4d14cb8367ee876f3dadb2a4564ca01beab3e3ea400c89",
+    "packages/agent-core/package.json": "db080bf0fe61a9f470bf460dddf44ea5dfc1b1f50e9bdc7eef50d5a80e041406",
+    "packages/agent-core/src/index.ts": "061550d55c668a5db51dd1cb82a5b8c7d41ed7be3843dbfc3d7b2b5c120d6fc2",
+    "packages/agent-core/tsconfig.build.json": "fd63ddf63679d2ac470f49b470a160d3e0038974c2ce0362a294f119382f3eb8",
+    "packages/business/package.json": "31123cca2d5fe843b24cbce16bede183c12fbadb7a49e550483aca86a385fa28",
+    "packages/business/prisma/migrations/202610300001_foundation/migration.sql": "96e22fa83830572209125f67711ce8d9a619ac809da09ced125f3c2ea763aa8e",
+    "packages/business/prisma/migrations/202610300002_auth/migration.sql": "347145ae1810b08ae5feaa636ff1ea9886eb19fe47eff1cab1ecd9a836bc884e",
+    "packages/business/prisma/migrations/migration_lock.toml": "1db17a8d051aa136110736752c5e1f8b7ed92b6ea8e803112fbbe2497047c210",
+    "packages/business/prisma/schema.prisma": "a54dfb0ce3277cf2726a463382807a58c26be460fd4082f2a8370dc943638834",
+    "packages/business/src/application/auth/captcha.ts": "f8acccd29830342af16b8a7f1ea4caf1566f6a3fec355e5682bf89d74422911b",
+    "packages/business/src/application/auth/index.ts": "46e0175ca21419da0230a0afba37bd673f16144b26068d0dcad5e5d0340aca75",
+    "packages/business/src/application/auth/login.ts": "eafac4b3f891bedd284ae0b977ee3652e4ea513d1b538b7849ed481c35453109",
+    "packages/business/src/application/auth/password.ts": "97d9209440e31cdf2c6ccedece27f85b0151129468f55e80ad3baedc37006701",
+    "packages/business/src/application/auth/ports.ts": "a48098ce536ef11c725aebe1aac59f95a1473ad805dad4d428b15ae0163dc1c8",
+    "packages/business/src/application/auth/register.ts": "b64254ac9b665acd695a83f3ee93d01d3571b104ae4908758688e12353779403",
+    "packages/business/src/application/auth/session.ts": "922e22557078b791f5f79d03e56b936cfb7a6fd80a8479367bac488609a6954a",
+    "packages/business/src/application/auth/support.ts": "829a5e622ca440dee94d56733c7ebc44e8bca6a08328d6f03b3b581bcc7c8388",
+    "packages/business/src/application/ports.ts": "be457ba6633383a97f0a35169a774dae4920a3f6c1f70f9f55e78862c1d46fe3",
+    "packages/business/src/domain/auth/account.ts": "a7814ed5243ec9c986ccf9c37006819129942d2d962a0b900f59ce3472f456b2",
+    "packages/business/src/domain/auth/attempt.ts": "17473620e8b8125c138cd2dddcc641174b8272f2583ea077d530014f5a0198e4",
+    "packages/business/src/domain/auth/challenge.ts": "64a44e8f7432cef333d56e5cc645b9b8a1a07142cf76c12a886830040271dfd7",
+    "packages/business/src/domain/auth/errors.ts": "9120771f5f9e9ac38db43647d0e7942a1b57b9e1918e7afd5c6f2ef4d5d679cf",
+    "packages/business/src/domain/auth/policy.ts": "a9c46267470d81e2b969ae853d9adefcd7fcdd9c16b467fcc2cf32bf6effde34",
+    "packages/business/src/domain/auth/rate-bucket.ts": "85c71b4ea6b4adfd42a23731e1a5f4cdbdb2ec5a14cf6510dcb726aebaf74cad",
+    "packages/business/src/domain/auth/session.ts": "3229a14b382d24ed08ffe5f746e422d891ee4c6b8b76a7d37dddcd491af95998",
+    "packages/business/src/domain/idempotency.ts": "8f000129ad3a72105b4f8d0663e0b0902a7dab4cdc5ff38899bad3416881b535",
+    "packages/business/src/index.ts": "fae625d9a9d8cd64633405b4f95d789bfc0893eb88dd7cd3a1ba9a8ca224de05",
+    "packages/business/src/infrastructure/auth/password-hasher.ts": "b6cb7259fe6f2d52c9a96145edb1c6269ec628a6dc2c38a58ef254c62c50f859",
+    "packages/business/src/infrastructure/auth/repositories.ts": "9954f6bf02de9879b4b68edf69ebdfef45e580403138b15bde878ec1f658d602",
+    "packages/business/src/infrastructure/auth/security.ts": "8b9238563a4d9a684e3b60d989cc00c4a74c93665e624096d00d7a0036dd12f8",
+    "packages/business/src/infrastructure/persistence.ts": "ae58ea6d0906a60f6370bb624e98ea3db3c99d7d1f618d7c8fa5d56ac901b8e8",
+    "packages/business/src/infrastructure/private-files.ts": "b51afb9c43c5e1672b440a994ff4cd8e86e5b6c8080fbc9eb308c08571e84363",
+    "packages/business/tsconfig.build.json": "fd63ddf63679d2ac470f49b470a160d3e0038974c2ce0362a294f119382f3eb8",
+    "packages/config/package.json": "3d6ce51c5de89e410ff92f08c0f2224d79760674081dea953443d43d8ba641da",
+    "packages/config/src/index.ts": "fbd40c90b300519650b700bd0830963c487f1c27aefb679ba3ec25380808458a",
+    "packages/config/tsconfig.build.json": "fd63ddf63679d2ac470f49b470a160d3e0038974c2ce0362a294f119382f3eb8",
+    "packages/contracts/package.json": "32b7effe5f7322077ccccbac8d583cebdc74186a7c7405942cc50a8b740316bc",
+    "packages/contracts/src/auth.ts": "6e0ff2a56722352abdf56830fbd12f94a8aa24dfe459e21e502364b736c09439",
+    "packages/contracts/src/index.ts": "11252a8d3181df499d397aaec0ee2f9d24af5690421f8b50faec91c3819024ad",
+    "packages/contracts/tsconfig.build.json": "fd63ddf63679d2ac470f49b470a160d3e0038974c2ce0362a294f119382f3eb8",
+    "packages/observability/package.json": "7b7c6c3573cba3c75100695b0463f35739b3e0eacec65fb82672a5503c5e820b",
+    "packages/observability/src/health.ts": "c0d39a28703c5c3fc05dede16ef670c43b470c26cf6dd76032fd8d2cfd1ba449",
+    "packages/observability/src/http.ts": "e2eddfca1636c1a7a1680e6728843b8b34ecb755600aeffda41b54834f55e41c",
+    "packages/observability/src/index.ts": "6087abc327c7a8f2dae4292ad6d16cde58e674be33631fbd7f7f292b10ca5830",
+    "packages/observability/src/logger.ts": "5c9a6c91905f5354db439c36c270d121877fe95245f3af8bcfa7508b75b53a06",
+    "packages/observability/tsconfig.build.json": "fd63ddf63679d2ac470f49b470a160d3e0038974c2ce0362a294f119382f3eb8",
+    "packages/testing/package.json": "444d6645e5bf22fead6a7894a969ce05d6b47091a5c013d4f8ad07a68255dd3d",
+    "packages/testing/src/index.ts": "1e7d365df91a1c39695c7f95d43660269bdaa6d58261b937b2a2e56ed46499f6",
+    "packages/testing/tsconfig.build.json": "fd63ddf63679d2ac470f49b470a160d3e0038974c2ce0362a294f119382f3eb8",
+    "playwright.config.ts": "1c4c0304edea68bf71dbb9e37288ae83b54beab40df4d59e900b5746c9123da3",
+    "pnpm-lock.yaml": "49c4b059392d1af9f234c9d317ce21c3d93dd2278bb267e8202192068ba2e326",
+    "pnpm-workspace.yaml": "5ea21117f035a686a8f1ad45a6a300d97dc0bf2abb72fa68804a88848651051f",
+    "prisma.config.ts": "1d390223c5271316514641884a5e25b5a5ea765f9c8e9cbaf19d110355007e4f",
+    "scripts/check-architecture.d.mts": "78f0d7125688af0ddccf8cb52a5144acf3ed28862b7313fc4f92464b3e26db39",
+    "scripts/check-architecture.mjs": "2d042cf64d0186560f55cb84ed56318b91c71c6d0f24aa2a92aab684e57b0501",
+    "scripts/check-interfaces.d.mts": "ed4a6cf1bf5d78751f8b8c343f002ca57feafd34c094f3de4d2e39771d294937",
+    "scripts/check-interfaces.mjs": "993f039e713d192041288cff268ed3d481644fd79af888db3c49ae766991e3af",
+    "scripts/lib/test-database.mjs": "1ced01e2825e99af4806f0b2e7deb6984ddfabe65065f7e99290f6c99bbedb4e",
+    "scripts/run-database-tests.mjs": "8063093148d568b3a4b505fe169b96c7725ba01b822d844f4169a0cfa69803a9",
+    "scripts/verify.mjs": "3266fca5c5ada82d2b38942787374827bfe43ac12913ab65b019bac93f0b2f15",
+    "scripts/with-env.mjs": "ef88678bf1d2d17e40416168426b5bfa93820b792cef12c5c4f77f6d4e0df325",
+    "tests/e2e/auth.spec.ts": "4a14aa4936f601b4c47561f50d5307ad7bffbd3c0ea525e33c2c594fd0f4653f",
+    "tests/e2e/foundation.spec.ts": "bc64575953f5d452a35d35d2483bd4725dd49ad5bf234dea874753e97e87faec",
+    "tests/fixtures/auth-server.mjs": "15528d44f2f92781850a6203266f37c67a853df769b3da48baa970e7c82514e6",
+    "tests/fixtures/auth.ts": "7494f2a59fcac03a7e3fe44065b29aae02ae8d8d8dde88e9394da740c389992e",
+    "tests/fixtures/transaction-process.mjs": "fa0451b64a8eba0287168894a672d8df657317e72e84dbff0dde6825f1580e5d",
+    "tests/integration/auth-http.test.ts": "75e76b0f1612224ffed60b63f2d3953579c0e6356697b4cc7819aa5fd9a14caf",
+    "tests/integration/auth-services.test.ts": "0124194eafef888b2535bb196b3f634cbd75512d58443974fe19387cea1a7aa6",
+    "tests/integration/persistence.test.ts": "026f69d317427e5236ff583d4adc48a58f1e8a6783494f6fb63ae1bbfcc11e23",
+    "tests/interface-registry.json": "cf11c5f6bcc0f7b8e35ee26630704da39a49606d897e2254d84892a9eb0fe3a6",
+    "tests/unit/auth-domain.test.ts": "97b928f770fa8113a58ac55a963f97dac77fd0edc45173d6cc168898a45d88cf",
+    "tests/unit/auth-security.test.ts": "d8d4032ba2c7bed11f4fd0b1cf91ee6a006d1fe90547e0b84fb6c67e7d491c4c",
+    "tests/unit/config-domain.test.ts": "e02d97de73c6c8573c434e1984cb73a54e3497850dc0a54e824d98bb610f3289",
+    "tests/unit/http.test.ts": "3c330cc42fb301f87c6dd70859016a7761732d253db62ef835e69b16c650ceff",
+    "tests/unit/private-files.test.ts": "8996854882e3d4b6a8dfeec4b3c63886364041f9749677d51b725dfaee1811a7",
+    "tests/unit/quality.test.ts": "5785de7068affe13920ad3da359f50fe18cd7950c61cad5f0043b21ba66e251a",
+    "tsconfig.base.json": "ee549e1bf1f1c6e2bade1a8802b45e146870b286f287ef074c5568d9d70ab6f1",
+    "tsconfig.json": "bd3091cd1d4ea2db0a7957e28c4925e2784c3f7e807d3ddaca3bfd20e4ec1ada",
+    "vitest.config.ts": "5d4e0da96037372a2429b4f1694a60f77451566bbc28777da4d29cdde6c84dad",
+    "vitest.integration.config.ts": "84533bd53f7f479307a8bbd99e0679b76e5227efd10bc2ba938c45cd3b5ca59f"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "applicationCommit": "0d8b9319a513620ef62ee0312d7427e76dce6012",
+  "deploymentRevision": "服务器RELEASE.json中的gitCommit对应本交付目录所在提交",
+  "images": {
+    "runtime": "career-assistant@sha256:de9e0c5529bf5ca468b527798bd514630a9146d784ef79d0fdf3e39cff12898a",
+    "web": "career-assistant-web@sha256:1d6df8878dc4a144877920eb69c53f2657fc96a31391157f31ba760729e516f4",
+    "database": "postgres:17@sha256:2d2b8998d31037bf721cfdf764d76ba74171b4fab3431b7f72c27c56ddbdf9e3"
+  },
+  "imageBundleSha256": "45e3b5f0e352d80f4e1205253ac711f225c1fd4f96c28d7adcbd19b7721149ba",
+  "serverDirectory": "/opt/career-assistant/releases/server-20261031",
+  "composeProject": "career-assistant-server",
+  "sourceArchive": "shared/source-server-20261031.tar.gz",
+  "gitHistoryBundle": "shared/history-server-20261031.bundle",
+  "secretsIncludedInSource": false
+}

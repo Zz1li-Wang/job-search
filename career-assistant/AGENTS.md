@@ -9,3 +9,5 @@
 **每一步完成后必须停止，等待用户检查并明确通过；有问题就在当前步修正、复验，再次等待检查。不得自行进入下一步。**
 
 本文件仅为入口；项目规则以 `AGENT.md` 为单一维护来源。
+
+每轮开始及最终回复前执行 `python3 /home/ayanami/job-search/conversation-records/sync.py` 更新对话快照，具体脱敏及最后一条回复补齐规则见 `AGENT.md`。

@@ -1,0 +1,40 @@
+{
+  "scope": "求职咨询与简历统一入口0.1，待用户检查",
+  "e2e": {
+    "command": "FONTCONFIG_FILE=/tmp/career-browser-fonts/fonts.conf LD_LIBRARY_PATH=/tmp/career-browser-deps/usr/lib/x86_64-linux-gnu pnpm test:e2e tests/e2e/chat.spec.ts tests/e2e/chat-entry.spec.ts tests/e2e/workspace.spec.ts",
+    "exitCode": 0,
+    "stats": {
+      "startTime": "2026-10-31T02:09:45.959Z",
+      "duration": 61839.784,
+      "expected": 8,
+      "skipped": 0,
+      "unexpected": 0,
+      "flaky": 0
+    }
+  },
+  "realModelRequestsByVerification": 0,
+  "realSourceRequestsByVerification": 0,
+  "database": "隔离PostgreSQL，全部8个现有迁移；不使用用户业务库",
+  "localSmoke": {
+    "origin": "http://127.0.0.1:5173",
+    "legacyRedirect": "/chat?resumes=open",
+    "separateResumeNavigationLinks": 0,
+    "browserPageErrors": 0
+  },
+  "sourceSha256": {
+    "apps/web/src/main.tsx": "674dc0d5767b186f4493f66b580ae211ae8c5a327ff1301f711e186d6d02f9b0",
+    "apps/web/src/style.css": "9efc6737a6cd738f672fce8085028c10a699056ca2cba598bab53f2ea8130911",
+    "apps/web/src/workspace/chat.tsx": "72997da6a9db84dc934d10757adcaacaa3cc7efa08814e28ca2fa1e177f9d06a",
+    "apps/web/src/workspace/profile.tsx": "895913eb88fe9738a7752d23c63b142c248d74b1079f80de6592c9f95bfa3f81",
+    "apps/web/src/workspace/shared.tsx": "be82cb2ea70ce9477a5e5add94c98723dc8c66ca95872af0ae8805dbb007ec4b",
+    "apps/web/src/workspace/resumes.tsx": "670e8c4c20178e6960087f865f4a4ba5d5f8bca4878f4c23b94e60d7bc61add8",
+    "tests/e2e/chat-entry.spec.ts": "38b0c40df9c86069922b3b337dc0dc2348fda87e80a6bab1603a69c0f824cb4f",
+    "tests/e2e/chat.spec.ts": "3cc26d92ebb65a2bc60a9ce2f5b8457ddd85edfc61bf31c9672e02a4acb55395",
+    "tests/e2e/workspace.spec.ts": "85421d9a44433a77e4485386c6efd53d4b722729b85e68bb8a0693179985c54e"
+  },
+  "limitations": [
+    "本轮为8个受影响浏览器E2E及静态检查，不将原269个全套测试记为本轮重跑",
+    "未修复此前真实简历任务MODEL_INTERRUPTED原因记录不足的问题",
+    "未重建生产容器、推送远端或上线"
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "numTotalTestSuites": 9,
+  "numPassedTestSuites": 9,
+  "numFailedTestSuites": 0,
+  "numPendingTestSuites": 0,
+  "numTotalTests": 17,
+  "numPassedTests": 17,
+  "numFailedTests": 0,
+  "numPendingTests": 0,
+  "numTodoTests": 0,
+  "snapshot": {
+    "added": 0,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0,
+    "didUpdate": false
+  },
+  "startTime": 1793345750409,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["配置与健康契约"],
+          "fullName": "配置与健康契约 默认端口与显式配置通过，启动拒绝错误协议及端口",
+          "status": "passed",
+          "title": "默认端口与显式配置通过，启动拒绝错误协议及端口",
+          "duration": 10.033599999999979,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["配置与健康契约"],
+          "fullName": "配置与健康契约 无效配置仅暴露字段名，不含密钥或输入值",
+          "status": "passed",
+          "title": "无效配置仅暴露字段名，不含密钥或输入值",
+          "duration": 2.576074999999946,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["配置与健康契约"],
+          "fullName": "配置与健康契约 存活不调用依赖；依赖抛错只产生不可用状态",
+          "status": "passed",
+          "title": "存活不调用依赖；依赖抛错只产生不可用状态",
+          "duration": 1.3006020000000262,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["配置与健康契约"],
+          "fullName": "配置与健康契约 Agent仅访问业务健康接口，不访问模型，并拒绝伪造健康正文",
+          "status": "passed",
+          "title": "Agent仅访问业务健康接口，不访问模型，并拒绝伪造健康正文",
+          "duration": 4.401773000000048,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["幂等领域对象"],
+          "fullName": "幂等领域对象 重放保留首次结果，不同内容拒绝",
+          "status": "passed",
+          "title": "重放保留首次结果，不同内容拒绝",
+          "duration": 1.4618090000000166,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["幂等领域对象"],
+          "fullName": "幂等领域对象 构造校验和快照复制维护领域不变量",
+          "status": "passed",
+          "title": "构造校验和快照复制维护领域不变量",
+          "duration": 0.9578469999999015,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793345751046,
+      "endTime": 1793345751067.9578,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/unit/config-domain.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["健康接口逐操作契约"],
+          "fullName": "健康接口逐操作契约 HEALTH-01 API存活与请求标识",
+          "status": "passed",
+          "title": "HEALTH-01 API存活与请求标识",
+          "duration": 197.84697400000005,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["健康接口逐操作契约"],
+          "fullName": "健康接口逐操作契约 HEALTH-02 API就绪与依赖故障",
+          "status": "passed",
+          "title": "HEALTH-02 API就绪与依赖故障",
+          "duration": 30.265851999999995,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["健康接口逐操作契约"],
+          "fullName": "健康接口逐操作契约 HEALTH-03 Agent存活认证与重复读取",
+          "status": "passed",
+          "title": "HEALTH-03 Agent存活认证与重复读取",
+          "duration": 29.39326899999992,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["健康接口逐操作契约"],
+          "fullName": "健康接口逐操作契约 HEALTH-04 Agent就绪认证作用域及降级",
+          "status": "passed",
+          "title": "HEALTH-04 Agent就绪认证作用域及降级",
+          "duration": 37.336423999999965,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["健康接口逐操作契约"],
+          "fullName": "健康接口逐操作契约 未知路径与非法请求标识返回安全契约",
+          "status": "passed",
+          "title": "未知路径与非法请求标识返回安全契约",
+          "duration": 18.286588999999935,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793345750973,
+      "endTime": 1793345751287.2866,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/unit/http.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["私有文件端口"],
+          "fullName": "私有文件端口 私有权限、重复创建拒绝、读取与幂等删除",
+          "status": "passed",
+          "title": "私有权限、重复创建拒绝、读取与幂等删除",
+          "duration": 10.096172000000024,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["私有文件端口"],
+          "fullName": "私有文件端口 目录穿越和符号链接无法读取",
+          "status": "passed",
+          "title": "目录穿越和符号链接无法读取",
+          "duration": 5.0148209999999835,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793345750760,
+      "endTime": 1793345750775.015,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/unit/private-files.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["架构和日志质量门禁"],
+          "fullName": "架构和日志质量门禁 正确边界通过，静态和动态导入共用规则",
+          "status": "passed",
+          "title": "正确边界通过，静态和动态导入共用规则",
+          "duration": 61.04992799999991,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["架构和日志质量门禁"],
+          "fullName": "架构和日志质量门禁 已实现接口均有关联测试",
+          "status": "passed",
+          "title": "已实现接口均有关联测试",
+          "duration": 46.19387599999993,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["架构和日志质量门禁"],
+          "fullName": "架构和日志质量门禁 新增接口漏登记时质量检查失败，不能仅靠清单自身完整",
+          "status": "passed",
+          "title": "新增接口漏登记时质量检查失败，不能仅靠清单自身完整",
+          "duration": 30.182510999999977,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["架构和日志质量门禁"],
+          "fullName": "架构和日志质量门禁 日志不输出敏感头、正文或异常详情",
+          "status": "passed",
+          "title": "日志不输出敏感头、正文或异常详情",
+          "duration": 6.2531900000001315,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793345751363,
+      "endTime": 1793345751507.2532,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/unit/quality.test.ts"
+    }
+  ]
+}

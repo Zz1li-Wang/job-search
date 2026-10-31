@@ -1,0 +1,40 @@
+{
+  "title": "行业公司研究岗（电新组）",
+  "company": null,
+  "cities": ["北京市", "上海市", "深圳市"],
+  "recruitmentType": "social",
+  "blocks": [
+    "行业公司研究岗（电新组）",
+    "国海证券 国企",
+    "报名截止",
+    "长期招聘，无固定截止日期",
+    "招聘类型",
+    "社招",
+    "工作地点",
+    "北京市、上海市、深圳市",
+    "薪资待遇",
+    "公告未写明",
+    "发布时间",
+    "2026年10月25日",
+    "能不能报",
+    "学历 要求 硕士及以上",
+    "专业 要求 公告未写明",
+    "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件",
+    "岗位介绍",
+    "国海证券 研究所"
+  ],
+  "deadline": {
+    "value": null,
+    "precision": "unknown",
+    "timezone": null
+  },
+  "availability": "unknown",
+  "links": [
+    {
+      "kind": "external",
+      "sourceId": null,
+      "url": "https://ghzq.hotjob.cn/SU64368f5c2f9d245a5ba3b479/pb/posDetail.html"
+    }
+  ],
+  "parserVersion": "zhidian-html-1"
+}

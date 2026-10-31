@@ -1,0 +1,26 @@
+[
+  {
+    "id": "OPS-01",
+    "command": "collect discover",
+    "test": "tests/integration/ingestion-cli.test.ts",
+    "testName": "OPS-01 发现输入身份和重复请求"
+  },
+  {
+    "id": "OPS-02",
+    "command": "evidence review",
+    "test": "tests/integration/ingestion-cli.test.ts",
+    "testName": "OPS-02 核验拒绝无证据及过时岗位"
+  },
+  {
+    "id": "OPS-03",
+    "command": "data export",
+    "test": "tests/integration/ingestion-cli.test.ts",
+    "testName": "OPS-03 导出固定视图重放并拒绝任意路径"
+  },
+  {
+    "id": "OPS-04",
+    "command": "task retry",
+    "test": "tests/integration/ingestion-cli.test.ts",
+    "testName": "OPS-04 重试拒绝输入覆盖与不存在目标"
+  }
+]

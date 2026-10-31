@@ -1,0 +1,598 @@
+{
+  "format": "career-source-export-1",
+  "exportId": "86038613-3a71-4477-b7c1-4477423a922a",
+  "snapshotAt": "2026-10-30T15:12:26.649Z",
+  "recordCount": 5,
+  "limitations": [
+    "实际已获取范围，非全站覆盖",
+    "认证列表HTML不保存",
+    "条件仍须人工核验"
+  ],
+  "entries": [
+    {
+      "versions": [
+        {
+          "versionId": "139f4953-ef82-4723-bed8-4ae7a6c413e2",
+          "materialHash": "1e9da5ed7b052ae7c1dd463eee02cc42d6dffe6484c0faaf64cd2a33ce2a040f",
+          "body": {
+            "title": "电气维修工",
+            "company": null,
+            "cities": [
+              "崇左市"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "电气维修工",
+              "广西国盛稀土新材料有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "26–27届",
+              "工作地点",
+              "崇左市",
+              "薪资待遇",
+              "5000-7000 元/月",
+              "发布时间",
+              "2026年10月30日",
+              "能不能报",
+              "学历 要求 本科及以上",
+              "专业 要求 电气自动化、机电一体化、电力系统、供用电技术",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-30T15:12:22.260Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "59abd019-bb73-4041-a698-6c10f528abc2",
+          "versionId": "139f4953-ef82-4723-bed8-4ae7a6c413e2",
+          "fetchedAt": "2026-10-30T15:12:22.249Z",
+          "httpStatus": 200,
+          "rawDigest": "8b15c8d9e2b1afe9367d73414d6b5d292f37e43b44476728966c3d62fe52ba02",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "055884cc-801d-4ea9-b4cd-831479048890",
+      "kind": "job",
+      "sourceId": "205e6eb8-f705-3153-aae1-6d90f6471d6f",
+      "url": "https://www.zhidianmijin.com.cn/jobs/205e6eb8-f705-3153-aae1-6d90f6471d6f",
+      "versionId": "139f4953-ef82-4723-bed8-4ae7a6c413e2",
+      "body": {
+        "title": "电气维修工",
+        "company": null,
+        "cities": [
+          "崇左市"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "电气维修工",
+          "广西国盛稀土新材料有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "26–27届",
+          "工作地点",
+          "崇左市",
+          "薪资待遇",
+          "5000-7000 元/月",
+          "发布时间",
+          "2026年10月30日",
+          "能不能报",
+          "学历 要求 本科及以上",
+          "专业 要求 电气自动化、机电一体化、电力系统、供用电技术",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-30T15:12:22.249Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "c7dee800-3b94-4466-9d2e-8d8b5f117ebf",
+          "materialHash": "229d3e6147f7053468228fad8c449558866c37f5f4bdc47e23f204689c976950",
+          "body": {
+            "title": "稀土冶炼分离技术员",
+            "company": null,
+            "cities": [
+              "崇左市"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "稀土冶炼分离技术员",
+              "广西国盛稀土新材料有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "26–27届",
+              "工作地点",
+              "崇左市",
+              "薪资待遇",
+              "5000-7000 元/月",
+              "发布时间",
+              "2026年10月30日",
+              "能不能报",
+              "学历 要求 本科及以上",
+              "专业 要求 冶金类、化工类、自动化类、电子信息、通信工程",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-30T15:12:23.435Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "5786aa41-f379-4e4d-a806-3a358efc862d",
+          "versionId": "c7dee800-3b94-4466-9d2e-8d8b5f117ebf",
+          "fetchedAt": "2026-10-30T15:12:23.416Z",
+          "httpStatus": 200,
+          "rawDigest": "9e06f25845228e8825467d6d5ad292f097d7f1a281a973c32c99de662fd22ce6",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "5b734132-10fc-4d6c-bc62-9309903dc86b",
+      "kind": "job",
+      "sourceId": "51c316a8-c061-63af-48a7-246a704daf68",
+      "url": "https://www.zhidianmijin.com.cn/jobs/51c316a8-c061-63af-48a7-246a704daf68",
+      "versionId": "c7dee800-3b94-4466-9d2e-8d8b5f117ebf",
+      "body": {
+        "title": "稀土冶炼分离技术员",
+        "company": null,
+        "cities": [
+          "崇左市"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "稀土冶炼分离技术员",
+          "广西国盛稀土新材料有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "26–27届",
+          "工作地点",
+          "崇左市",
+          "薪资待遇",
+          "5000-7000 元/月",
+          "发布时间",
+          "2026年10月30日",
+          "能不能报",
+          "学历 要求 本科及以上",
+          "专业 要求 冶金类、化工类、自动化类、电子信息、通信工程",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-30T15:12:23.416Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "6cde7a43-5cab-4dff-9884-de329dceed3d",
+          "materialHash": "e1719c9f0fdd8e6d38d4f92a928cb177fda1b9972cc948c77dc4b7beea8c065f",
+          "body": {
+            "title": "党群工作部（党委宣传部、团委）党建岗",
+            "company": null,
+            "cities": [
+              "南宁市"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "党群工作部（党委宣传部、团委）党建岗",
+              "中稀广西稀土有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "26–27届",
+              "工作地点",
+              "南宁市",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月30日",
+              "能不能报",
+              "学历 要求 硕士及以上",
+              "专业 要求 中共党史党建学、新闻传播学、中国语言文学、汉语言文学、行政管理",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-30T15:12:24.615Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "95a71aba-b349-4fc1-8d73-13a91413faaf",
+          "versionId": "6cde7a43-5cab-4dff-9884-de329dceed3d",
+          "fetchedAt": "2026-10-30T15:12:24.605Z",
+          "httpStatus": 200,
+          "rawDigest": "3fd3540f4ff162b9c90ffaf0f73e429de25e6055d2cb959a48c5c1ef010a37c2",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "77b45731-c760-481c-9e8c-bc51e92763e6",
+      "kind": "job",
+      "sourceId": "34653a6c-fa79-ccbe-990f-4ff835dfa043",
+      "url": "https://www.zhidianmijin.com.cn/jobs/34653a6c-fa79-ccbe-990f-4ff835dfa043",
+      "versionId": "6cde7a43-5cab-4dff-9884-de329dceed3d",
+      "body": {
+        "title": "党群工作部（党委宣传部、团委）党建岗",
+        "company": null,
+        "cities": [
+          "南宁市"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "党群工作部（党委宣传部、团委）党建岗",
+          "中稀广西稀土有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "26–27届",
+          "工作地点",
+          "南宁市",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月30日",
+          "能不能报",
+          "学历 要求 硕士及以上",
+          "专业 要求 中共党史党建学、新闻传播学、中国语言文学、汉语言文学、行政管理",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-30T15:12:24.605Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "3caf075e-18c6-47a7-a6ee-d2af69c44030",
+          "materialHash": "d490eb54bc811fd0d4e9993c7b0200c355518f1612cca676025b3c26621e0237",
+          "body": {
+            "title": "技术员",
+            "company": null,
+            "cities": [
+              "贺州市"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "技术员",
+              "中稀(广西)金源稀土新材料有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "26–27届",
+              "工作地点",
+              "贺州市",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月30日",
+              "能不能报",
+              "学历 要求 本科及以上",
+              "专业 要求 公告未写明",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-30T15:12:21.047Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "67da69f5-19e9-43b8-8d30-be069fb9d04b",
+          "versionId": "3caf075e-18c6-47a7-a6ee-d2af69c44030",
+          "fetchedAt": "2026-10-30T15:12:21.033Z",
+          "httpStatus": 200,
+          "rawDigest": "dd89f1a0023760abbbba6680787af023b0fe3dc7d426820208ec810a2c5aca64",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "f807ae96-9b89-45e1-8cd3-b8947d2438c1",
+      "kind": "job",
+      "sourceId": "83cc9610-1324-37cb-8cc8-85651ea898e0",
+      "url": "https://www.zhidianmijin.com.cn/jobs/83cc9610-1324-37cb-8cc8-85651ea898e0",
+      "versionId": "3caf075e-18c6-47a7-a6ee-d2af69c44030",
+      "body": {
+        "title": "技术员",
+        "company": null,
+        "cities": [
+          "贺州市"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "技术员",
+          "中稀(广西)金源稀土新材料有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "26–27届",
+          "工作地点",
+          "贺州市",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月30日",
+          "能不能报",
+          "学历 要求 本科及以上",
+          "专业 要求 公告未写明",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-30T15:12:21.033Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "10786699-9239-4d74-a26c-09c574a1f5a2",
+          "materialHash": "ab66233f7bbb891321f783e90077bd44b26dc3ac04f84634ab0e6d89a9ea0f18",
+          "body": {
+            "title": "技术员",
+            "company": null,
+            "cities": [
+              "贺州市"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "技术员",
+              "中稀(广西)金源稀土新材料有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "26–27届",
+              "工作地点",
+              "贺州市",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月30日",
+              "能不能报",
+              "学历 要求 硕士及以上",
+              "专业 要求 公告未写明",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-30T15:12:26.591Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "95a1334f-62f3-438c-aa85-295f164e6347",
+          "versionId": "10786699-9239-4d74-a26c-09c574a1f5a2",
+          "fetchedAt": "2026-10-30T15:12:26.580Z",
+          "httpStatus": 200,
+          "rawDigest": "44f5afd51821e40b2dbcad51541755fcd1bbd48dbd9bd2e3fc9a582c7c8c7965",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "f940a264-2711-4c53-8b32-b4c69bbe1ff9",
+      "kind": "job",
+      "sourceId": "55bfab6a-44f0-2b93-92f2-e1617f09d231",
+      "url": "https://www.zhidianmijin.com.cn/jobs/55bfab6a-44f0-2b93-92f2-e1617f09d231",
+      "versionId": "10786699-9239-4d74-a26c-09c574a1f5a2",
+      "body": {
+        "title": "技术员",
+        "company": null,
+        "cities": [
+          "贺州市"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "技术员",
+          "中稀(广西)金源稀土新材料有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "26–27届",
+          "工作地点",
+          "贺州市",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月30日",
+          "能不能报",
+          "学历 要求 硕士及以上",
+          "专业 要求 公告未写明",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-30T15:12:26.580Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    }
+  ]
+}

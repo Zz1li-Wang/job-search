@@ -1,0 +1,23 @@
+{
+  "runId": "6cd2da0a-7a77-4e17-9f37-682a405d2649",
+  "url": "https://www.zhidianmijin.com.cn/jobs?sort=latest&direction=desc&page=2",
+  "startedAt": "2026-10-30T06:24:40.303Z",
+  "endedAt": "2026-10-30T06:24:41.643Z",
+  "status": "blocked",
+  "before": {
+    "httpStatus": 200,
+    "category": "login_required",
+    "jobIds": [],
+    "fetchedAt": "2026-10-30T06:24:40.304Z"
+  },
+  "after": {
+    "httpStatus": 0,
+    "category": "network_error",
+    "jobIds": [],
+    "fetchedAt": "2026-10-30T06:24:41.450Z"
+  },
+  "requestCount": 2,
+  "cumulativeSourceRequests": 20,
+  "rawAuthenticatedHtmlSaved": false,
+  "summary": "未形成匿名受限而带Cookie可读岗位的充分证据；可能仍受限、已过期或页面需要其他验证，不自动重试。"
+}

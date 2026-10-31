@@ -1,0 +1,141 @@
+name: career-assistant
+x-runtime: &runtime
+  image: ${CAREER_IMAGE:-career-assistant:local}
+  build:
+    context: ..
+    dockerfile: deploy/Dockerfile
+    target: runtime
+  restart: unless-stopped
+  init: true
+  logging:
+    driver: json-file
+    options: { max-size: 10m, max-file: '3' }
+x-business-env: &business-env
+  NODE_ENV: ${NODE_ENV:-production}
+  SERVER_HOST: 0.0.0.0
+  DATABASE_URL: postgresql://career:${POSTGRES_PASSWORD:?configure POSTGRES_PASSWORD}@database:5432/career
+  SERVICE_AUTH_TOKEN: ${SERVICE_AUTH_TOKEN:?configure SERVICE_AUTH_TOKEN}
+  AUTH_PUBLIC_ORIGIN: ${AUTH_PUBLIC_ORIGIN:?configure AUTH_PUBLIC_ORIGIN}
+  AUTH_TOKEN_PEPPER: ${AUTH_TOKEN_PEPPER:?configure AUTH_TOKEN_PEPPER}
+  AUTH_CSRF_SECRET: ${AUTH_CSRF_SECRET:?configure AUTH_CSRF_SECRET}
+  AUTH_TRUSTED_PROXIES: ${AUTH_TRUSTED_PROXIES:-}
+  API_PORT: '3001'
+  AGENT_PORT: '3002'
+  API_INTERNAL_URL: http://api:3001
+  AGENT_INTERNAL_URL: http://agent:3002
+  PRIVATE_FILE_ROOT: /app/var/private
+  INGESTION_EXPORT_ROOT: /app/var/exports
+services:
+  database:
+    image: postgres:17@sha256:2d2b8998d31037bf721cfdf764d76ba74171b4fab3431b7f72c27c56ddbdf9e3
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: career
+      POSTGRES_DB: career
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?configure POSTGRES_PASSWORD}
+    volumes: [database:/var/lib/postgresql/data]
+    networks: [private]
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U career -d career']
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  migrate:
+    <<: *runtime
+    restart: 'no'
+    environment: *business-env
+    command:
+      [
+        node,
+        node_modules/prisma/build/index.js,
+        migrate,
+        deploy,
+        --config,
+        prisma.config.ts,
+      ]
+    depends_on:
+      database: { condition: service_healthy }
+    networks: [private]
+  api:
+    <<: *runtime
+    environment: *business-env
+    volumes: [private-files:/app/var/private, exports:/app/var/exports]
+    depends_on:
+      migrate: { condition: service_completed_successfully }
+    networks: [private]
+    healthcheck:
+      test:
+        [
+          CMD,
+          node,
+          -e,
+          "fetch('http://127.0.0.1:3001/health/ready').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+  agent:
+    <<: *runtime
+    command: [node, apps/agent/dist/main.js]
+    environment:
+      NODE_ENV: ${NODE_ENV:-production}
+      SERVER_HOST: 0.0.0.0
+      API_INTERNAL_URL: http://api:3001
+      AGENT_PORT: '3002'
+      SERVICE_AUTH_TOKEN: ${SERVICE_AUTH_TOKEN:?configure SERVICE_AUTH_TOKEN}
+      MODEL_BASE_URL: ${MODEL_BASE_URL:-https://api.deepseek.com}
+      MODEL_NAME: deepseek-v4-pro
+      MODEL_API_KEY: ${MODEL_API_KEY:?configure MODEL_API_KEY}
+    depends_on:
+      api: { condition: service_healthy }
+    networks: [private, egress]
+    healthcheck:
+      test:
+        [
+          CMD,
+          node,
+          -e,
+          "fetch('http://127.0.0.1:3002/health/ready',{headers:{Authorization:'Bearer '+process.env.SERVICE_AUTH_TOKEN}}).then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+  worker:
+    <<: *runtime
+    command: [node, apps/worker/dist/main.js]
+    environment:
+      <<: *business-env
+      INGESTION_NETWORK_ENABLED: 'false'
+      INGESTION_BUDGET_ID: deployment-disabled
+      INGESTION_REQUEST_LIMIT: '0'
+    volumes: [private-files:/app/var/private, exports:/app/var/exports]
+    depends_on:
+      agent: { condition: service_healthy }
+    networks: [private, egress]
+  web:
+    image: ${CAREER_WEB_IMAGE:-career-assistant-web:local}
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+      target: web
+    restart: unless-stopped
+    environment: { PUBLIC_HOST: '${PUBLIC_HOST:?configure PUBLIC_HOST}' }
+    ports:
+      [
+        '${HTTP_BIND:-0.0.0.0}:${HTTP_PORT:-80}:80',
+        '${HTTPS_BIND:-0.0.0.0}:${HTTPS_PORT:-443}:443',
+      ]
+    volumes: [caddy-data:/data, caddy-config:/config]
+    depends_on:
+      api: { condition: service_healthy }
+    networks: [edge, private]
+networks:
+  edge: {}
+  private: { internal: true }
+  egress: {}
+volumes:
+  database: {}
+  private-files: {}
+  exports: {}
+  caddy-data: {}
+  caddy-config: {}

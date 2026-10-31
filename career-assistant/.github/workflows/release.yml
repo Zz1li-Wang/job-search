@@ -1,0 +1,21 @@
+name: 手动准备发布包
+on: { workflow_dispatch: {} }
+permissions: { contents: read }
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker build --target runtime -t career-assistant:${{ github.sha }} -f deploy/Dockerfile .
+      - run: docker build --target web -t career-assistant-web:${{ github.sha }} -f deploy/Dockerfile .
+      - run: docker save career-assistant:${{ github.sha }} career-assistant-web:${{ github.sha }} | gzip > career-images.tar.gz
+      - uses: actions/upload-artifact@v4
+        with:
+          {
+            name: 'release-${{ github.sha }}',
+            path: career-images.tar.gz,
+            retention-days: 7,
+          }
+# 本流程只生成可审查镜像包；不配置服务器凭据，不推送镜像，不自动上线。
+# 发布方检查CI、备份及部署手册后，显式授权并在目标机执行部署。

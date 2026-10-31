@@ -1,0 +1,368 @@
+{
+  "runId": "2d6abdfa-8f8f-4e25-9724-ec6ff5ea5201",
+  "kind": "all",
+  "requestLimit": 12,
+  "startedAt": "2026-10-30T05:25:19.830Z",
+  "endedAt": "2026-10-30T05:25:29.082Z",
+  "overall": "blocked",
+  "source": {
+    "status": "blocked",
+    "summary": "尚未同时验证两种招聘类型、公告和可用分页；200响应不代表登录限制已解除。",
+    "requestCount": 10,
+    "pages": [
+      {
+        "url": "https://www.zhidianmijin.com.cn/robots.txt",
+        "fetchedAt": "2026-10-30T05:25:19.832Z",
+        "transport": "node-native-fetch",
+        "httpStatus": 200,
+        "jobLinks": [],
+        "announcementLinks": [],
+        "paginationLinks": [],
+        "snapshot": "source/01.html",
+        "title": "",
+        "recruitmentType": "unknown"
+      },
+      {
+        "url": "https://www.zhidianmijin.com.cn/",
+        "fetchedAt": "2026-10-30T05:25:20.831Z",
+        "transport": "node-native-fetch",
+        "httpStatus": 200,
+        "jobLinks": [
+          "https://www.zhidianmijin.com.cn/jobs/43f306c3-e6c4-794a-d349-31fd21c4db9c",
+          "https://www.zhidianmijin.com.cn/jobs/b8324825-df58-d496-f96c-e4e686c5544d",
+          "https://www.zhidianmijin.com.cn/jobs/50eb92a6-1cce-b348-2742-cb6e17011214",
+          "https://www.zhidianmijin.com.cn/jobs/1f6da8b4-99be-4574-cd8c-afabe1e4a761",
+          "https://www.zhidianmijin.com.cn/jobs/e3c44246-c824-5e06-c170-5eee616ecc41",
+          "https://www.zhidianmijin.com.cn/jobs/069b481f-6ec6-6d2c-ba82-53f8987a275a",
+          "https://www.zhidianmijin.com.cn/jobs/6b4104a4-1207-09a4-f016-c787b3cef295",
+          "https://www.zhidianmijin.com.cn/jobs/826ddbd5-dc28-0e93-c5c1-b8c1a89ca182",
+          "https://www.zhidianmijin.com.cn/jobs/9c24db2e-6868-6930-cfaf-0aa38eb8836f",
+          "https://www.zhidianmijin.com.cn/jobs/dd790a08-4a12-0732-b299-2f90c106a8cb"
+        ],
+        "announcementLinks": [
+          "https://www.zhidianmijin.com.cn/announcements/20c92be7-686d-ec95-4603-fe99f441c0bd",
+          "https://www.zhidianmijin.com.cn/announcements/789d8a0d-d019-eacd-f394-3fc2f98791c5",
+          "https://www.zhidianmijin.com.cn/announcements/5edf1f38-2a04-59cd-0dc1-ba83db61399d",
+          "https://www.zhidianmijin.com.cn/announcements/e7ecc391-9619-a812-cb6d-2d9124b7c87c",
+          "https://www.zhidianmijin.com.cn/announcements/21011cac-711a-da0a-317a-f18c38bc95fb",
+          "https://www.zhidianmijin.com.cn/announcements/dab7a605-7a4b-f8bd-fa34-3384797be205"
+        ],
+        "paginationLinks": [],
+        "snapshot": "source/02.html",
+        "title": "聚焦央国企，精准锁定好机遇",
+        "recruitmentType": "unknown"
+      },
+      {
+        "url": "https://www.zhidianmijin.com.cn/jobs",
+        "fetchedAt": "2026-10-30T05:25:21.832Z",
+        "transport": "node-native-fetch",
+        "httpStatus": 200,
+        "jobLinks": [
+          "https://www.zhidianmijin.com.cn/jobs/1abab653-6ba7-dfe0-05e2-e1909b96523c?returnTo=%2Fjobs%3Fsort%3Dlatest%26direction%3Ddesc%26page%3D1",
+          "https://www.zhidianmijin.com.cn/jobs/24b28918-040d-4529-0dd3-ee4f471c6223?returnTo=%2Fjobs%3Fsort%3Dlatest%26direction%3Ddesc%26page%3D1",
+          "https://www.zhidianmijin.com.cn/jobs/2b0182df-0aeb-a0ef-3b75-93c047b64726?returnTo=%2Fjobs%3Fsort%3Dlatest%26direction%3Ddesc%26page%3D1",
+          "https://www.zhidianmijin.com.cn/jobs/49becbb8-b615-5d53-94b2-8c475e9d85e4?returnTo=%2Fjobs%3Fsort%3Dlatest%26direction%3Ddesc%26page%3D1",
+          "https://www.zhidianmijin.com.cn/jobs/53af064b-8090-fb36-f542-a5d7e6a784f1?returnTo=%2Fjobs%3Fsort%3Dlatest%26direction%3Ddesc%26page%3D1",
+          "https://www.zhidianmijin.com.cn/jobs/58771e62-5d4b-9077-0c1e-72b9abf5ec03?returnTo=%2Fjobs%3Fsort%3Dlatest%26direction%3Ddesc%26page%3D1",
+          "https://www.zhidianmijin.com.cn/jobs/8d861313-5a58-48eb-d23c-0070c827d3d8?returnTo=%2Fjobs%3Fsort%3Dlatest%26direction%3Ddesc%26page%3D1",
+          "https://www.zhidianmijin.com.cn/jobs/903c830b-95b2-b8a6-a03c-ac6727724ead?returnTo=%2Fjobs%3Fsort%3Dlatest%26direction%3Ddesc%26page%3D1",
+          "https://www.zhidianmijin.com.cn/jobs/cd405b17-d12f-48b3-c2af-7eac8a277ba2?returnTo=%2Fjobs%3Fsort%3Dlatest%26direction%3Ddesc%26page%3D1",
+          "https://www.zhidianmijin.com.cn/jobs/efeae2b2-ca50-e68d-39a7-b6a6739f071a?returnTo=%2Fjobs%3Fsort%3Dlatest%26direction%3Ddesc%26page%3D1"
+        ],
+        "announcementLinks": [],
+        "paginationLinks": [
+          "https://www.zhidianmijin.com.cn/jobs?sort=latest&direction=desc&page=2"
+        ],
+        "snapshot": "source/03.html",
+        "title": "找岗位",
+        "recruitmentType": "unknown"
+      },
+      {
+        "url": "https://www.zhidianmijin.com.cn/jobs/1abab653-6ba7-dfe0-05e2-e1909b96523c?returnTo=%2Fjobs%3Fsort%3Dlatest%26direction%3Ddesc%26page%3D1",
+        "fetchedAt": "2026-10-30T05:25:22.832Z",
+        "transport": "node-native-fetch",
+        "httpStatus": 200,
+        "jobLinks": [
+          "https://www.zhidianmijin.com.cn/jobs/1abab653-6ba7-dfe0-05e2-e1909b96523c",
+          "https://www.zhidianmijin.com.cn/jobs/1abab653-6ba7-dfe0-05e2-e1909b96523c?returnTo=%2Fjobs%3Fsort%3Dlatest%26direction%3Ddesc%26page%3D1#main-content"
+        ],
+        "announcementLinks": [],
+        "paginationLinks": [
+          "https://www.zhidianmijin.com.cn/jobs?sort=latest&direction=desc&page=1"
+        ],
+        "snapshot": "source/04.html",
+        "title": "管理培训生-安全管理",
+        "recruitmentType": "campus"
+      },
+      {
+        "url": "https://www.zhidianmijin.com.cn/jobs/24b28918-040d-4529-0dd3-ee4f471c6223?returnTo=%2Fjobs%3Fsort%3Dlatest%26direction%3Ddesc%26page%3D1",
+        "fetchedAt": "2026-10-30T05:25:23.831Z",
+        "transport": "node-native-fetch",
+        "httpStatus": 200,
+        "jobLinks": [
+          "https://www.zhidianmijin.com.cn/jobs/24b28918-040d-4529-0dd3-ee4f471c6223",
+          "https://www.zhidianmijin.com.cn/jobs/24b28918-040d-4529-0dd3-ee4f471c6223?returnTo=%2Fjobs%3Fsort%3Dlatest%26direction%3Ddesc%26page%3D1#main-content"
+        ],
+        "announcementLinks": [],
+        "paginationLinks": [
+          "https://www.zhidianmijin.com.cn/jobs?sort=latest&direction=desc&page=1"
+        ],
+        "snapshot": "source/05.html",
+        "title": "会计",
+        "recruitmentType": "campus"
+      },
+      {
+        "url": "https://www.zhidianmijin.com.cn/jobs/787b1a4b-53c0-9d9a-be12-2c5e1f8042a9",
+        "fetchedAt": "2026-10-30T05:25:24.833Z",
+        "transport": "node-native-fetch",
+        "httpStatus": 200,
+        "jobLinks": [
+          "https://www.zhidianmijin.com.cn/jobs/787b1a4b-53c0-9d9a-be12-2c5e1f8042a9",
+          "https://www.zhidianmijin.com.cn/jobs/787b1a4b-53c0-9d9a-be12-2c5e1f8042a9#main-content"
+        ],
+        "announcementLinks": [],
+        "paginationLinks": [],
+        "snapshot": "source/06.html",
+        "title": "软件开发工程师",
+        "recruitmentType": "campus"
+      },
+      {
+        "url": "https://www.zhidianmijin.com.cn/jobs/01d3988d-6c30-0d20-2c09-0f15085e21b2",
+        "fetchedAt": "2026-10-30T05:25:25.834Z",
+        "transport": "node-native-fetch",
+        "httpStatus": 200,
+        "jobLinks": [
+          "https://www.zhidianmijin.com.cn/jobs/01d3988d-6c30-0d20-2c09-0f15085e21b2",
+          "https://www.zhidianmijin.com.cn/jobs/01d3988d-6c30-0d20-2c09-0f15085e21b2#main-content"
+        ],
+        "announcementLinks": [],
+        "paginationLinks": [],
+        "snapshot": "source/07.html",
+        "title": "行业公司研究岗（电新组）",
+        "recruitmentType": "social"
+      },
+      {
+        "url": "https://www.zhidianmijin.com.cn/announcements/20c92be7-686d-ec95-4603-fe99f441c0bd",
+        "fetchedAt": "2026-10-30T05:25:26.834Z",
+        "transport": "node-native-fetch",
+        "httpStatus": 200,
+        "jobLinks": [],
+        "announcementLinks": [
+          "https://www.zhidianmijin.com.cn/announcements/20c92be7-686d-ec95-4603-fe99f441c0bd",
+          "https://www.zhidianmijin.com.cn/announcements/20c92be7-686d-ec95-4603-fe99f441c0bd#main-content"
+        ],
+        "paginationLinks": [],
+        "snapshot": "source/08.html",
+        "title": "维谛技术(Vertiv)2027届秋季校园招聘持续开放中",
+        "recruitmentType": "unknown"
+      },
+      {
+        "url": "https://www.zhidianmijin.com.cn/announcements/789d8a0d-d019-eacd-f394-3fc2f98791c5",
+        "fetchedAt": "2026-10-30T05:25:27.835Z",
+        "transport": "node-native-fetch",
+        "httpStatus": 200,
+        "jobLinks": [
+          "https://www.zhidianmijin.com.cn/jobs/6bf23a74-1947-9e2d-d692-c2befe80c634?returnTo=%2Fannouncements%2F789d8a0d-d019-eacd-f394-3fc2f98791c5",
+          "https://www.zhidianmijin.com.cn/jobs/098eaf4f-5a0d-96a9-3e15-233240053df8?returnTo=%2Fannouncements%2F789d8a0d-d019-eacd-f394-3fc2f98791c5",
+          "https://www.zhidianmijin.com.cn/jobs/1cd5b5eb-f9a2-46cf-f8e3-af9c1a6085c3?returnTo=%2Fannouncements%2F789d8a0d-d019-eacd-f394-3fc2f98791c5",
+          "https://www.zhidianmijin.com.cn/jobs/411909ba-a1ed-837e-8e84-2fda37d10a0f?returnTo=%2Fannouncements%2F789d8a0d-d019-eacd-f394-3fc2f98791c5",
+          "https://www.zhidianmijin.com.cn/jobs/605446a5-38c0-8b9e-d65c-38984dffe94d?returnTo=%2Fannouncements%2F789d8a0d-d019-eacd-f394-3fc2f98791c5",
+          "https://www.zhidianmijin.com.cn/jobs/9a07e593-08ef-8015-f55b-d97f549f4b32?returnTo=%2Fannouncements%2F789d8a0d-d019-eacd-f394-3fc2f98791c5"
+        ],
+        "announcementLinks": [
+          "https://www.zhidianmijin.com.cn/announcements/789d8a0d-d019-eacd-f394-3fc2f98791c5",
+          "https://www.zhidianmijin.com.cn/announcements/789d8a0d-d019-eacd-f394-3fc2f98791c5#main-content"
+        ],
+        "paginationLinks": [],
+        "snapshot": "source/09.html",
+        "title": "塔斯汀 2027 届管培生校园招聘正式启动！",
+        "recruitmentType": "unknown"
+      },
+      {
+        "url": "https://www.zhidianmijin.com.cn/jobs?sort=latest&direction=desc&page=2",
+        "fetchedAt": "2026-10-30T05:25:28.836Z",
+        "transport": "node-native-fetch",
+        "httpStatus": 200,
+        "jobLinks": [],
+        "announcementLinks": [],
+        "paginationLinks": [
+          "https://www.zhidianmijin.com.cn/jobs?sort=latest&direction=desc&page=2#main-content",
+          "https://www.zhidianmijin.com.cn/jobs?sort=latest&direction=desc&page=1"
+        ],
+        "snapshot": "source/10.html",
+        "title": "登录后查看第 2 页岗位",
+        "recruitmentType": "unknown"
+      }
+    ],
+    "evidenceFiles": [
+      "source/01.html",
+      "source/02.html",
+      "source/03.html",
+      "source/04.html",
+      "source/05.html",
+      "source/06.html",
+      "source/07.html",
+      "source/08.html",
+      "source/09.html",
+      "source/10.html"
+    ],
+    "limitations": [
+      "只验证有限公开样本，不代表全站覆盖或岗位资格已经核验。",
+      "使用Node原生fetch；网络失败不等于网站不存在，未使用搜索缓存替代本机采集。",
+      "未验证源站内部API及浏览器采集；未把未出现的分页链接猜作可用。"
+    ]
+  },
+  "document": {
+    "status": "passed",
+    "summary": "文档结果逐项记录；负例passed表示正确拒绝，不表示扫描件或加密文件可读取。",
+    "fixtures": [
+      {
+        "fixtureId": "text-txt",
+        "format": ".txt",
+        "status": "passed",
+        "expected": "readable",
+        "spans": [
+          {
+            "locator": "paragraph:1",
+            "text": "FICTIONAL TEST RESUME"
+          },
+          {
+            "locator": "paragraph:2",
+            "text": "Name: Test Student"
+          },
+          {
+            "locator": "paragraph:3",
+            "text": "Education: Bachelor, Computer Science, Expected graduation: 2027-06"
+          },
+          {
+            "locator": "paragraph:4",
+            "text": "Internship: Example Lab, 2026-07 to 2026-08"
+          },
+          {
+            "locator": "paragraph:5",
+            "text": "Certificate: English CET-6"
+          },
+          {
+            "locator": "paragraph:6",
+            "text": "正式工作经历：无。实习不能当作正式工作年限。"
+          }
+        ]
+      },
+      {
+        "fixtureId": "text-docx",
+        "format": ".docx",
+        "status": "passed",
+        "expected": "readable",
+        "spans": [
+          {
+            "locator": "paragraph:1",
+            "text": "FICTIONAL TEST RESUME"
+          },
+          {
+            "locator": "paragraph:2",
+            "text": "Name: Test Student"
+          },
+          {
+            "locator": "paragraph:3",
+            "text": "Education: Bachelor, Computer Science, Expected graduation: 2027-06"
+          },
+          {
+            "locator": "paragraph:4",
+            "text": "Internship: Example Lab, 2026-07 to 2026-08"
+          },
+          {
+            "locator": "paragraph:5",
+            "text": "Certificate: English CET-6"
+          },
+          {
+            "locator": "paragraph:6",
+            "text": "正式工作经历：无。实习不能当作正式工作年限。"
+          }
+        ]
+      },
+      {
+        "fixtureId": "text-pdf",
+        "format": ".pdf",
+        "status": "passed",
+        "expected": "readable",
+        "spans": [
+          {
+            "locator": "page:1",
+            "text": "FICTIONAL TEST RESUME Name: Test Student Education: Bachelor, Computer Science, Expected graduation: 2027-06 Internship: Example Lab, 2026-07 to 2026-08 Certificate: English CET-6"
+          }
+        ]
+      },
+      {
+        "fixtureId": "image-only.pdf",
+        "format": ".pdf",
+        "status": "passed",
+        "expected": "rejected",
+        "spans": [],
+        "errorCode": "no_extractable_text"
+      },
+      {
+        "fixtureId": "encrypted.pdf",
+        "format": ".pdf",
+        "status": "passed",
+        "expected": "rejected",
+        "spans": [],
+        "errorCode": "encrypted_pdf"
+      },
+      {
+        "fixtureId": "oversize.txt",
+        "format": ".txt",
+        "status": "passed",
+        "expected": "rejected",
+        "spans": [],
+        "errorCode": "document_too_large"
+      },
+      {
+        "fixtureId": "forged.pdf",
+        "format": ".pdf",
+        "status": "passed",
+        "expected": "rejected",
+        "spans": [],
+        "errorCode": "document_signature_mismatch"
+      },
+      {
+        "fixtureId": "invalid-utf8.txt",
+        "format": ".txt",
+        "status": "passed",
+        "expected": "rejected",
+        "spans": [],
+        "errorCode": "invalid_text_encoding"
+      }
+    ],
+    "evidenceFiles": [
+      "fixtures/resume.txt",
+      "fixtures/resume.docx",
+      "fixtures/resume.pdf",
+      "fixtures/image-only.pdf",
+      "fixtures/encrypted.pdf",
+      "fixtures/oversize.txt",
+      "fixtures/forged.pdf",
+      "fixtures/invalid-utf8.txt"
+    ],
+    "limitations": [
+      "简历均为虚构测试数据，不使用OCR或模型识别字段。",
+      "PDF样本为英文嵌入文本；DOCX/TXT包含中文。未验证中文字体复杂PDF、真实多栏简历和生产环境负载。",
+      "图像PDF用于模拟无文字层输入；其内容不是经过OCR识别的简历。"
+    ]
+  },
+  "model": {
+    "status": "blocked",
+    "summary": "缺少配置：MODEL_BASE_URL、MODEL_NAME、MODEL_API_KEY、MODEL_PROTOCOL；真实请求数为0。",
+    "requestCount": 0,
+    "missingConfiguration": [
+      "MODEL_BASE_URL",
+      "MODEL_NAME",
+      "MODEL_API_KEY",
+      "MODEL_PROTOCOL"
+    ],
+    "evidenceFiles": [],
+    "limitations": [
+      "结构化、流式、工具调用和结果回传均未完成真实验证。",
+      "尚未提供服务协议，不伪造通用收费调用；配置齐备后实现相应适配器并补充真实能力用例。"
+    ]
+  }
+}

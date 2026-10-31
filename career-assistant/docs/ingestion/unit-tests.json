@@ -1,0 +1,565 @@
+{
+  "numTotalTestSuites": 17,
+  "numPassedTestSuites": 17,
+  "numFailedTestSuites": 0,
+  "numPendingTestSuites": 0,
+  "numTotalTests": 42,
+  "numPassedTests": 42,
+  "numFailedTests": 0,
+  "numPendingTests": 0,
+  "numTodoTests": 0,
+  "snapshot": {
+    "added": 0,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0,
+    "didUpdate": false
+  },
+  "startTime": 1793374248967,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["认证DTO与领域规则"],
+          "fullName": "认证DTO与领域规则 密码按Unicode码点校验而不裁剪，拒绝额外身份字段",
+          "status": "passed",
+          "title": "密码按Unicode码点校验而不裁剪，拒绝额外身份字段",
+          "duration": 13.150736000000052,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["认证DTO与领域规则"],
+          "fullName": "认证DTO与领域规则 生产Origin禁止HTTP，秘密不能为空",
+          "status": "passed",
+          "title": "生产Origin禁止HTTP，秘密不能为空",
+          "duration": 5.893396999999823,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["认证DTO与领域规则"],
+          "fullName": "认证DTO与领域规则 其他浏览器不能消费挑战，答错和到期尝试均消费",
+          "status": "passed",
+          "title": "其他浏览器不能消费挑战，答错和到期尝试均消费",
+          "duration": 3.142045000000053,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["认证DTO与领域规则"],
+          "fullName": "认证DTO与领域规则 改密版本不可覆盖，删除账号不能使用旧凭据",
+          "status": "passed",
+          "title": "改密版本不可覆盖，删除账号不能使用旧凭据",
+          "duration": 4.615435999999818,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["认证DTO与领域规则"],
+          "fullName": "认证DTO与领域规则 会话到期、撤销、错误账号及旧epoch均不可用",
+          "status": "passed",
+          "title": "会话到期、撤销、错误账号及旧epoch均不可用",
+          "duration": 4.2663800000000265,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["认证DTO与领域规则"],
+          "fullName": "认证DTO与领域规则 不存在用户名同样失败冷却，冷却边界恢复",
+          "status": "passed",
+          "title": "不存在用户名同样失败冷却，冷却边界恢复",
+          "duration": 2.232285000000047,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["认证DTO与领域规则"],
+          "fullName": "认证DTO与领域规则 固定窗口按来源和操作区分，满额不再递增",
+          "status": "passed",
+          "title": "固定窗口按来源和操作区分，满额不再递增",
+          "duration": 3.0223430000000917,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793374250064,
+      "endTime": 1793374250101.0225,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/unit/auth-domain.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["真实密码与图片适配器"],
+          "fullName": "真实密码与图片适配器 正式scrypt参数随机盐、正确错误密码和畸形参数拒绝",
+          "status": "passed",
+          "title": "正式scrypt参数随机盐、正确错误密码和畸形参数拒绝",
+          "duration": 2135.2755850000003,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["真实密码与图片适配器"],
+          "fullName": "真实密码与图片适配器 计算门容量和失败释放许可",
+          "status": "passed",
+          "title": "计算门容量和失败释放许可",
+          "duration": 1.8551910000001044,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["真实密码与图片适配器"],
+          "fullName": "真实密码与图片适配器 生产随机源、HMAC用途隔离、PNG可解码且无文字块",
+          "status": "passed",
+          "title": "生产随机源、HMAC用途隔离、PNG可解码且无文字块",
+          "duration": 10.37585399999989,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793374250485,
+      "endTime": 1793374252633.3757,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/unit/auth-security.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["配置与健康契约"],
+          "fullName": "配置与健康契约 默认端口与显式配置通过，启动拒绝错误协议及端口",
+          "status": "passed",
+          "title": "默认端口与显式配置通过，启动拒绝错误协议及端口",
+          "duration": 8.107230000000072,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["配置与健康契约"],
+          "fullName": "配置与健康契约 无效配置仅暴露字段名，不含密钥或输入值",
+          "status": "passed",
+          "title": "无效配置仅暴露字段名，不含密钥或输入值",
+          "duration": 2.2875460000000203,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["配置与健康契约"],
+          "fullName": "配置与健康契约 存活不调用依赖；依赖抛错只产生不可用状态",
+          "status": "passed",
+          "title": "存活不调用依赖；依赖抛错只产生不可用状态",
+          "duration": 1.1413310000000365,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["配置与健康契约"],
+          "fullName": "配置与健康契约 Agent仅访问业务健康接口，不访问模型，并拒绝伪造健康正文",
+          "status": "passed",
+          "title": "Agent仅访问业务健康接口，不访问模型，并拒绝伪造健康正文",
+          "duration": 5.202444999999898,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["幂等领域对象"],
+          "fullName": "幂等领域对象 重放保留首次结果，不同内容拒绝",
+          "status": "passed",
+          "title": "重放保留首次结果，不同内容拒绝",
+          "duration": 1.518235999999888,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["幂等领域对象"],
+          "fullName": "幂等领域对象 构造校验和快照复制维护领域不变量",
+          "status": "passed",
+          "title": "构造校验和快照复制维护领域不变量",
+          "duration": 1.006890999999996,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793374250428,
+      "endTime": 1793374250448.0068,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/unit/config-domain.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["健康接口逐操作契约"],
+          "fullName": "健康接口逐操作契约 HEALTH-01 API存活与请求标识",
+          "status": "passed",
+          "title": "HEALTH-01 API存活与请求标识",
+          "duration": 196.99420299999997,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["健康接口逐操作契约"],
+          "fullName": "健康接口逐操作契约 HEALTH-02 API就绪与依赖故障",
+          "status": "passed",
+          "title": "HEALTH-02 API就绪与依赖故障",
+          "duration": 28.026827000000026,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["健康接口逐操作契约"],
+          "fullName": "健康接口逐操作契约 HEALTH-03 Agent存活认证与重复读取",
+          "status": "passed",
+          "title": "HEALTH-03 Agent存活认证与重复读取",
+          "duration": 28.197677999999996,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["健康接口逐操作契约"],
+          "fullName": "健康接口逐操作契约 HEALTH-04 Agent就绪认证作用域及降级",
+          "status": "passed",
+          "title": "HEALTH-04 Agent就绪认证作用域及降级",
+          "duration": 38.46177199999988,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["健康接口逐操作契约"],
+          "fullName": "健康接口逐操作契约 未知路径与非法请求标识返回安全契约",
+          "status": "passed",
+          "title": "未知路径与非法请求标识返回安全契约",
+          "duration": 20.05409399999985,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793374249768,
+      "endTime": 1793374250080.0542,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/unit/http.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["采集领域契约与状态"],
+          "fullName": "采集领域契约与状态 刷新分钟额度与岗位60秒间隔由领域规则判断边界",
+          "status": "passed",
+          "title": "刷新分钟额度与岗位60秒间隔由领域规则判断边界",
+          "duration": 6.824510999999802,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集领域契约与状态"],
+          "fullName": "采集领域契约与状态 发现页数及游标必须受版本保护，不允许额外身份",
+          "status": "passed",
+          "title": "发现页数及游标必须受版本保护，不允许额外身份",
+          "duration": 4.813628999999992,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集领域契约与状态"],
+          "fullName": "采集领域契约与状态 租约到期旧token不可提交，重新领取递增围栏",
+          "status": "passed",
+          "title": "租约到期旧token不可提交，重新领取递增围栏",
+          "duration": 9.44701699999996,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集领域契约与状态"],
+          "fullName": "采集领域契约与状态 领取后新刷新需要后继，而领取前请求已覆盖",
+          "status": "passed",
+          "title": "领取后新刷新需要后继，而领取前请求已覆盖",
+          "duration": 2.386024000000134,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集领域契约与状态"],
+          "fullName": "采集领域契约与状态 可重试失败退避并封顶，人工恢复保留累计尝试",
+          "status": "passed",
+          "title": "可重试失败退避并封顶，人工恢复保留累计尝试",
+          "duration": 2.718111999999792,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集领域契约与状态"],
+          "fullName": "采集领域契约与状态 来源访问受限暂停，不自动作为成功或关闭",
+          "status": "passed",
+          "title": "来源访问受限暂停，不自动作为成功或关闭",
+          "duration": 1.3646969999999783,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集领域契约与状态"],
+          "fullName": "采集领域契约与状态 检查点只接受当前周期和版本",
+          "status": "passed",
+          "title": "检查点只接受当前周期和版本",
+          "duration": 4.775185999999849,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集领域契约与状态"],
+          "fullName": "采集领域契约与状态 条件树前置拒绝过深与错误类型，未知不被消除",
+          "status": "passed",
+          "title": "条件树前置拒绝过深与错误类型，未知不被消除",
+          "duration": 12.154064000000062,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集领域契约与状态"],
+          "fullName": "采集领域契约与状态 成功获取时间与核验分开，日期截止当天及过期均不新鲜",
+          "status": "passed",
+          "title": "成功获取时间与核验分开，日期截止当天及过期均不新鲜",
+          "duration": 31.226595999999972,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793374250057,
+      "endTime": 1793374250133.2266,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/unit/ingestion-domain.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["来源解析与访问边界"],
+          "fullName": "来源解析与访问边界 无岗位链接但未明确空结果时不能成功结束扫描",
+          "status": "passed",
+          "title": "无岗位链接但未明确空结果时不能成功结束扫描",
+          "duration": 11.046084999999948,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["来源解析与访问边界"],
+          "fullName": "来源解析与访问边界 列表只取实际岗位链接并识别下一页，不把社招过滤掉",
+          "status": "passed",
+          "title": "列表只取实际岗位链接并识别下一页，不把社招过滤掉",
+          "duration": 5.593405999999959,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["来源解析与访问边界"],
+          "fullName": "来源解析与访问边界 来源详情单位采用明确雇主标记，不猜测相邻文本",
+          "status": "passed",
+          "title": "来源详情单位采用明确雇主标记，不猜测相邻文本",
+          "duration": 11.773936999999933,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["来源解析与访问边界"],
+          "fullName": "来源解析与访问边界 HTTP200登录和会员页不能变成空列表成功",
+          "status": "passed",
+          "title": "HTTP200登录和会员页不能变成空列表成功",
+          "duration": 2.057847000000038,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["来源解析与访问边界"],
+          "fullName": "来源解析与访问边界 正文去除脚本表单和账户区域，保留缺失与原文链接",
+          "status": "passed",
+          "title": "正文去除脚本表单和账户区域，保留缺失与原文链接",
+          "duration": 22.5976119999998,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["来源解析与访问边界"],
+          "fullName": "来源解析与访问边界 限定源站origin、路径和参数，不接受内网和任意查询",
+          "status": "passed",
+          "title": "限定源站origin、路径和参数，不接受内网和任意查询",
+          "duration": 5.67771700000003,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793374250056,
+      "endTime": 1793374250114.6777,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/unit/ingestion-source.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["私有文件端口"],
+          "fullName": "私有文件端口 私有权限、重复创建拒绝、读取与幂等删除",
+          "status": "passed",
+          "title": "私有权限、重复创建拒绝、读取与幂等删除",
+          "duration": 12.638316999999915,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["私有文件端口"],
+          "fullName": "私有文件端口 目录穿越和符号链接无法读取",
+          "status": "passed",
+          "title": "目录穿越和符号链接无法读取",
+          "duration": 7.155390000000125,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793374250055,
+      "endTime": 1793374250075.1553,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/unit/private-files.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["架构和日志质量门禁"],
+          "fullName": "架构和日志质量门禁 正确边界通过，静态和动态导入共用规则",
+          "status": "passed",
+          "title": "正确边界通过，静态和动态导入共用规则",
+          "duration": 239.1883909999999,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["架构和日志质量门禁"],
+          "fullName": "架构和日志质量门禁 已实现接口均有关联测试",
+          "status": "passed",
+          "title": "已实现接口均有关联测试",
+          "duration": 155.8831399999999,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["架构和日志质量门禁"],
+          "fullName": "架构和日志质量门禁 新增接口漏登记时质量检查失败，不能仅靠清单自身完整",
+          "status": "passed",
+          "title": "新增接口漏登记时质量检查失败，不能仅靠清单自身完整",
+          "duration": 57.249514999999974,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["架构和日志质量门禁"],
+          "fullName": "架构和日志质量门禁 日志不输出敏感头、正文或异常详情",
+          "status": "passed",
+          "title": "日志不输出敏感头、正文或异常详情",
+          "duration": 6.193108999999822,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793374250197,
+      "endTime": 1793374250656.193,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/unit/quality.test.ts"
+    }
+  ]
+}

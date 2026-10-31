@@ -1,0 +1,17 @@
+{
+  "runId": "736bf63c-45ce-4a7e-b51e-1950a57d8147",
+  "artifacts": [
+    {
+      "file": "model/evidence.json",
+      "sha256": "503aad0dd6fd3f7fab3c2f54b8ea3a16a386f49cbd3f77de5237a753692a9471"
+    },
+    {
+      "file": "model/fictional-resume.txt",
+      "sha256": "2238968be6d4c3d6e4625f7f5633b9eef3bb0449dacea9919463b60eccd531de"
+    },
+    {
+      "file": "report.md",
+      "sha256": "d909d7d545e4a5d6bc8687120be75cae49a1706399c10aa1b33d0e9af706d279"
+    }
+  ]
+}

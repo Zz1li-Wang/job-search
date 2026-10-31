@@ -1,0 +1,23 @@
+/** 采集执行预算与更新周期；值的业务含义由配置和测试共同约束。 */
+export const INGESTION_POLICY = Object.freeze({
+  sourceKey: 'zhidianmijin' as const,
+  origin: 'https://www.zhidianmijin.com.cn',
+  leaseMs: 60_000,
+  heartbeatMs: 20_000,
+  maxAttempts: 3,
+  maxConcurrency: 2,
+  requestGapMs: 1_005,
+  requestTimeoutMs: 20_000,
+  maxBytes: 2 * 1024 * 1024,
+  maxRedirects: 3,
+  discoveryMs: 2 * 60 * 60 * 1000,
+  refreshMs: 24 * 60 * 60 * 1000,
+  urgentMs: 2 * 60 * 60 * 1000,
+  urgentWindowMs: 48 * 60 * 60 * 1000,
+  orphanAgeMs: 24 * 60 * 60 * 1000,
+  maximumRealRequests: 40,
+  parserVersion: 'zhidian-html-1',
+  maximumMaintenance: 100,
+  refreshRatePerMinute: 5,
+  minimumRefreshMs: 60_000,
+});

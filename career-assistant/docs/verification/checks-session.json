@@ -1,0 +1,54 @@
+{
+  "format": {
+    "command": [
+      "./node_modules/.bin/prettier",
+      "--check",
+      "**/*.{ts,json,mjs}"
+    ],
+    "exitCode": 0,
+    "stdout": "Checking formatting...\nAll matched files use Prettier code style!\n",
+    "stderr": ""
+  },
+  "lint": {
+    "command": [
+      "./node_modules/.bin/eslint",
+      "."
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "typecheck": {
+    "command": [
+      "./node_modules/.bin/tsc",
+      "--noEmit"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "checkedAt": "2026-10-30T06:32:39.956275+00:00",
+  "tests": {
+    "report": "tests-session.json",
+    "passed": 77,
+    "failed": 0
+  },
+  "sourceAttemptsBefore": 18,
+  "sessionReservedAttempts": 2,
+  "cumulativeSourceBudgetConsumed": 20,
+  "cookieVerdict": "inconclusive_due_to_verifier_defect",
+  "retestRequests": 0,
+  "sourceCodeSha256": {
+    "tools/verification/session.test.ts": "2ce2a6a50879efa15a75858717294a30c7366c1c1d7ad0c6aafd9b030c5b7104",
+    "tools/verification/session-reader.ts": "6d5828f405a5b9bea0707fa93151bb1d970b462a0908ebf5d835c25a7fe14c24",
+    "tools/verification/session-service.ts": "cb1aa00f6c120e724a0bc09537143458d6a47d1ab0e775ccb196e576b9eae728",
+    "tools/verification/session-dto.ts": "bc5f5e98595e2abfe3a0b42e1acd16d44a7abf29406683559c77888a04ed4cbc",
+    "tools/verification/session-store.ts": "75d5d5d5b000b73593f08f93e65e86abaf02a5f7e98e4422c71628890c7535e7",
+    "tools/verification/session-cli.ts": "393db1a381f483c66d61d3993c5fcf5d09618ef46fd0e800a894ed8e7eb3eeb5",
+    "tools/verification/session-page.ts": "e099109026a9367a5cb04141043ebbe07f594aa53928d06b51da576a0b16d7b5"
+  },
+  "limitations": [
+    "原认证响应未保存，无法确定本次抛错是否确为已复现的UUID缺陷，不能断言Cookie成功或失效。",
+    "仅修复后本地替身回归通过，没有追加真实请求。"
+  ]
+}

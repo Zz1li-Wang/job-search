@@ -1,0 +1,81 @@
+{
+  "capturedAt": "2026-10-31T02:23:09.944Z",
+  "authorization": "用户明确要求启用worker",
+  "scope": "本地Worker，沿用既有40次来源请求上限",
+  "networkEnabled": true,
+  "historicalRequestsCarriedForward": 27,
+  "budget": {
+    "id": "step6-approved-verification",
+    "limit": 40,
+    "used": 39
+  },
+  "requestsReservedThisActivation": 12,
+  "remainingRequests": 1,
+  "discovery": {
+    "sourceKey": "zhidianmijin",
+    "stream": "new",
+    "runId": "a5a27974-adf8-4456-851e-e5aa89197d29",
+    "pageLimit": 1,
+    "taskId": "b1942d2d-7e5e-4506-bbe7-8a59e4e42230"
+  },
+  "tasks": [
+    {
+      "status": "succeeded",
+      "error_code": null,
+      "count": 11
+    }
+  ],
+  "trust": {
+    "computedAt": "2026-10-31T02:23:09.861Z",
+    "firstFetchedAt": "2026-10-31T02:20:53.304Z",
+    "lastFetchedAt": "2026-10-31T02:21:08.285Z",
+    "counts": {
+      "campus": 9,
+      "social": 0,
+      "unknown": 1,
+      "fetched": 10,
+      "reviewed": 0,
+      "fresh": 0
+    },
+    "queues": [
+      {
+        "status": "queued",
+        "count": 0
+      },
+      {
+        "status": "running",
+        "count": 0
+      },
+      {
+        "status": "retry_wait",
+        "count": 0
+      },
+      {
+        "status": "paused",
+        "count": 0
+      },
+      {
+        "status": "failed",
+        "count": 0
+      },
+      {
+        "status": "succeeded",
+        "count": 11
+      }
+    ],
+    "pausedSources": [],
+    "coverageWarnings": [
+      "只代表已获取记录，未验证全站覆盖",
+      "外站原文未访问，不作为完整核验依据",
+      "持续来源网络默认关闭"
+    ],
+    "verifiedScope": ["已入库岗位与同站公告；具体范围以记录为准"]
+  },
+  "httpStatus": 200,
+  "knownIssues": [
+    "trust中的默认关闭提示来自API自身禁用来源网络，不能代表独立Worker状态",
+    "首批样本不是全站覆盖；完整条件核验仍为0",
+    "原额度耗尽后自动暂停，不自动更换预算键或清零"
+  ],
+  "secretsExported": false
+}

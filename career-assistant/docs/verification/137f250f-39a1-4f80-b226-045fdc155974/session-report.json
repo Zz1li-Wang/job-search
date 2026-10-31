@@ -1,0 +1,34 @@
+{
+  "runId": "137f250f-39a1-4f80-b226-045fdc155974",
+  "url": "https://www.zhidianmijin.com.cn/jobs?sort=latest&direction=desc&page=2",
+  "startedAt": "2026-10-30T06:39:31.490Z",
+  "endedAt": "2026-10-30T06:39:32.804Z",
+  "status": "passed",
+  "before": {
+    "httpStatus": 200,
+    "category": "login_required",
+    "jobIds": [],
+    "fetchedAt": "2026-10-30T06:39:31.491Z"
+  },
+  "after": {
+    "httpStatus": 200,
+    "category": "jobs_visible",
+    "jobIds": [
+      "cc9d0d22-d3b4-304f-6706-70825fb2d5e6",
+      "12d85dcb-794e-dd78-a3c9-241378ad3e39",
+      "5bdf17d5-c078-eef6-070a-f5ed6ade055f",
+      "890e7ce1-0b29-aecd-df4f-9f7ae8a709e0",
+      "95d7b783-0ab8-5767-2006-123ae595a99b",
+      "9eaef12d-012f-ee95-420b-fc7694514ea6",
+      "043c01c4-3977-87ec-45f3-4c99eb949111",
+      "1a35ecee-2f66-1a43-333a-15342610b2cc",
+      "2515d29d-2bca-7f2f-970d-46834c188933",
+      "34c1aea0-9d74-38d0-1f98-4e85c1cb8000"
+    ],
+    "fetchedAt": "2026-10-30T06:39:32.655Z"
+  },
+  "requestCount": 2,
+  "cumulativeSourceRequests": 22,
+  "rawAuthenticatedHtmlSaved": false,
+  "summary": "匿名第2页需登录，带Cookie后可见公开岗位ID；仅证明该会话此时可读该页，不代表全站或长期权限。"
+}

@@ -1,0 +1,482 @@
+[
+  {
+    "id": "HEALTH-01",
+    "service": "api",
+    "method": "GET",
+    "path": "/health/live",
+    "test": "tests/unit/http.test.ts",
+    "testName": "HEALTH-01 API存活与请求标识"
+  },
+  {
+    "id": "HEALTH-02",
+    "service": "api",
+    "method": "GET",
+    "path": "/health/ready",
+    "test": "tests/unit/http.test.ts",
+    "testName": "HEALTH-02 API就绪与依赖故障"
+  },
+  {
+    "id": "HEALTH-03",
+    "service": "agent",
+    "method": "GET",
+    "path": "/health/live",
+    "test": "tests/unit/http.test.ts",
+    "testName": "HEALTH-03 Agent存活认证与重复读取"
+  },
+  {
+    "id": "HEALTH-04",
+    "service": "agent",
+    "method": "GET",
+    "path": "/health/ready",
+    "test": "tests/unit/http.test.ts",
+    "testName": "HEALTH-04 Agent就绪认证作用域及降级"
+  },
+  {
+    "id": "AUTH-01",
+    "service": "api",
+    "method": "GET",
+    "path": "/api/v1/auth/captcha",
+    "test": "tests/integration/auth-http.test.ts",
+    "testName": "AUTH-01 PNG挑战和浏览器绑定及限流"
+  },
+  {
+    "id": "AUTH-02",
+    "service": "api",
+    "method": "POST",
+    "path": "/api/v1/auth/register",
+    "test": "tests/integration/auth-http.test.ts",
+    "testName": "AUTH-02 注册不登录及验证前拒绝和用户名冲突"
+  },
+  {
+    "id": "AUTH-03",
+    "service": "api",
+    "method": "POST",
+    "path": "/api/v1/auth/login",
+    "test": "tests/integration/auth-http.test.ts",
+    "testName": "AUTH-03 登录Cookie冷却和统一错误及验证码重放"
+  },
+  {
+    "id": "AUTH-04",
+    "service": "api",
+    "method": "POST",
+    "path": "/api/v1/auth/logout",
+    "test": "tests/integration/auth-http.test.ts",
+    "testName": "AUTH-04 当前设备退出重复和空Cookie及CSRF"
+  },
+  {
+    "id": "AUTH-05",
+    "service": "api",
+    "method": "GET",
+    "path": "/api/v1/auth/me",
+    "test": "tests/integration/auth-http.test.ts",
+    "testName": "AUTH-05 本人资料及会话到期和伪造ID拒绝"
+  },
+  {
+    "id": "AUTH-06",
+    "service": "api",
+    "method": "PUT",
+    "path": "/api/v1/auth/password",
+    "test": "tests/integration/auth-http.test.ts",
+    "testName": "AUTH-06 改密原密码错误及全部会话撤销"
+  },
+  {
+    "id": "JOB-04",
+    "service": "api",
+    "method": "POST",
+    "path": "/api/v1/jobs/:id/refresh",
+    "test": "tests/integration/ingestion-http.test.ts",
+    "testName": "JOB-04 刷新认证CSRF幂等合并与非法URL拒绝"
+  },
+  {
+    "id": "TASK-01",
+    "service": "api",
+    "method": "GET",
+    "path": "/api/v1/tasks/:id",
+    "test": "tests/integration/ingestion-http.test.ts",
+    "testName": "TASK-01 只允许本人关联任务并拒绝额外身份字段"
+  },
+  {
+    "id": "PUBLIC-01",
+    "service": "api",
+    "method": "GET",
+    "path": "/api/v1/trust",
+    "test": "tests/integration/ingestion-http.test.ts",
+    "testName": "PUBLIC-01 覆盖统计区分获取核验新鲜且不含个人信息"
+  },
+  {
+    "id": "JOB-01",
+    "service": "api",
+    "method": "GET",
+    "path": "/api/v1/jobs",
+    "test": "tests/integration/jobs-http.test.ts",
+    "testName": "JOB-01 筛选分页签名与会话校验"
+  },
+  {
+    "id": "JOB-02",
+    "service": "api",
+    "method": "GET",
+    "path": "/api/v1/jobs/:id",
+    "test": "tests/integration/jobs-http.test.ts",
+    "testName": "JOB-02 详情安全字段与不存在岗位"
+  },
+  {
+    "id": "JOB-03",
+    "service": "api",
+    "method": "GET",
+    "path": "/api/v1/jobs/:id/evidence",
+    "test": "tests/integration/jobs-http.test.ts",
+    "testName": "JOB-03 原文证据与版本冲突不输出存储路径"
+  },
+  {
+    "id": "PROFILE-01",
+    "service": "api",
+    "method": "GET",
+    "path": "/api/v1/profile",
+    "test": "tests/integration/jobs-http.test.ts",
+    "testName": "PROFILE-01 正式画像为空不创建假资料且只返回本人"
+  },
+  {
+    "id": "ELIG-01",
+    "service": "api",
+    "method": "POST",
+    "path": "/api/v1/eligibility-checks",
+    "test": "tests/integration/jobs-http.test.ts",
+    "testName": "ELIG-01 三态结果幂等社招应届与版本冲突"
+  },
+  {
+    "id": "ELIG-02",
+    "service": "api",
+    "method": "GET",
+    "path": "/api/v1/eligibility-checks/:id",
+    "test": "tests/integration/jobs-http.test.ts",
+    "testName": "ELIG-02 历史记录随画像变化失效且其他账号不可见"
+  },
+  {
+    "id": "CHAT-01",
+    "service": "api",
+    "method": "POST",
+    "path": "/api/v1/conversations",
+    "test": "tests/integration/chat-http.test.ts",
+    "testName": "CHAT-01 创建会话与身份输入拒绝"
+  },
+  {
+    "id": "CHAT-02",
+    "service": "api",
+    "method": "GET",
+    "path": "/api/v1/conversations",
+    "test": "tests/integration/chat-http.test.ts",
+    "testName": "CHAT-02 会话列表只返回本人"
+  },
+  {
+    "id": "CHAT-03",
+    "service": "api",
+    "method": "DELETE",
+    "path": "/api/v1/conversations/:id",
+    "test": "tests/integration/chat-http.test.ts",
+    "testName": "CHAT-03 删除会话撤销运行且重复成功"
+  },
+  {
+    "id": "CHAT-04",
+    "service": "api",
+    "method": "GET",
+    "path": "/api/v1/conversations/:id/messages",
+    "test": "tests/integration/chat-http.test.ts",
+    "testName": "CHAT-04 消息列表与不存在会话"
+  },
+  {
+    "id": "CHAT-05",
+    "service": "api",
+    "method": "POST",
+    "path": "/api/v1/conversations/:id/messages",
+    "test": "tests/integration/chat-http.test.ts",
+    "testName": "CHAT-05 幂等消息与并发串行"
+  },
+  {
+    "id": "CHAT-06",
+    "service": "api",
+    "method": "GET",
+    "path": "/api/v1/runs/:id",
+    "test": "tests/integration/chat-http.test.ts",
+    "testName": "CHAT-06 运行状态与真实Agent及MCP闭环"
+  },
+  {
+    "id": "CHAT-07",
+    "service": "api",
+    "method": "GET",
+    "path": "/api/v1/runs/:id/events",
+    "test": "tests/integration/chat-http.test.ts",
+    "testName": "CHAT-07 SSE回放只读取已提交事件"
+  },
+  {
+    "id": "CHAT-08",
+    "service": "api",
+    "method": "POST",
+    "path": "/api/v1/runs/:id/cancel",
+    "test": "tests/integration/chat-http.test.ts",
+    "testName": "CHAT-08 取消排队运行阻止推理"
+  },
+  {
+    "id": "CHAT-09",
+    "service": "api",
+    "method": "POST",
+    "path": "/api/v1/runs/:id/retry",
+    "test": "tests/integration/chat-http.test.ts",
+    "testName": "CHAT-09 显式重试使用版本且不自动计费"
+  },
+  {
+    "id": "INT-EVENT",
+    "service": "api",
+    "method": "POST",
+    "path": "/internal/v1/runs/:id/events",
+    "test": "tests/integration/chat-http.test.ts",
+    "testName": "INT-EVENT 事件回调要求双重服务与运行授权"
+  },
+  {
+    "id": "MCP-POST",
+    "service": "api",
+    "method": "POST",
+    "path": "/mcp",
+    "test": "tests/integration/chat-http.test.ts",
+    "testName": "MCP-POST 工具入口拒绝伪造授权"
+  },
+  {
+    "id": "MCP-GET",
+    "service": "api",
+    "method": "GET",
+    "path": "/mcp",
+    "test": "tests/integration/chat-http.test.ts",
+    "testName": "MCP-GET 无状态传输读取仍需授权"
+  },
+  {
+    "id": "MCP-DELETE",
+    "service": "api",
+    "method": "DELETE",
+    "path": "/mcp",
+    "test": "tests/integration/chat-http.test.ts",
+    "testName": "MCP-DELETE 无状态传输删除仍需授权"
+  },
+  {
+    "id": "AGENT-POST",
+    "service": "agent",
+    "method": "POST",
+    "path": "/internal/v1/runs",
+    "test": "tests/integration/chat-http.test.ts",
+    "testName": "AGENT-POST 派发拒绝无凭据请求"
+  },
+  {
+    "id": "AGENT-GET",
+    "service": "agent",
+    "method": "GET",
+    "path": "/internal/v1/runs/:id",
+    "test": "tests/integration/chat-http.test.ts",
+    "testName": "AGENT-GET 进程未知状态与授权"
+  },
+  {
+    "id": "AGENT-CANCEL",
+    "service": "agent",
+    "method": "POST",
+    "path": "/internal/v1/runs/:id/cancel",
+    "test": "tests/integration/chat-http.test.ts",
+    "testName": "AGENT-CANCEL 取消未知运行幂等"
+  },
+  {
+    "id": "RES-01",
+    "service": "api",
+    "method": "POST",
+    "path": "/api/v1/resumes",
+    "test": "tests/integration/resume-http.test.ts",
+    "testName": "RES-01 文件上传验证与格式拒绝"
+  },
+  {
+    "id": "RES-02",
+    "service": "api",
+    "method": "POST",
+    "path": "/api/v1/resumes/text",
+    "test": "tests/integration/resume-http.test.ts",
+    "testName": "RES-02 粘贴文本不直接改变正式画像"
+  },
+  {
+    "id": "RES-03",
+    "service": "api",
+    "method": "GET",
+    "path": "/api/v1/resumes",
+    "test": "tests/integration/resume-http.test.ts",
+    "testName": "RES-03 私有简历列表与存储路径隔离"
+  },
+  {
+    "id": "RES-04",
+    "service": "api",
+    "method": "GET",
+    "path": "/api/v1/resumes/:id",
+    "test": "tests/integration/resume-http.test.ts",
+    "testName": "RES-04 独立Agent读取MCP原文并生成待确认草稿"
+  },
+  {
+    "id": "RES-05",
+    "service": "api",
+    "method": "POST",
+    "path": "/api/v1/resumes/:id/parse",
+    "test": "tests/integration/resume-http.test.ts",
+    "testName": "RES-05 重复解析复用任务且不重复推理"
+  },
+  {
+    "id": "RES-06",
+    "service": "api",
+    "method": "DELETE",
+    "path": "/api/v1/resumes/:id",
+    "test": "tests/integration/resume-http.test.ts",
+    "testName": "RES-06 删除立即不可读并阻止排队任务恢复"
+  },
+  {
+    "id": "RES-07",
+    "service": "api",
+    "method": "GET",
+    "path": "/api/v1/resumes/:id/content",
+    "test": "tests/integration/resume-http.test.ts",
+    "testName": "RES-07 原文未就绪冲突并保留定位"
+  },
+  {
+    "id": "PROFILE-02",
+    "service": "api",
+    "method": "POST",
+    "path": "/api/v1/profile/drafts",
+    "test": "tests/integration/resume-http.test.ts",
+    "testName": "PROFILE-02 手填草稿等待确认"
+  },
+  {
+    "id": "PROFILE-03",
+    "service": "api",
+    "method": "PATCH",
+    "path": "/api/v1/profile/drafts/:id",
+    "test": "tests/integration/resume-http.test.ts",
+    "testName": "PROFILE-03 草稿编辑版本冲突"
+  },
+  {
+    "id": "PROFILE-04",
+    "service": "api",
+    "method": "POST",
+    "path": "/api/v1/profile/drafts/:id/confirm",
+    "test": "tests/integration/resume-http.test.ts",
+    "testName": "PROFILE-04 两草稿确认竞争及重复原结果"
+  },
+  {
+    "id": "PROFILE-05",
+    "service": "api",
+    "method": "GET",
+    "path": "/api/v1/profile/drafts/:id",
+    "test": "tests/integration/resume-http.test.ts",
+    "testName": "PROFILE-05 草稿读取归属与不存在"
+  },
+  {
+    "id": "INT-EXTRACT",
+    "service": "agent",
+    "method": "POST",
+    "path": "/internal/v1/resume-extractions",
+    "test": "tests/integration/resume-http.test.ts",
+    "testName": "INT-EXTRACT 提取接口拒绝无服务授权"
+  },
+  {
+    "id": "FAV-01",
+    "service": "api",
+    "method": "GET",
+    "path": "/api/v1/favorites",
+    "test": "tests/integration/career-http.test.ts",
+    "testName": "FAV-01 收藏列表仅本人且初始为空"
+  },
+  {
+    "id": "FAV-02",
+    "service": "api",
+    "method": "PUT",
+    "path": "/api/v1/favorites/:jobId",
+    "test": "tests/integration/career-http.test.ts",
+    "testName": "FAV-02 并发收藏只保留一条"
+  },
+  {
+    "id": "FAV-03",
+    "service": "api",
+    "method": "DELETE",
+    "path": "/api/v1/favorites/:jobId",
+    "test": "tests/integration/career-http.test.ts",
+    "testName": "FAV-03 重复取消收藏均成功"
+  },
+  {
+    "id": "APP-01",
+    "service": "api",
+    "method": "GET",
+    "path": "/api/v1/applications",
+    "test": "tests/integration/career-http.test.ts",
+    "testName": "APP-01 本人记录筛选及非法状态"
+  },
+  {
+    "id": "APP-02",
+    "service": "api",
+    "method": "POST",
+    "path": "/api/v1/applications",
+    "test": "tests/integration/career-http.test.ts",
+    "testName": "APP-02 重复创建不重置状态与幂等内容冲突"
+  },
+  {
+    "id": "APP-03",
+    "service": "api",
+    "method": "GET",
+    "path": "/api/v1/applications/:id",
+    "test": "tests/integration/career-http.test.ts",
+    "testName": "APP-03 私有记录读取与不存在"
+  },
+  {
+    "id": "APP-04",
+    "service": "api",
+    "method": "PATCH",
+    "path": "/api/v1/applications/:id",
+    "test": "tests/integration/career-http.test.ts",
+    "testName": "APP-04 版本并发冲突与未来日期拒绝"
+  },
+  {
+    "id": "APP-05",
+    "service": "api",
+    "method": "GET",
+    "path": "/api/v1/applications/:id/history",
+    "test": "tests/integration/career-http.test.ts",
+    "testName": "APP-05 状态修正与历史同事务及重放不重复"
+  },
+  {
+    "id": "APP-06",
+    "service": "api",
+    "method": "DELETE",
+    "path": "/api/v1/applications/:id",
+    "test": "tests/integration/career-http.test.ts",
+    "testName": "APP-06 删除连同历史且旧幂等键不恢复"
+  },
+  {
+    "id": "PRIV-01",
+    "service": "api",
+    "method": "DELETE",
+    "path": "/api/v1/profile",
+    "test": "tests/integration/privacy-http.test.ts",
+    "testName": "PRIV-01 清空画像与草稿幂等并保留账号"
+  },
+  {
+    "id": "PRIV-02",
+    "service": "api",
+    "method": "DELETE",
+    "path": "/api/v1/me/data",
+    "test": "tests/integration/privacy-http.test.ts",
+    "testName": "PRIV-02 清空个人资料撤销队列与文件补偿"
+  },
+  {
+    "id": "PRIV-03",
+    "service": "api",
+    "method": "DELETE",
+    "path": "/api/v1/me",
+    "test": "tests/integration/privacy-http.test.ts",
+    "testName": "PRIV-03 删除账号要求密码并撤销所有会话"
+  },
+  {
+    "id": "PRIV-04",
+    "service": "api",
+    "method": "GET",
+    "path": "/api/v1/deletions/:id",
+    "test": "tests/integration/privacy-http.test.ts",
+    "testName": "PRIV-04 删除记录仅本人可读且确认范围不可混用"
+  }
+]

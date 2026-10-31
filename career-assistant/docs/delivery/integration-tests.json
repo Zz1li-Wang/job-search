@@ -1,0 +1,1486 @@
+{
+  "numTotalTestSuites": 25,
+  "numPassedTestSuites": 25,
+  "numFailedTestSuites": 0,
+  "numPendingTestSuites": 0,
+  "numTotalTests": 120,
+  "numPassedTests": 120,
+  "numFailedTests": 0,
+  "numPendingTests": 0,
+  "numTodoTests": 0,
+  "snapshot": {
+    "added": 0,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 0,
+    "total": 0,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0,
+    "didUpdate": false
+  },
+  "startTime": 1793383755883,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["账号HTTP逐接口契约"],
+          "fullName": "账号HTTP逐接口契约 认证表迁移缺失时ready503但live200",
+          "status": "passed",
+          "title": "认证表迁移缺失时ready503但live200",
+          "duration": 232.93716800000004,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["账号HTTP逐接口契约"],
+          "fullName": "账号HTTP逐接口契约 AUTH-01 PNG挑战和浏览器绑定及限流",
+          "status": "passed",
+          "title": "AUTH-01 PNG挑战和浏览器绑定及限流",
+          "duration": 884.420602,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["账号HTTP逐接口契约"],
+          "fullName": "账号HTTP逐接口契约 AUTH-02 注册不登录及验证前拒绝和用户名冲突",
+          "status": "passed",
+          "title": "AUTH-02 注册不登录及验证前拒绝和用户名冲突",
+          "duration": 139.41504299999997,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["账号HTTP逐接口契约"],
+          "fullName": "账号HTTP逐接口契约 AUTH-03 登录Cookie冷却和统一错误及验证码重放",
+          "status": "passed",
+          "title": "AUTH-03 登录Cookie冷却和统一错误及验证码重放",
+          "duration": 391.955097,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["账号HTTP逐接口契约"],
+          "fullName": "账号HTTP逐接口契约 AUTH-04 当前设备退出重复和空Cookie及CSRF",
+          "status": "passed",
+          "title": "AUTH-04 当前设备退出重复和空Cookie及CSRF",
+          "duration": 241.2083679999996,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["账号HTTP逐接口契约"],
+          "fullName": "账号HTTP逐接口契约 AUTH-05 本人资料及会话到期和伪造ID拒绝",
+          "status": "passed",
+          "title": "AUTH-05 本人资料及会话到期和伪造ID拒绝",
+          "duration": 148.70797399999992,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["账号HTTP逐接口契约"],
+          "fullName": "账号HTTP逐接口契约 AUTH-06 改密原密码错误及全部会话撤销",
+          "status": "passed",
+          "title": "AUTH-06 改密原密码错误及全部会话撤销",
+          "duration": 328.9297899999997,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["账号HTTP逐接口契约"],
+          "fullName": "账号HTTP逐接口契约 验证码错误和到期均消费，IP额度不能由转发头绕过",
+          "status": "passed",
+          "title": "验证码错误和到期均消费，IP额度不能由转发头绕过",
+          "duration": 208.27833099999998,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793383796394,
+      "endTime": 1793383798970.2783,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/integration/auth-http.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["认证Service真实事务与并发"],
+          "fullName": "认证Service真实事务与并发 数据库拒绝负计数和不存在账号的会话",
+          "status": "passed",
+          "title": "数据库拒绝负计数和不存在账号的会话",
+          "duration": 33.34660699999995,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["认证Service真实事务与并发"],
+          "fullName": "认证Service真实事务与并发 真实迁移结果与Prisma模型无漂移",
+          "status": "passed",
+          "title": "真实迁移结果与Prisma模型无漂移",
+          "duration": 1023.1023140000001,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["认证Service真实事务与并发"],
+          "fullName": "认证Service真实事务与并发 同一验证码两条独立事务竞争，至多一个消费并创建账号",
+          "status": "passed",
+          "title": "同一验证码两条独立事务竞争，至多一个消费并创建账号",
+          "duration": 265.459971,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["认证Service真实事务与并发"],
+          "fullName": "认证Service真实事务与并发 不同挑战抢大小写用户名，唯一约束仅允许一个账号",
+          "status": "passed",
+          "title": "不同挑战抢大小写用户名，唯一约束仅允许一个账号",
+          "duration": 87.91812100000016,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["认证Service真实事务与并发"],
+          "fullName": "认证Service真实事务与并发 两个API连接池共享IP预算，不能并发超发",
+          "status": "passed",
+          "title": "两个API连接池共享IP预算，不能并发超发",
+          "duration": 113.5217590000002,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["认证Service真实事务与并发"],
+          "fullName": "认证Service真实事务与并发 并发密码失败累计准确，不存在的用户名同样冷却",
+          "status": "passed",
+          "title": "并发密码失败累计准确，不存在的用户名同样冷却",
+          "duration": 188.07575600000018,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["认证Service真实事务与并发"],
+          "fullName": "认证Service真实事务与并发 登录密码计算期间改密，不能补建旧版本会话",
+          "status": "passed",
+          "title": "登录密码计算期间改密，不能补建旧版本会话",
+          "duration": 163.89591800000017,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["认证Service真实事务与并发"],
+          "fullName": "认证Service真实事务与并发 两个改密运算并发，只有一个版本提交且全部旧会话失效",
+          "status": "passed",
+          "title": "两个改密运算并发，只有一个版本提交且全部旧会话失效",
+          "duration": 147.56870000000026,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["认证Service真实事务与并发"],
+          "fullName": "认证Service真实事务与并发 哈希失败不创建账号，先前验证码消费不恢复",
+          "status": "passed",
+          "title": "哈希失败不创建账号，先前验证码消费不恢复",
+          "duration": 62.95421600000009,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["认证Service真实事务与并发"],
+          "fullName": "认证Service真实事务与并发 会话插入失败回滚失败计数重置，消费动作保留",
+          "status": "passed",
+          "title": "会话插入失败回滚失败计数重置，消费动作保留",
+          "duration": 119.01295000000027,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["认证Service真实事务与并发"],
+          "fullName": "认证Service真实事务与并发 撤销会话失败时密码更新一起回滚",
+          "status": "passed",
+          "title": "撤销会话失败时密码更新一起回滚",
+          "duration": 164.25999300000012,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["认证Service真实事务与并发"],
+          "fullName": "认证Service真实事务与并发 密码计算不持事务，PNG失败不插入新挑战",
+          "status": "passed",
+          "title": "密码计算不持事务，PNG失败不插入新挑战",
+          "duration": 95.66672500000004,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["认证Service真实事务与并发"],
+          "fullName": "认证Service真实事务与并发 清理跳过已锁过期挑战，不删除仍有效记录",
+          "status": "passed",
+          "title": "清理跳过已锁过期挑战，不删除仍有效记录",
+          "duration": 80.88591700000006,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["认证Service真实事务与并发"],
+          "fullName": "认证Service真实事务与并发 单次清理跨表累计不超过100条",
+          "status": "passed",
+          "title": "单次清理跨表累计不超过100条",
+          "duration": 242.50894199999993,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793383792817,
+      "endTime": 1793383795605.509,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/integration/auth-services.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "fullName": "FAV-01 收藏列表仅本人且初始为空",
+          "status": "passed",
+          "title": "FAV-01 收藏列表仅本人且初始为空",
+          "duration": 702.467984,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "FAV-02 并发收藏只保留一条",
+          "status": "passed",
+          "title": "FAV-02 并发收藏只保留一条",
+          "duration": 478.9147549999998,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "FAV-03 重复取消收藏均成功",
+          "status": "passed",
+          "title": "FAV-03 重复取消收藏均成功",
+          "duration": 372.00456600000007,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "APP-01 本人记录筛选及非法状态",
+          "status": "passed",
+          "title": "APP-01 本人记录筛选及非法状态",
+          "duration": 408.27003600000035,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "APP-02 重复创建不重置状态与幂等内容冲突",
+          "status": "passed",
+          "title": "APP-02 重复创建不重置状态与幂等内容冲突",
+          "duration": 335.30239200000005,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "APP-03 私有记录读取与不存在",
+          "status": "passed",
+          "title": "APP-03 私有记录读取与不存在",
+          "duration": 349.95159300000023,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "APP-04 版本并发冲突与未来日期拒绝",
+          "status": "passed",
+          "title": "APP-04 版本并发冲突与未来日期拒绝",
+          "duration": 419.14213100000006,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "APP-05 状态修正与历史同事务及重放不重复",
+          "status": "passed",
+          "title": "APP-05 状态修正与历史同事务及重放不重复",
+          "duration": 366.78629200000023,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "APP-06 删除连同历史且旧幂等键不恢复",
+          "status": "passed",
+          "title": "APP-06 删除连同历史且旧幂等键不恢复",
+          "duration": 370.47298899999987,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "无变化的投递更新也保留首次幂等结果",
+          "status": "passed",
+          "title": "无变化的投递更新也保留首次幂等结果",
+          "duration": 405.7540199999994,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793383779304,
+      "endTime": 1793383783512.754,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/integration/career-http.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "fullName": "CHAT-01 创建会话与身份输入拒绝",
+          "status": "passed",
+          "title": "CHAT-01 创建会话与身份输入拒绝",
+          "duration": 540.140366,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "CHAT-02 会话列表只返回本人",
+          "status": "passed",
+          "title": "CHAT-02 会话列表只返回本人",
+          "duration": 244.72380999999996,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "CHAT-03 删除会话撤销运行且重复成功",
+          "status": "passed",
+          "title": "CHAT-03 删除会话撤销运行且重复成功",
+          "duration": 347.4976300000001,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "CHAT-04 消息列表与不存在会话",
+          "status": "passed",
+          "title": "CHAT-04 消息列表与不存在会话",
+          "duration": 296.02706999999987,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "CHAT-05 幂等消息与并发串行",
+          "status": "passed",
+          "title": "CHAT-05 幂等消息与并发串行",
+          "duration": 275.3709469999999,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "CHAT-06 运行状态与真实Agent及MCP闭环",
+          "status": "passed",
+          "title": "CHAT-06 运行状态与真实Agent及MCP闭环",
+          "duration": 557.562664,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "CHAT-07 SSE回放只读取已提交事件",
+          "status": "passed",
+          "title": "CHAT-07 SSE回放只读取已提交事件",
+          "duration": 502.40479400000004,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "CHAT-08 取消排队运行阻止推理",
+          "status": "passed",
+          "title": "CHAT-08 取消排队运行阻止推理",
+          "duration": 255.745903,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "CHAT-09 显式重试使用版本且不自动计费",
+          "status": "passed",
+          "title": "CHAT-09 显式重试使用版本且不自动计费",
+          "duration": 278.04999499999985,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "INT-EVENT 事件回调要求双重服务与运行授权",
+          "status": "passed",
+          "title": "INT-EVENT 事件回调要求双重服务与运行授权",
+          "duration": 183.47893000000022,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "MCP-POST 工具入口拒绝伪造授权",
+          "status": "passed",
+          "title": "MCP-POST 工具入口拒绝伪造授权",
+          "duration": 187.95702400000027,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "MCP-GET 无状态传输读取仍需授权",
+          "status": "passed",
+          "title": "MCP-GET 无状态传输读取仍需授权",
+          "duration": 190.2376350000004,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "MCP-DELETE 无状态传输删除仍需授权",
+          "status": "passed",
+          "title": "MCP-DELETE 无状态传输删除仍需授权",
+          "duration": 184.51002100000005,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "AGENT-POST 派发拒绝无凭据请求",
+          "status": "passed",
+          "title": "AGENT-POST 派发拒绝无凭据请求",
+          "duration": 185.0030969999998,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "AGENT-GET 进程未知状态与授权",
+          "status": "passed",
+          "title": "AGENT-GET 进程未知状态与授权",
+          "duration": 174.3847969999997,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "AGENT-CANCEL 取消未知运行幂等",
+          "status": "passed",
+          "title": "AGENT-CANCEL 取消未知运行幂等",
+          "duration": 176.57121800000004,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "模型断流明确失败且不保存固定答案",
+          "status": "passed",
+          "title": "模型断流明确失败且不保存固定答案",
+          "duration": 463.054032,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "模型或资料指令不能扩展业务工具白名单",
+          "status": "passed",
+          "title": "模型或资料指令不能扩展业务工具白名单",
+          "duration": 382.0507170000001,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "重试原失败运行的重复请求复用首次子运行",
+          "status": "passed",
+          "title": "重试原失败运行的重复请求复用首次子运行",
+          "duration": 431.9320579999994,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793383768037,
+      "endTime": 1793383773237.9321,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/integration/chat-http.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["本地维护逐命令契约"],
+          "fullName": "本地维护逐命令契约 OPS-01 发现输入身份和重复请求",
+          "status": "passed",
+          "title": "OPS-01 发现输入身份和重复请求",
+          "duration": 248.98528900000008,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["本地维护逐命令契约"],
+          "fullName": "本地维护逐命令契约 OPS-02 核验拒绝无证据及过时岗位",
+          "status": "passed",
+          "title": "OPS-02 核验拒绝无证据及过时岗位",
+          "duration": 86.03018599999996,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["本地维护逐命令契约"],
+          "fullName": "本地维护逐命令契约 OPS-03 导出固定视图重放并拒绝任意路径",
+          "status": "passed",
+          "title": "OPS-03 导出固定视图重放并拒绝任意路径",
+          "duration": 92.10099000000002,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["本地维护逐命令契约"],
+          "fullName": "本地维护逐命令契约 OPS-04 重试拒绝输入覆盖与不存在目标",
+          "status": "passed",
+          "title": "OPS-04 重试拒绝输入覆盖与不存在目标",
+          "duration": 44.48926800000004,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793383808834,
+      "endTime": 1793383809305.4893,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/integration/ingestion-cli.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["采集HTTP逐接口契约"],
+          "fullName": "采集HTTP逐接口契约 JOB-04 刷新认证CSRF幂等合并与非法URL拒绝",
+          "status": "passed",
+          "title": "JOB-04 刷新认证CSRF幂等合并与非法URL拒绝",
+          "duration": 814.558812,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集HTTP逐接口契约"],
+          "fullName": "采集HTTP逐接口契约 TASK-01 只允许本人关联任务并拒绝额外身份字段",
+          "status": "passed",
+          "title": "TASK-01 只允许本人关联任务并拒绝额外身份字段",
+          "duration": 521.3525930000001,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集HTTP逐接口契约"],
+          "fullName": "采集HTTP逐接口契约 PUBLIC-01 覆盖统计区分获取核验新鲜且不含个人信息",
+          "status": "passed",
+          "title": "PUBLIC-01 覆盖统计区分获取核验新鲜且不含个人信息",
+          "duration": 398.0356190000002,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793383799726,
+      "endTime": 1793383801460.0356,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/integration/ingestion-http.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["来源网络许可与凭据隔离"],
+          "fullName": "来源网络许可与凭据隔离 Cookie只用于列表，robots详情及跳转均不携带",
+          "status": "passed",
+          "title": "Cookie只用于列表，robots详情及跳转均不携带",
+          "duration": 2306.599354,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["来源网络许可与凭据隔离"],
+          "fullName": "来源网络许可与凭据隔离 跨域重定向被拒绝，预算用尽后不会发送下一请求",
+          "status": "passed",
+          "title": "跨域重定向被拒绝，预算用尽后不会发送下一请求",
+          "duration": 2163.923075,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["来源网络许可与凭据隔离"],
+          "fullName": "来源网络许可与凭据隔离 robots禁止和网络关闭均不读取岗位",
+          "status": "passed",
+          "title": "robots禁止和网络关闭均不读取岗位",
+          "duration": 57.531347999999525,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793383783858,
+      "endTime": 1793383788386.5312,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/integration/ingestion-network.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["采集故障补偿与迟到防护"],
+          "fullName": "采集故障补偿与迟到防护 暂停的历史扫描恢复时清除对应流暂停而非错误清除新增流",
+          "status": "passed",
+          "title": "暂停的历史扫描恢复时清除对应流暂停而非错误清除新增流",
+          "duration": 336.3146230000001,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集故障补偿与迟到防护"],
+          "fullName": "采集故障补偿与迟到防护 旧Worker在网络中失去租约，迟到正文不能覆盖新执行者",
+          "status": "passed",
+          "title": "旧Worker在网络中失去租约，迟到正文不能覆盖新执行者",
+          "duration": 284.22886900000003,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集故障补偿与迟到防护"],
+          "fullName": "采集故障补偿与迟到防护 快照写失败记录可重试失败，不发布正文或成功时间",
+          "status": "passed",
+          "title": "快照写失败记录可重试失败，不发布正文或成功时间",
+          "duration": 149.14054099999998,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集故障补偿与迟到防护"],
+          "fullName": "采集故障补偿与迟到防护 相同正文重复采集只增加观察，不增加正文版本",
+          "status": "passed",
+          "title": "相同正文重复采集只增加观察，不增加正文版本",
+          "duration": 235.88241500000004,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集故障补偿与迟到防护"],
+          "fullName": "采集故障补偿与迟到防护 运行中后到刷新形成一个可追踪后继，原任务重放不额外创建",
+          "status": "passed",
+          "title": "运行中后到刷新形成一个可追踪后继，原任务重放不额外创建",
+          "duration": 333.98111900000004,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集故障补偿与迟到防护"],
+          "fullName": "采集故障补偿与迟到防护 完整核验可保存，公告变化撤销有效性且旧操作键不可刷新结论",
+          "status": "passed",
+          "title": "完整核验可保存，公告变化撤销有效性且旧操作键不可刷新结论",
+          "duration": 489.05923900000016,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793383801539,
+      "endTime": 1793383803368.0593,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/integration/ingestion-recovery.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["采集仓储真实PostgreSQL"],
+          "fullName": "采集仓储真实PostgreSQL 活跃自然键唯一，独立连接并发登记返回同一任务",
+          "status": "passed",
+          "title": "活跃自然键唯一，独立连接并发登记返回同一任务",
+          "duration": 228.34157700000003,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集仓储真实PostgreSQL"],
+          "fullName": "采集仓储真实PostgreSQL 锁住候选时另一个Worker跳过，过期token不能覆盖新token",
+          "status": "passed",
+          "title": "锁住候选时另一个Worker跳过，过期token不能覆盖新token",
+          "duration": 95.22951499999999,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集仓储真实PostgreSQL"],
+          "fullName": "采集仓储真实PostgreSQL 预算原子封顶，重建持久化连接不清零",
+          "status": "passed",
+          "title": "预算原子封顶，重建持久化连接不清零",
+          "duration": 42.401746,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集仓储真实PostgreSQL"],
+          "fullName": "采集仓储真实PostgreSQL 即使没有新Worker领取，过期租约也无法直接完成写入",
+          "status": "passed",
+          "title": "即使没有新Worker领取，过期租约也无法直接完成写入",
+          "duration": 42.116551999999956,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集仓储真实PostgreSQL"],
+          "fullName": "采集仓储真实PostgreSQL 来源ID不是标准UUID仍可存储，唯一约束与映射不丢失",
+          "status": "passed",
+          "title": "来源ID不是标准UUID仍可存储，唯一约束与映射不丢失",
+          "duration": 22.580791999999974,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集仓储真实PostgreSQL"],
+          "fullName": "采集仓储真实PostgreSQL 数据库拒绝负预算和负版本，失败事务不遗留源记录",
+          "status": "passed",
+          "title": "数据库拒绝负预算和负版本，失败事务不遗留源记录",
+          "duration": 32.025409999999965,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793383808036,
+      "endTime": 1793383808499.0254,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/integration/ingestion-repository.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["采集任务与证据用例"],
+          "fullName": "采集任务与证据用例 发现登记和正文写入可重放，校招社招都保留且获取不等于核验",
+          "status": "passed",
+          "title": "发现登记和正文写入可重放，校招社招都保留且获取不等于核验",
+          "duration": 541.5159610000001,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集任务与证据用例"],
+          "fullName": "采集任务与证据用例 同runId改内容冲突，不创建另一个扫描周期",
+          "status": "passed",
+          "title": "同runId改内容冲突，不创建另一个扫描周期",
+          "duration": 79.18095500000004,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集任务与证据用例"],
+          "fullName": "采集任务与证据用例 网络失败退避，失败不推进检查点或刷新成功时间",
+          "status": "passed",
+          "title": "网络失败退避，失败不推进检查点或刷新成功时间",
+          "duration": 95.7486560000001,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集任务与证据用例"],
+          "fullName": "采集任务与证据用例 证据核验检查定位，旧版本和缺失外站不能被标为完整",
+          "status": "passed",
+          "title": "证据核验检查定位，旧版本和缺失外站不能被标为完整",
+          "duration": 320.98791099999994,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["采集任务与证据用例"],
+          "fullName": "采集任务与证据用例 正文摘要不会因相同页面重复执行新增版本",
+          "status": "passed",
+          "title": "正文摘要不会因相同页面重复执行新增版本",
+          "duration": 241.48739,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793383806067,
+      "endTime": 1793383807345.4873,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/integration/ingestion-services.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["岗位画像资格逐接口"],
+          "fullName": "岗位画像资格逐接口 JOB-01 筛选分页签名与会话校验",
+          "status": "passed",
+          "title": "JOB-01 筛选分页签名与会话校验",
+          "duration": 793.5230900000001,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["岗位画像资格逐接口"],
+          "fullName": "岗位画像资格逐接口 JOB-02 详情安全字段与不存在岗位",
+          "status": "passed",
+          "title": "JOB-02 详情安全字段与不存在岗位",
+          "duration": 444.1830440000001,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["岗位画像资格逐接口"],
+          "fullName": "岗位画像资格逐接口 JOB-03 原文证据与版本冲突不输出存储路径",
+          "status": "passed",
+          "title": "JOB-03 原文证据与版本冲突不输出存储路径",
+          "duration": 390.0348959999999,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["岗位画像资格逐接口"],
+          "fullName": "岗位画像资格逐接口 PROFILE-01 正式画像为空不创建假资料且只返回本人",
+          "status": "passed",
+          "title": "PROFILE-01 正式画像为空不创建假资料且只返回本人",
+          "duration": 340.32517499999994,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["岗位画像资格逐接口"],
+          "fullName": "岗位画像资格逐接口 ELIG-01 三态结果幂等社招应届与版本冲突",
+          "status": "passed",
+          "title": "ELIG-01 三态结果幂等社招应届与版本冲突",
+          "duration": 549.2487259999998,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["岗位画像资格逐接口"],
+          "fullName": "岗位画像资格逐接口 ELIG-02 历史记录随画像变化失效且其他账号不可见",
+          "status": "passed",
+          "title": "ELIG-02 历史记录随画像变化失效且其他账号不可见",
+          "duration": 460.72650299999987,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793383789079,
+      "endTime": 1793383792056.7266,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/integration/jobs-http.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "fullName": "MCP-01 get_profile仅读取本人正式画像且拒绝身份参数",
+          "status": "passed",
+          "title": "MCP-01 get_profile仅读取本人正式画像且拒绝身份参数",
+          "duration": 1021.554733,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "MCP-02 search_jobs返回真实候选且不保证资格",
+          "status": "passed",
+          "title": "MCP-02 search_jobs返回真实候选且不保证资格",
+          "duration": 1051.4663779999998,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "MCP-03 get_job_evidence返回实际正文观察版本",
+          "status": "passed",
+          "title": "MCP-03 get_job_evidence返回实际正文观察版本",
+          "duration": 956.6512390000003,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "MCP-04 evaluate_eligibility保持后端待核验结论",
+          "status": "passed",
+          "title": "MCP-04 evaluate_eligibility保持后端待核验结论",
+          "duration": 963.4811810000001,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "MCP-05 request_job_refresh只登记异步任务",
+          "status": "passed",
+          "title": "MCP-05 request_job_refresh只登记异步任务",
+          "duration": 926.0232660000001,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "MCP-06 get_task_status拒绝未授权任务",
+          "status": "passed",
+          "title": "MCP-06 get_task_status拒绝未授权任务",
+          "duration": 686.6306159999995,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "MCP-07 read_resume拒绝跨资源和未就绪资料",
+          "status": "passed",
+          "title": "MCP-07 read_resume拒绝跨资源和未就绪资料",
+          "duration": 664.9408639999992,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "MCP-08 propose_profile_update仅产生待确认草稿且幂等",
+          "status": "passed",
+          "title": "MCP-08 propose_profile_update仅产生待确认草稿且幂等",
+          "duration": 722.0135799999998,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "MCP运行授权绑定删除屏障及持久化调用上限",
+          "status": "passed",
+          "title": "MCP运行授权绑定删除屏障及持久化调用上限",
+          "duration": 883.0214190000006,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "内部事件序号幂等与伪造引用拒绝及终结后防写",
+          "status": "passed",
+          "title": "内部事件序号幂等与伪造引用拒绝及终结后防写",
+          "duration": 736.5510919999997,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "删除资料后原运行授权及跨用户访问立即失效",
+          "status": "passed",
+          "title": "删除资料后原运行授权及跨用户访问立即失效",
+          "duration": 827.1458949999997,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "超过单批事件上限的终结运行仍完整回放",
+          "status": "passed",
+          "title": "超过单批事件上限的终结运行仍完整回放",
+          "duration": 1007.2961840000007,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793383756812,
+      "endTime": 1793383767259.2961,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/integration/mcp.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["真实PostgreSQL Repository与UnitOfWork"],
+          "fullName": "真实PostgreSQL Repository与UnitOfWork Entity映射、提交及数据库关闭重连后持久化",
+          "status": "passed",
+          "title": "Entity映射、提交及数据库关闭重连后持久化",
+          "duration": 162.42236000000003,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["真实PostgreSQL Repository与UnitOfWork"],
+          "fullName": "真实PostgreSQL Repository与UnitOfWork 事务抛错回滚，提交后上下文和伪造上下文都拒绝使用",
+          "status": "passed",
+          "title": "事务抛错回滚，提交后上下文和伪造上下文都拒绝使用",
+          "duration": 12.441404000000034,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["真实PostgreSQL Repository与UnitOfWork"],
+          "fullName": "真实PostgreSQL Repository与UnitOfWork 两个独立连接并发插入，同键只创建一次并返回首次结果",
+          "status": "passed",
+          "title": "两个独立连接并发插入，同键只创建一次并返回首次结果",
+          "duration": 13.31338900000003,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["真实PostgreSQL Repository与UnitOfWork"],
+          "fullName": "真实PostgreSQL Repository与UnitOfWork 同键不同请求的领域冲突不覆盖结果，不同作用域可分别写入",
+          "status": "passed",
+          "title": "同键不同请求的领域冲突不覆盖结果，不同作用域可分别写入",
+          "duration": 23.74762499999997,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": ["真实PostgreSQL Repository与UnitOfWork"],
+          "fullName": "真实PostgreSQL Repository与UnitOfWork 迁移包含公共任务和审计表，任务事件唯一约束真实生效",
+          "status": "passed",
+          "title": "迁移包含公共任务和审计表，任务事件唯一约束真实生效",
+          "duration": 17.716523999999936,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793383809653,
+      "endTime": 1793383809882.7166,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/integration/persistence.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "fullName": "PRIV-01 清空画像与草稿幂等并保留账号",
+          "status": "passed",
+          "title": "PRIV-01 清空画像与草稿幂等并保留账号",
+          "duration": 677.762405,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "PRIV-02 清空个人资料撤销队列与文件补偿",
+          "status": "passed",
+          "title": "PRIV-02 清空个人资料撤销队列与文件补偿",
+          "duration": 399.902599,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "PRIV-03 删除账号要求密码并撤销所有会话",
+          "status": "passed",
+          "title": "PRIV-03 删除账号要求密码并撤销所有会话",
+          "duration": 279.6282679999997,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "PRIV-04 删除记录仅本人可读且确认范围不可混用",
+          "status": "passed",
+          "title": "PRIV-04 删除记录仅本人可读且确认范围不可混用",
+          "duration": 261.0040600000002,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793383804099,
+      "endTime": 1793383805717.0042,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/integration/privacy-http.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [],
+          "fullName": "RES-01 文件上传验证与格式拒绝",
+          "status": "passed",
+          "title": "RES-01 文件上传验证与格式拒绝",
+          "duration": 565.1063650000001,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "RES-02 粘贴文本不直接改变正式画像",
+          "status": "passed",
+          "title": "RES-02 粘贴文本不直接改变正式画像",
+          "duration": 250.35783300000003,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "RES-03 私有简历列表与存储路径隔离",
+          "status": "passed",
+          "title": "RES-03 私有简历列表与存储路径隔离",
+          "duration": 267.03009499999985,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "RES-04 独立Agent读取MCP原文并生成待确认草稿",
+          "status": "passed",
+          "title": "RES-04 独立Agent读取MCP原文并生成待确认草稿",
+          "duration": 463.0796889999999,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "RES-05 重复解析复用任务且不重复推理",
+          "status": "passed",
+          "title": "RES-05 重复解析复用任务且不重复推理",
+          "duration": 247.29065200000014,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "RES-06 删除立即不可读并阻止排队任务恢复",
+          "status": "passed",
+          "title": "RES-06 删除立即不可读并阻止排队任务恢复",
+          "duration": 276.47900400000026,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "RES-07 原文未就绪冲突并保留定位",
+          "status": "passed",
+          "title": "RES-07 原文未就绪冲突并保留定位",
+          "duration": 380.4974309999998,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "PROFILE-02 手填草稿等待确认",
+          "status": "passed",
+          "title": "PROFILE-02 手填草稿等待确认",
+          "duration": 221.60945700000002,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "PROFILE-03 草稿编辑版本冲突",
+          "status": "passed",
+          "title": "PROFILE-03 草稿编辑版本冲突",
+          "duration": 207.67162899999994,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "PROFILE-04 两草稿确认竞争及重复原结果",
+          "status": "passed",
+          "title": "PROFILE-04 两草稿确认竞争及重复原结果",
+          "duration": 284.15198499999997,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "PROFILE-05 草稿读取归属与不存在",
+          "status": "passed",
+          "title": "PROFILE-05 草稿读取归属与不存在",
+          "duration": 212.79626199999984,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "INT-EXTRACT 提取接口拒绝无服务授权",
+          "status": "passed",
+          "title": "INT-EXTRACT 提取接口拒绝无服务授权",
+          "duration": 173.5879990000003,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "旧解析重试在新尝试失败后不能再次触发模型",
+          "status": "passed",
+          "title": "旧解析重试在新尝试失败后不能再次触发模型",
+          "duration": 464.62118999999984,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "预存文件期间清空资料会拒绝迟到上传并清理孤立文件",
+          "status": "passed",
+          "title": "预存文件期间清空资料会拒绝迟到上传并清理孤立文件",
+          "duration": 281.0924499999992,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        },
+        {
+          "ancestorTitles": [],
+          "fullName": "五万字中文JSON正文可上传且同键改标题返回冲突",
+          "status": "passed",
+          "title": "五万字中文JSON正文可上传且同键改标题返回冲突",
+          "duration": 217.97513199999958,
+          "failureMessages": [],
+          "meta": {},
+          "tags": [],
+          "benchmarks": []
+        }
+      ],
+      "startTime": 1793383773965,
+      "endTime": 1793383778478.975,
+      "status": "passed",
+      "message": "",
+      "name": "/home/ayanami/job-search/career-assistant/tests/integration/resume-http.test.ts"
+    }
+  ]
+}

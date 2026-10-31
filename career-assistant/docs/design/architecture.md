@@ -4,14 +4,14 @@
 
 ## 输入输出和职责
 
-| 层 | 输入 | 操作 | 输出 |
-| --- | --- | --- | --- |
-| HTTP / MCP | 协议请求、受信身份、请求 ID | Zod DTO 校验、授权上下文、调用 Service、协议映射 | 输出 DTO / SSE / 工具结果 |
-| Service | 输入 DTO、ActorContext | 决定 UoW、读取实体、传入时钟和身份、调用领域行为、持久化、外部协调 | 输出 DTO 或应用错误 |
-| Entity | 独立领域类型和完整运行事实 | 不变量、权限、状态转换、业务决策 | 新实体状态或类型化 Decision |
-| Repository | Entity / ID / 有类型的查询 / 不透明事务上下文 | 过滤、锁、条件写、Mapper | Entity、投影、ID、受影响行数 |
-| Mapper | Prisma 记录或领域实体 | 显式字段映射 | Entity 或内部持久化参数 |
-| 外部适配器 | Service 指定的受控请求 | 文件、HTTP、模型或进程外调用 | 校验后的专用结果 / 外部失败 |
+| 层         | 输入                                          | 操作                                                               | 输出                         |
+| ---------- | --------------------------------------------- | ------------------------------------------------------------------ | ---------------------------- |
+| HTTP / MCP | 协议请求、受信身份、请求 ID                   | Zod DTO 校验、授权上下文、调用 Service、协议映射                   | 输出 DTO / SSE / 工具结果    |
+| Service    | 输入 DTO、ActorContext                        | 决定 UoW、读取实体、传入时钟和身份、调用领域行为、持久化、外部协调 | 输出 DTO 或应用错误          |
+| Entity     | 独立领域类型和完整运行事实                    | 不变量、权限、状态转换、业务决策                                   | 新实体状态或类型化 Decision  |
+| Repository | Entity / ID / 有类型的查询 / 不透明事务上下文 | 过滤、锁、条件写、Mapper                                           | Entity、投影、ID、受影响行数 |
+| Mapper     | Prisma 记录或领域实体                         | 显式字段映射                                                       | Entity 或内部持久化参数      |
+| 外部适配器 | Service 指定的受控请求                        | 文件、HTTP、模型或进程外调用                                       | 校验后的专用结果 / 外部失败  |
 
 ```mermaid
 flowchart TD
@@ -40,21 +40,21 @@ flowchart TD
 
 ## 数据关系和版本
 
-所有 ID 采用 UUID，时间以 UTC 存储、ISO 8601 输出，页面默认 Asia/Shanghai。公告截止时区保留证据；未写截止时刻的日期不擅自补为可肯定判断的精确时刻，当天视为待核验。仅查看“今天”等相对文字不足以核验截止。
+本系统生成的ID采用UUID；源站sourceId为不透明字符串，即使形似UUID也不验证UUID版本或variant，不与内部jobId混用。时间以UTC存储、ISO 8601输出，页面默认Asia/Shanghai。公告截止时区保留证据；未写截止时刻的日期不擅自补为可肯定判断的精确时刻，当天视为待核验。仅查看“今天”等相对文字不足以核验截止。
 
-| 数据模型 | 关键字段与约束 | 数据含义 |
-| --- | --- | --- |
-| User / Session / Captcha | usernameNormalized 唯一；sessionDigest 唯一；authEpoch；personalDataEpoch；deletedAt | 身份、撤销、个人数据删除屏障和一次性挑战；不保存明文密码、会话或验证码答案 |
-| Profile / ProfileDraft | userId；version；draftVersion；baseProfileVersion；sourceVersion | 已确认画像与草稿分开；职业状态、教育、实习和正式工作分别表达 |
-| Resume / ResumeText | userId、fileDigest、storageKey、version、deletedAt；文字页/段定位 | 私有文件及可追溯文字；不能通过公开 URL 读取 |
-| Job / JobVersion | source、sourceId 唯一；currentVersionId；contentHash | 稳定岗位标识和不可变版本，招聘类型不表示资格 |
-| Announcement / SourceSnapshot | sourceId、hash、fetchedAt、verifiedAt、locator | 岗位关联公告、原始快照、抓取与核验分开 |
-| RequirementSet | jobVersionId、reviewStatus、ruleTree、evidenceIds、version | 有 AND/OR/例外的条件树；模型草稿不能自动成为核验通过 |
-| EligibilityCheck | userId、profileVersion、jobVersion、evidenceVersion、rulesVersion、evaluatedAt | 三态结果及逐条件解释；依赖更新后不可当作当前结果 |
-| Conversation / Message / AgentRun / RunEvent | userId；conversationId+clientMessageId 唯一；runId+sequence 唯一 | 单会话单活跃运行、消息与事件持久化 |
-| Favorite / Application / ApplicationHistory | userId+jobId 唯一；version；操作唯一键 | 自有求职管理及变更历史 |
-| Task / ExecutionAttempt | dedupeKey 活跃唯一；leaseOwner、leaseUntil、fencingToken、attempt | 至少一次执行、带租约条件写；运行尝试和业务任务分开 |
-| IdempotencyRecord / DeletionRequest | actor、operation、key 唯一；requestHash；status | 结果重放、冲突检测及清理进度 |
+| 数据模型                                     | 关键字段与约束                                                                       | 数据含义                                                                   |
+| -------------------------------------------- | ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------- |
+| User / Session / Captcha                     | usernameNormalized 唯一；sessionDigest 唯一；authEpoch；personalDataEpoch；deletedAt | 身份、撤销、个人数据删除屏障和一次性挑战；不保存明文密码、会话或验证码答案 |
+| Profile / ProfileDraft                       | userId；version；draftVersion；baseProfileVersion；sourceVersion                     | 已确认画像与草稿分开；职业状态、教育、实习和正式工作分别表达               |
+| Resume / ResumeText                          | userId、fileDigest、storageKey、version、deletedAt；文字页/段定位                    | 私有文件及可追溯文字；不能通过公开 URL 读取                                |
+| Job / JobVersion                             | source、sourceId 唯一；currentVersionId；contentHash                                 | 稳定岗位标识和不可变版本，招聘类型不表示资格                               |
+| Announcement / SourceSnapshot                | sourceId、hash、fetchedAt、verifiedAt、locator                                       | 岗位关联公告、原始快照、抓取与核验分开                                     |
+| RequirementSet                               | jobVersionId、reviewStatus、ruleTree、evidenceIds、version                           | 有 AND/OR/例外的条件树；模型草稿不能自动成为核验通过                       |
+| EligibilityCheck                             | userId、profileVersion、jobVersion、evidenceVersion、rulesVersion、evaluatedAt       | 三态结果及逐条件解释；依赖更新后不可当作当前结果                           |
+| Conversation / Message / AgentRun / RunEvent | userId；conversationId+clientMessageId 唯一；runId+sequence 唯一                     | 单会话单活跃运行、消息与事件持久化                                         |
+| Favorite / Application / ApplicationHistory  | userId+jobId 唯一；version；操作唯一键                                               | 自有求职管理及变更历史                                                     |
+| Task / ExecutionAttempt                      | dedupeKey 活跃唯一；leaseOwner、leaseUntil、fencingToken、attempt                    | 至少一次执行、带租约条件写；运行尝试和业务任务分开                         |
+| IdempotencyRecord / DeletionRequest          | actor、operation、key 唯一；requestHash；status                                      | 结果重放、冲突检测及清理进度                                               |
 
 Prisma 模型和 Mapper 只在 `business` 的持久化基础设施内部，Service 看不到 ORM。UoW 接口与 Repository 端口由业务包导出，具体事务对象不公开。
 

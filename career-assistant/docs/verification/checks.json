@@ -1,0 +1,75 @@
+{
+  "format": {
+    "command": [
+      "./node_modules/.bin/prettier",
+      "--check",
+      "**/*.{ts,json,mjs}"
+    ],
+    "exitCode": 0,
+    "stdout": "Checking formatting...\nAll matched files use Prettier code style!\n",
+    "stderr": ""
+  },
+  "lint": {
+    "command": [
+      "./node_modules/.bin/eslint",
+      "."
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "typecheck": {
+    "command": [
+      "./node_modules/.bin/tsc",
+      "--noEmit"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "tests": {
+    "command": [
+      "./node_modules/.bin/vitest",
+      "run",
+      "--reporter=json",
+      "--outputFile=/tmp/career-verification-tests.json"
+    ],
+    "exitCode": 0,
+    "report": "tests.json",
+    "passed": 38,
+    "failed": 0
+  },
+  "checkedAt": "2026-10-30T05:33:56.656450+00:00",
+  "runtime": {
+    "node": "v24.19.0",
+    "npm": "11.17.0"
+  },
+  "git": {
+    "status": "not_run",
+    "reason": "尚无仓库；第三步方案禁止提前执行第四步工程初始化。"
+  },
+  "sourceCodeSha256": {
+    "tools/verification/domain.ts": "9c744dc57477be248d19c36e190dee379bd9230346091f1b263ccee83fd4c7f7",
+    "tools/verification/model.ts": "55e40cbe1dbe46fe2c5c31dc7b098e27d99b735936076cdc7d2d67584ab6716f",
+    "tools/verification/dto.ts": "f6d61447c54d9af95124cfa4891e40c55b67fa7119ba7d28a695aa5a71f11257",
+    "tools/verification/service.ts": "168da84f9b8c71d0cfc89cdd3ba6df015039539588999b8f12fff6d138b10cdf",
+    "tools/verification/cli.ts": "205f1bccf598bdebb6142405374db44eeeb161119b3a6a93befccb9099b0fc81",
+    "tools/verification/source.ts": "fc38af8a280564d98bd3fc4270fa6328dfdcc52964d21f3494a73965cb8d3f83",
+    "tools/verification/fixtures.ts": "f112936be2f4453081a28013aef15c57744b0d2dbac0d27ad84a7998940be4e3",
+    "tools/verification/error-codes.ts": "287d5f04588ae3352c7f105508ffe476d8594e4af81706d348dcfd13e1493b72",
+    "tools/verification/report-store.ts": "ce702e51e4b9e214ef2ab6241f381bdf8edd3067594c07b164ea2a3d717a5d43",
+    "tools/verification/documents.ts": "c14e3f98dd8fa10f3c04eb922e981430a8cd15727fc869c1c4705ec0307761a5",
+    "tools/verification/verification.test.ts": "5a0a4ac373697b91e5825d92e434642def3b08c5c538a57e86213e09e53ae4dd"
+  },
+  "observedRequestInterval": {
+    "minimumSeconds": 0.999,
+    "targetSeconds": 1,
+    "status": "warning",
+    "note": "交付代码新增5ms余量，未再次真实联网验证。"
+  },
+  "requestBudget": {
+    "used": 18,
+    "approved": 20,
+    "modelCalls": 0
+  }
+}

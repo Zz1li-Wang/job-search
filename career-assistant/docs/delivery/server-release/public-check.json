@@ -1,0 +1,40 @@
+{
+  "at": "2026-10-31T03:57:46.613Z",
+  "url": "https://47.95.166.110",
+  "modelConnectivity": {
+    "httpStatus": 200,
+    "configuredModelPresent": true,
+    "inferenceCalls": 0
+  },
+  "checks": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/health/ready",
+      "status": 200
+    },
+    {
+      "path": "/internal/v1/runs",
+      "status": 404
+    },
+    {
+      "path": "/mcp",
+      "status": 404
+    }
+  ],
+  "tls": {
+    "authorized": true,
+    "issuer": {
+      "C": "US",
+      "O": "Let's Encrypt",
+      "CN": "YE1"
+    },
+    "validFrom": "Oct 31 02:49:04 2026 GMT",
+    "validTo": "Nov  6 18:49:03 2026 GMT",
+    "subjectAltName": "IP Address:47.95.166.110",
+    "fingerprint256": "20:55:73:52:C9:F4:B8:E1:CB:38:8B:E6:B2:73:1A:25:56:53:1D:88:D0:8E:D5:BE:35:32:E2:FC:2F:E4:E6:96"
+  },
+  "success": true
+}

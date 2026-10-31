@@ -1,0 +1,15 @@
+node_modules
+**/dist/
+**/generated/
+.env*
+!.env.example
+!**/.env.*.example
+coverage/
+test-results/
+playwright-report/
+*.tsbuildinfo
+var/
+.artifacts/
+# 第三步原始页面及虚构文档保留在本地，不混入源码交付。
+docs/verification/*/source/
+docs/verification/*/fixtures/

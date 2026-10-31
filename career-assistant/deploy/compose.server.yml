@@ -1,0 +1,24 @@
+# 与compose.yml组合，供本次已获授权的IP发布使用；不改变默认离线部署。
+services:
+  worker:
+    environment:
+      INGESTION_NETWORK_ENABLED: 'true'
+      INGESTION_BUDGET_ID: ${INGESTION_BUDGET_ID:?configure approved ingestion budget}
+      INGESTION_REQUEST_LIMIT: ${INGESTION_REQUEST_LIMIT:?configure request limit}
+      INGESTION_OPERATOR_REFERENCE: ${INGESTION_OPERATOR_REFERENCE:?configure operator reference}
+      INGESTION_COOKIE_FILE: /run/career/source.env
+    volumes:
+      - type: bind
+        source: ./.env.source
+        target: /run/career/source.env
+        read_only: true
+        bind:
+          create_host_path: false
+  web:
+    volumes:
+      - type: bind
+        source: ./Caddyfile.ip
+        target: /etc/caddy/Caddyfile
+        read_only: true
+        bind:
+          create_host_path: false

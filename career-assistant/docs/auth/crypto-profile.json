@@ -1,0 +1,9 @@
+{
+  "algorithm": "scrypt",
+  "N": 131072,
+  "r": 8,
+  "p": 1,
+  "oneHashDurationMs": 668,
+  "observedProcessMaxRssKiB": 278676,
+  "scope": "单个测试进程样本，不代表所有硬件或并发容量"
+}

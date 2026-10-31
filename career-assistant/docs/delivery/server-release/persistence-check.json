@@ -1,0 +1,16 @@
+{
+  "success": true,
+  "originalPersonalTablesUnchanged": [
+    "resumes",
+    "profile_drafts",
+    "profiles",
+    "agent_runs",
+    "conversations",
+    "messages",
+    "run_events"
+  ],
+  "postRestartTlsAndHealth": "public-check.json",
+  "automaticRestart": "unless-stopped",
+  "dockerBootEnabled": true,
+  "sourceBudgetRetainedAfterRecreate": true
+}

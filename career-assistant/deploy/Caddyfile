@@ -1,0 +1,5 @@
+import /etc/caddy/Caddyfile.routes
+
+{$PUBLIC_HOST:localhost} {
+  import career_routes
+}

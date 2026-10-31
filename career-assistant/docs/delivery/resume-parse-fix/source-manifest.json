@@ -1,0 +1,20 @@
+{
+  "algorithm": "SHA256",
+  "scope": "本次修复改动的源码与测试",
+  "files": {
+    "apps/agent/src/app.ts": "a9a33828d657e3e07f79878c7773bf9e5cbebe541bb89fd43b9781ea91609c2e",
+    "apps/web/src/workspace/resumes.tsx": "abb69b9354dbae60c3bb0647288e32520e29a50a3ca33ef72b33a32c5217f135",
+    "packages/agent-core/src/extraction.ts": "f70b678f3660367ac6ce72f9086e8d90b6498b458e45b0a5d232a75077c3c793",
+    "packages/business/src/domain/resume/entities.ts": "7335d70d48969127595a9f2e72c3ab3b3fd64fc7f76453ff21fe7a0d905dcba5",
+    "packages/business/src/domain/resume/errors.ts": "832f6bbe5fd59822dd666df278c0d5340c958bd7a25dd48abc095464ba74452a",
+    "packages/business/src/domain/shared/errors.ts": "6cd273b304baa34c601d4e786a409ad6a4eb8e134d34a3f97c4db24d0d367604",
+    "packages/business/src/infrastructure/resume/client.ts": "fde5878ae3b253d832c949c04341f94282459e0efe9c877f1e5ef0365e2721c9",
+    "packages/contracts/src/profile.ts": "15d71fc57833b723ffe48ff63c8a1338544574a57d61715b03e77870860194ec",
+    "packages/contracts/src/resume.ts": "5a701dfefe0570c8122be864a6b423cc62faa48e5dc5d01f1a0721e3e6fb351a",
+    "tests/e2e/workspace.spec.ts": "99754fe676bff8fd4097fb03de461d2b78c865c9a4612b5305835ad6c61fda08",
+    "tests/fixtures/model.ts": "61c934b8e3bd3e136b7662107bffd7fe5d862da5f79267b066943b87c64b9a62",
+    "tests/integration/ingestion-http.test.ts": "0486a401b95c7b1436175e8dc4ccf807195781d5d91b2bad27d461757791057e",
+    "tests/integration/resume-http.test.ts": "f22b99fcd90f041f3aafcfee5b210903f1bd80f6fde5973d2c2176f7ebc496bd",
+    "tests/unit/resume.test.ts": "48da0c4dc04cda52bff34cabfaef85463fed90d0dc14103316d9e5fe91eea049"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "runId": "d9206958-625a-440e-b8b2-137ba2c11a13",
+  "artifacts": [
+    {
+      "file": "report.md",
+      "sha256": "026de25b8254b3abcdb5ec0bd8786619f8971d99490348d4ea98b938e68b8b7a"
+    },
+    {
+      "file": "source/01.html",
+      "sha256": "823e1d19458700608f450c1b01f2fd4575118585dbb808fbd8f6d431fd6473dc"
+    },
+    {
+      "file": "source/02.html",
+      "sha256": "cd0b2ccec81363f1317117e7f80de30423e9c60dad6ae3f9fb237abd7822748c"
+    },
+    {
+      "file": "source/03.html",
+      "sha256": "db386a54f334a2d524f32a45b296a5e3546205540531805abdba07a7409322ff"
+    },
+    {
+      "file": "source/04.html",
+      "sha256": "4a006674322651bf28eecbc2c5c41fc10c040e9e83d25696e24f7355f96e93b7"
+    },
+    {
+      "file": "association-evidence.json",
+      "sha256": "cf0c9f1b98ad3dac16102c8d145896135944556c1088d796cb5f040a07045bdd"
+    }
+  ]
+}

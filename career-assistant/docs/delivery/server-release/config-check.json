@@ -1,0 +1,13 @@
+{
+  "at": "2026-10-31T03:43:14.428Z",
+  "checks": [
+    "独立Compose项目",
+    "Worker新增10次独立预算",
+    "Cookie仅Worker只读挂载",
+    "deepseek-v4-pro配置",
+    "Caddy显式IP ACME shortlived及内部路由拒绝"
+  ],
+  "success": true,
+  "externalModelCalls": 0,
+  "externalSourceCalls": 0
+}

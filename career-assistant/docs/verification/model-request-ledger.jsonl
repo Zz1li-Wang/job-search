@@ -1,0 +1,5 @@
+{"runId":"736bf63c-45ce-4a7e-b51e-1950a57d8147","sequence":1,"capability":"structured_extraction","startedAt":"2026-10-30T05:52:15.601Z"}
+{"runId":"736bf63c-45ce-4a7e-b51e-1950a57d8147","sequence":2,"capability":"streaming","startedAt":"2026-10-30T05:52:18.227Z"}
+{"runId":"736bf63c-45ce-4a7e-b51e-1950a57d8147","sequence":3,"capability":"tool_call","startedAt":"2026-10-30T05:52:19.022Z"}
+{"runId":"736bf63c-45ce-4a7e-b51e-1950a57d8147","sequence":4,"capability":"tool_result_return","startedAt":"2026-10-30T05:52:19.985Z"}
+{"runId":"736bf63c-45ce-4a7e-b51e-1950a57d8147","sequence":5,"capability":"field_evidence_audit","startedAt":"2026-10-30T05:52:21.680Z"}

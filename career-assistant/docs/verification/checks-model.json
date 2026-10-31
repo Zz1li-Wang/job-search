@@ -1,0 +1,78 @@
+{
+  "format": {
+    "command": [
+      "./node_modules/.bin/prettier",
+      "--check",
+      "**/*.{ts,json,mjs}"
+    ],
+    "exitCode": 0,
+    "stdout": "Checking formatting...\nAll matched files use Prettier code style!\n",
+    "stderr": ""
+  },
+  "lint": {
+    "command": [
+      "./node_modules/.bin/eslint",
+      "."
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "typecheck": {
+    "command": [
+      "./node_modules/.bin/tsc",
+      "--noEmit"
+    ],
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "tests": {
+    "command": [
+      "./node_modules/.bin/vitest",
+      "run",
+      "--reporter=json",
+      "--outputFile=/tmp/career-verification-model-tests.json"
+    ],
+    "exitCode": 0,
+    "report": "tests-model.json",
+    "passed": 64,
+    "failed": 0
+  },
+  "checkedAt": "2026-10-30T05:58:34.961264+00:00",
+  "sourceCodeSha256": {
+    "tools/verification/domain.ts": "9c744dc57477be248d19c36e190dee379bd9230346091f1b263ccee83fd4c7f7",
+    "tools/verification/model.ts": "bdc56f5c13f241c166a7d9c8b038f84d26f2d9025e150a1e4b77892c25a73598",
+    "tools/verification/dto.ts": "f6d61447c54d9af95124cfa4891e40c55b67fa7119ba7d28a695aa5a71f11257",
+    "tools/verification/model-probe.ts": "1fd9618ecc1a9d68b7f59128e711020230afce823949653ebc3d35da79aa7738",
+    "tools/verification/deepseek.ts": "971397a4e1cf7169ba7b1c0398c749b8c730535eb20145dae8a9bc8631e95e5a",
+    "tools/verification/model-ledger.ts": "4ef3530cf68cfb44a258259fe183a8793bb7c660947959cecbd00997839b0662",
+    "tools/verification/service.ts": "68e89c23f3aeb356f27f7ad4ec4d9215634345afe56dd3f4af06362daa1d991b",
+    "tools/verification/model.test.ts": "d38fcec0e8589836582befbf997785c777b7dd6b9f56669e526178b8028b6eb2",
+    "tools/verification/model-contracts.ts": "df644914198082ba7c9a8ebbb5694d555bbd34b5c47066be9d7bdbf3c53bc72c",
+    "tools/verification/cli.ts": "205f1bccf598bdebb6142405374db44eeeb161119b3a6a93befccb9099b0fc81",
+    "tools/verification/source.ts": "fc38af8a280564d98bd3fc4270fa6328dfdcc52964d21f3494a73965cb8d3f83",
+    "tools/verification/fixtures.ts": "f112936be2f4453081a28013aef15c57744b0d2dbac0d27ad84a7998940be4e3",
+    "tools/verification/model-evidence.ts": "ed8de2b16d8d615b728ee6cee8f04a25d592445b031c155d5cf1f226f0da8311",
+    "tools/verification/error-codes.ts": "287d5f04588ae3352c7f105508ffe476d8594e4af81706d348dcfd13e1493b72",
+    "tools/verification/report-store.ts": "ce702e51e4b9e214ef2ab6241f381bdf8edd3067594c07b164ea2a3d717a5d43",
+    "tools/verification/documents.ts": "c14e3f98dd8fa10f3c04eb922e981430a8cd15727fc869c1c4705ec0307761a5",
+    "tools/verification/verification.test.ts": "5a0a4ac373697b91e5825d92e434642def3b08c5c538a57e86213e09e53ae4dd"
+  },
+  "git": {
+    "status": "not_run",
+    "reason": "尚无Git仓库；不提前执行第四步初始化。"
+  },
+  "realVerification": {
+    "model": "deepseek-v4-pro",
+    "modelRequestCount": 5,
+    "modelChecksPassed": 5,
+    "sourceRequests": 18,
+    "sourcePagination": "blocked_by_login",
+    "thinkingMode": "disabled"
+  },
+  "replay": {
+    "exitCode": 0,
+    "additionalModelRequests": 0
+  }
+}

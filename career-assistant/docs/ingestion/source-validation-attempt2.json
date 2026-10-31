@@ -1,0 +1,152 @@
+{
+  "startedAt": "2026-10-30T15:12:11.534Z",
+  "endedAt": "2026-10-30T15:12:26.701Z",
+  "budget": 40,
+  "usedBefore": 5,
+  "usedAfter": 15,
+  "historicalSourceRequests": 26,
+  "modelRequestsUnchanged": 5,
+  "results": [
+    {
+      "operation": "list:1",
+      "status": "blocked",
+      "errorCode": "SOURCE_PARSE_UNSUPPORTED"
+    },
+    {
+      "operation": "list:2",
+      "status": "passed",
+      "jobCount": 10,
+      "nextPage": 3
+    },
+    {
+      "operation": "known-social-detail",
+      "status": "passed",
+      "recruitmentType": "social",
+      "rawDigest": "daeb3978dcb6593d449d72567a358cf304b9852b4bfded6113b5baddecab922a"
+    }
+  ],
+  "pipeline": {
+    "taskId": "655935d2-af76-45b9-ae94-39b2e5cc8ded",
+    "coverage": {
+      "computedAt": "2026-10-30T15:12:26.606Z",
+      "firstFetchedAt": "2026-10-30T15:12:21.033Z",
+      "lastFetchedAt": "2026-10-30T15:12:26.580Z",
+      "counts": {
+        "campus": 5,
+        "social": 0,
+        "unknown": 0,
+        "fetched": 5,
+        "reviewed": 0,
+        "fresh": 0
+      },
+      "queues": [
+        {
+          "status": "queued",
+          "count": 5
+        },
+        {
+          "status": "running",
+          "count": 0
+        },
+        {
+          "status": "retry_wait",
+          "count": 0
+        },
+        {
+          "status": "paused",
+          "count": 0
+        },
+        {
+          "status": "failed",
+          "count": 0
+        },
+        {
+          "status": "succeeded",
+          "count": 6
+        }
+      ],
+      "pausedSources": [],
+      "coverageWarnings": [
+        "只代表已获取记录，未验证全站覆盖",
+        "外站原文未访问，不作为完整核验依据",
+        "持续来源网络默认关闭"
+      ],
+      "verifiedScope": ["已入库岗位与同站公告；具体范围以记录为准"]
+    },
+    "tasks": [
+      {
+        "id": "b59e3736-21a0-4641-ab44-f0cafd27a739",
+        "kind": "source.fetch",
+        "status": "queued",
+        "errorCode": null
+      },
+      {
+        "id": "d4258c19-8a8e-42a7-9d93-4f2b9463b2ed",
+        "kind": "source.fetch",
+        "status": "queued",
+        "errorCode": null
+      },
+      {
+        "id": "d372074f-0959-4288-a449-fceaf92d4595",
+        "kind": "source.fetch",
+        "status": "queued",
+        "errorCode": null
+      },
+      {
+        "id": "b922f8fd-bfde-47e0-b4bf-5f226a0fd363",
+        "kind": "source.fetch",
+        "status": "queued",
+        "errorCode": null
+      },
+      {
+        "id": "df2d0012-67d0-4ff0-9d09-3dce922ca8e0",
+        "kind": "source.fetch",
+        "status": "queued",
+        "errorCode": null
+      },
+      {
+        "id": "655935d2-af76-45b9-ae94-39b2e5cc8ded",
+        "kind": "source.discover",
+        "status": "succeeded",
+        "errorCode": null
+      },
+      {
+        "id": "1efb8891-f049-4afc-b43a-424f4656a784",
+        "kind": "source.fetch",
+        "status": "succeeded",
+        "errorCode": null
+      },
+      {
+        "id": "4220aabd-244e-4bae-99e5-5cf8b5f6e23e",
+        "kind": "source.fetch",
+        "status": "succeeded",
+        "errorCode": null
+      },
+      {
+        "id": "4cefc304-2bdc-4e53-800a-8e705ac8d681",
+        "kind": "source.fetch",
+        "status": "succeeded",
+        "errorCode": null
+      },
+      {
+        "id": "642b9d29-f8a1-49a3-8edc-efb7fe8ac5af",
+        "kind": "source.fetch",
+        "status": "succeeded",
+        "errorCode": null
+      },
+      {
+        "id": "b43abe00-fb9a-4b1b-aadd-f357920d381f",
+        "kind": "source.fetch",
+        "status": "succeeded",
+        "errorCode": null
+      }
+    ],
+    "exportDigest": "beeebc430053554c94bb6dd0b361f15b55a1fa881a2393737593463fef0a6693"
+  },
+  "limitations": [
+    "有限样本，不代表全站范围或更新吞吐已验证",
+    "认证列表只在内存解析，不保存原始HTML",
+    "外站原文未访问，抓取成功不等于资格已核验",
+    "真实持续采集保持关闭"
+  ]
+}

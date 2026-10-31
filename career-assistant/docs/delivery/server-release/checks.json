@@ -1,0 +1,122 @@
+{
+  "startedAt": "2026-10-31T03:43:13.053Z",
+  "steps": [
+    {
+      "name": "generate",
+      "command": ["pnpm", "db:generate"],
+      "exitCode": 0,
+      "durationMs": 2021
+    },
+    {
+      "name": "build",
+      "command": ["pnpm", "build"],
+      "exitCode": 0,
+      "durationMs": 15158
+    },
+    {
+      "name": "format",
+      "command": ["pnpm", "format:check"],
+      "exitCode": 0,
+      "durationMs": 5497
+    },
+    {
+      "name": "lint",
+      "command": ["pnpm", "lint"],
+      "exitCode": 0,
+      "durationMs": 3180
+    },
+    {
+      "name": "typecheck",
+      "command": ["pnpm", "typecheck"],
+      "exitCode": 0,
+      "durationMs": 8108
+    },
+    {
+      "name": "architecture",
+      "command": ["pnpm", "check:architecture"],
+      "exitCode": 0,
+      "durationMs": 822
+    },
+    {
+      "name": "interfaces",
+      "command": ["pnpm", "check:interfaces"],
+      "exitCode": 0,
+      "durationMs": 986
+    },
+    {
+      "name": "maintenance",
+      "command": ["pnpm", "check:maintenance"],
+      "exitCode": 0,
+      "durationMs": 453
+    },
+    {
+      "name": "unit",
+      "command": [
+        "pnpm",
+        "exec",
+        "vitest",
+        "run",
+        "--config",
+        "vitest.config.ts",
+        "--reporter=json",
+        "--outputFile=.artifacts/unit.json"
+      ],
+      "exitCode": 0,
+      "durationMs": 6877
+    },
+    {
+      "name": "integration",
+      "command": ["pnpm", "test:integration"],
+      "exitCode": 0,
+      "durationMs": 78928
+    },
+    {
+      "name": "e2e",
+      "command": ["pnpm", "test:e2e"],
+      "exitCode": 0,
+      "durationMs": 138187
+    },
+    {
+      "name": "verification",
+      "command": ["pnpm", "test:verification"],
+      "exitCode": 0,
+      "durationMs": 4772
+    },
+    {
+      "name": "verificationFormat",
+      "command": ["pnpm", "--prefix", "tools/verification", "format:check"],
+      "exitCode": 0,
+      "durationMs": 1860
+    },
+    {
+      "name": "verificationLint",
+      "command": ["pnpm", "--prefix", "tools/verification", "lint"],
+      "exitCode": 0,
+      "durationMs": 2290
+    },
+    {
+      "name": "verificationTypes",
+      "command": ["pnpm", "--prefix", "tools/verification", "typecheck"],
+      "exitCode": 0,
+      "durationMs": 2673
+    },
+    {
+      "name": "gitWhitespace",
+      "command": ["git", "diff", "--check"],
+      "exitCode": 0,
+      "durationMs": 11
+    },
+    {
+      "name": "gitStagedWhitespace",
+      "command": ["git", "diff", "--cached", "--check"],
+      "exitCode": 0,
+      "durationMs": 7
+    }
+  ],
+  "externalRequestLedgersUnchanged": true,
+  "endedAt": "2026-10-31T03:48:56.307Z",
+  "initialE2EFailure": {
+    "reason": "浏览器启动缺少libnspr4；复用项目已记录的/tmp动态库路径后重跑",
+    "exitCode": 1
+  }
+}

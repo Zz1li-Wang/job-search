@@ -1,0 +1,25 @@
+{
+  "authorization": "用户明确允许多次检查，直到修复",
+  "generationRequests": 7,
+  "readOnlyModelsChecks": 1,
+  "finalStream": {
+    "httpStatus": 200,
+    "finishReasons": ["stop"],
+    "schemaValid": true,
+    "evidenceValid": true
+  },
+  "finalStoredState": {
+    "resumeStatus": "ready",
+    "errorCode": null,
+    "draftStatus": "draft",
+    "profileAutomaticallyConfirmed": false
+  },
+  "diagnosticLoaderRemoved": true,
+  "privateContentInReports": false,
+  "limitations": [
+    "本份真实简历通过，不保证所有复杂文档和所有后续模型输出均通过",
+    "诊断日志仅含固定分类、字段路径、时间和usage，不含简历、回答或凭据",
+    "原有严格日期和原文依据校验保留；未明确的学历状态保持未知"
+  ],
+  "finalModelCompletedAt": "2026-10-31T02:54:05.748Z"
+}

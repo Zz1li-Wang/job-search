@@ -1,0 +1,94 @@
+{
+  "runId": "d9206958-625a-440e-b8b2-137ba2c11a13",
+  "kind": "source",
+  "requestLimit": 4,
+  "startedAt": "2026-10-30T06:50:32.732Z",
+  "endedAt": "2026-10-30T06:50:35.829Z",
+  "overall": "passed",
+  "source": {
+    "status": "passed",
+    "summary": "公开公告正文给出两个真实岗位链接，分别读取详情成功且招聘类型为校招；单位、条件及原文链接另作离线人工核对。",
+    "requestCount": 4,
+    "pages": [
+      {
+        "url": "https://www.zhidianmijin.com.cn/robots.txt",
+        "fetchedAt": "2026-10-30T06:50:32.744Z",
+        "transport": "node-native-fetch",
+        "httpStatus": 200,
+        "jobLinks": [],
+        "announcementLinks": [],
+        "paginationLinks": [],
+        "snapshot": "source/01.html",
+        "title": "",
+        "recruitmentType": "unknown"
+      },
+      {
+        "url": "https://www.zhidianmijin.com.cn/announcements/789d8a0d-d019-eacd-f394-3fc2f98791c5",
+        "fetchedAt": "2026-10-30T06:50:33.749Z",
+        "transport": "node-native-fetch",
+        "httpStatus": 200,
+        "jobLinks": [
+          "https://www.zhidianmijin.com.cn/jobs/6bf23a74-1947-9e2d-d692-c2befe80c634?returnTo=%2Fannouncements%2F789d8a0d-d019-eacd-f394-3fc2f98791c5",
+          "https://www.zhidianmijin.com.cn/jobs/098eaf4f-5a0d-96a9-3e15-233240053df8?returnTo=%2Fannouncements%2F789d8a0d-d019-eacd-f394-3fc2f98791c5",
+          "https://www.zhidianmijin.com.cn/jobs/1cd5b5eb-f9a2-46cf-f8e3-af9c1a6085c3?returnTo=%2Fannouncements%2F789d8a0d-d019-eacd-f394-3fc2f98791c5",
+          "https://www.zhidianmijin.com.cn/jobs/411909ba-a1ed-837e-8e84-2fda37d10a0f?returnTo=%2Fannouncements%2F789d8a0d-d019-eacd-f394-3fc2f98791c5",
+          "https://www.zhidianmijin.com.cn/jobs/605446a5-38c0-8b9e-d65c-38984dffe94d?returnTo=%2Fannouncements%2F789d8a0d-d019-eacd-f394-3fc2f98791c5",
+          "https://www.zhidianmijin.com.cn/jobs/9a07e593-08ef-8015-f55b-d97f549f4b32?returnTo=%2Fannouncements%2F789d8a0d-d019-eacd-f394-3fc2f98791c5"
+        ],
+        "announcementLinks": [
+          "https://www.zhidianmijin.com.cn/announcements/789d8a0d-d019-eacd-f394-3fc2f98791c5",
+          "https://www.zhidianmijin.com.cn/announcements/789d8a0d-d019-eacd-f394-3fc2f98791c5#main-content"
+        ],
+        "paginationLinks": [],
+        "snapshot": "source/02.html",
+        "title": "塔斯汀 2027 届管培生校园招聘正式启动！",
+        "recruitmentType": "unknown"
+      },
+      {
+        "url": "https://www.zhidianmijin.com.cn/jobs/6bf23a74-1947-9e2d-d692-c2befe80c634?returnTo=%2Fannouncements%2F789d8a0d-d019-eacd-f394-3fc2f98791c5",
+        "fetchedAt": "2026-10-30T06:50:34.754Z",
+        "transport": "node-native-fetch",
+        "httpStatus": 200,
+        "jobLinks": [
+          "https://www.zhidianmijin.com.cn/jobs/6bf23a74-1947-9e2d-d692-c2befe80c634",
+          "https://www.zhidianmijin.com.cn/jobs/6bf23a74-1947-9e2d-d692-c2befe80c634?returnTo=%2Fannouncements%2F789d8a0d-d019-eacd-f394-3fc2f98791c5#main-content"
+        ],
+        "announcementLinks": [
+          "https://www.zhidianmijin.com.cn/announcements/789d8a0d-d019-eacd-f394-3fc2f98791c5"
+        ],
+        "paginationLinks": [],
+        "snapshot": "source/03.html",
+        "title": "集团管培生",
+        "recruitmentType": "campus"
+      },
+      {
+        "url": "https://www.zhidianmijin.com.cn/jobs/098eaf4f-5a0d-96a9-3e15-233240053df8?returnTo=%2Fannouncements%2F789d8a0d-d019-eacd-f394-3fc2f98791c5",
+        "fetchedAt": "2026-10-30T06:50:35.760Z",
+        "transport": "node-native-fetch",
+        "httpStatus": 200,
+        "jobLinks": [
+          "https://www.zhidianmijin.com.cn/jobs/098eaf4f-5a0d-96a9-3e15-233240053df8",
+          "https://www.zhidianmijin.com.cn/jobs/098eaf4f-5a0d-96a9-3e15-233240053df8?returnTo=%2Fannouncements%2F789d8a0d-d019-eacd-f394-3fc2f98791c5#main-content"
+        ],
+        "announcementLinks": [
+          "https://www.zhidianmijin.com.cn/announcements/789d8a0d-d019-eacd-f394-3fc2f98791c5"
+        ],
+        "paginationLinks": [],
+        "snapshot": "source/04.html",
+        "title": "项目管理",
+        "recruitmentType": "campus"
+      }
+    ],
+    "evidenceFiles": [
+      "source/01.html",
+      "source/02.html",
+      "source/03.html",
+      "source/04.html"
+    ],
+    "limitations": [
+      "只验证公告实际列出的前两个校招岗位，不证明全部岗位或社招均有内部公告关联。",
+      "未访问外站原文或报名入口，未证明岗位条件完整、仍开放或应届生必然可报。",
+      "未使用Cookie或模型，不验证全站分页、长期会话或完整生产采集更新链路。"
+    ]
+  }
+}

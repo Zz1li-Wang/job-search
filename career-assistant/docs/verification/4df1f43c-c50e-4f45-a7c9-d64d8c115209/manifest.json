@@ -1,0 +1,73 @@
+{
+  "runId": "4df1f43c-c50e-4f45-a7c9-d64d8c115209",
+  "artifacts": [
+    {
+      "file": "fixtures/encrypted.pdf",
+      "sha256": "dfe562d89b3d2ce102bf8e49883988284db183fff7507baaef0092a381f4dbd7"
+    },
+    {
+      "file": "fixtures/forged.pdf",
+      "sha256": "f1b0e0f8af56ec8cac50fdf369909c8b8da9eca070c221f925b4064b46ad2950"
+    },
+    {
+      "file": "fixtures/image-only.pdf",
+      "sha256": "66e1ce26f9ae886e478705e32a338ec199f528807207e6bc5a48c421d7c4876f"
+    },
+    {
+      "file": "fixtures/invalid-utf8.txt",
+      "sha256": "b88c193009c22360a2a1e815905a7ea5f0b091647e5eaaff56a0cd90e22598b7"
+    },
+    {
+      "file": "fixtures/oversize.txt",
+      "sha256": "4b5d4e4afa64835d7a9cc3a10ffeaa4160e49503e451f26173b659116c31a0ea"
+    },
+    {
+      "file": "fixtures/resume.docx",
+      "sha256": "4b92fdc3e33b12a1b3eb4e4af978d856fb98ef96038b495a9def5687b8db10e6"
+    },
+    {
+      "file": "fixtures/resume.pdf",
+      "sha256": "df92f9db8796e496eb315005312766513d86b281cf7840e8a43ff4280ffe3e79"
+    },
+    {
+      "file": "fixtures/resume.txt",
+      "sha256": "2238968be6d4c3d6e4625f7f5633b9eef3bb0449dacea9919463b60eccd531de"
+    },
+    {
+      "file": "report.md",
+      "sha256": "23dd956830a7f1e027d9e4b4988e77682c68fd5133460aeff394938fdfe4de50"
+    },
+    {
+      "file": "source/01.html",
+      "sha256": "823e1d19458700608f450c1b01f2fd4575118585dbb808fbd8f6d431fd6473dc"
+    },
+    {
+      "file": "source/02.html",
+      "sha256": "00047c567557163dd4ea13cec65d1579019da2a94a4e663ec9fe6c2cc41ab755"
+    },
+    {
+      "file": "source/03.html",
+      "sha256": "426406d16b7da97399b2476c13a614404345f6d3a52490f78a04b93f73efafa7"
+    },
+    {
+      "file": "source/04.html",
+      "sha256": "fd75e5ab40bcbe67943feef7314577d7b51a0fd2b5215a96062b51ab8cda8ee5"
+    },
+    {
+      "file": "source/05.html",
+      "sha256": "8f2210f73ea37d9fdde98df1a0b6de9239a2c76490fa911cab8b4ace1eda0389"
+    },
+    {
+      "file": "source/06.html",
+      "sha256": "80d6e514250e07cb5b10804f07d12629920b34ccde9203769468b7920c2839d2"
+    },
+    {
+      "file": "source/07.html",
+      "sha256": "417e8c015f05f96df69ef6139c09ac3f619afdc3f95de0843f158820b0210fbf"
+    },
+    {
+      "file": "source/08.html",
+      "sha256": "7dbc92d118d8067d5780ccafc4132472e3ff66227bc4db0c1ea9230e0a55a1d5"
+    }
+  ]
+}

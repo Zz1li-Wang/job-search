@@ -1,0 +1,6 @@
+# 会话可能包含隐私，默认不进入版本管理。
+*
+!.gitignore
+!README.md
+!sync.py
+!test_sync.py

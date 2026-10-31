@@ -1,0 +1,93 @@
+{
+  "startedAt": "2026-10-30T15:09:36.739Z",
+  "endedAt": "2026-10-30T15:09:45.537Z",
+  "budget": 40,
+  "usedBefore": 0,
+  "usedAfter": 5,
+  "historicalSourceRequests": 26,
+  "modelRequestsUnchanged": 5,
+  "results": [
+    {
+      "operation": "list:1",
+      "status": "passed",
+      "jobCount": 0,
+      "nextPage": null
+    },
+    {
+      "operation": "list:2",
+      "status": "passed",
+      "jobCount": 10,
+      "nextPage": 3
+    },
+    {
+      "operation": "known-social-detail",
+      "status": "passed",
+      "recruitmentType": "social",
+      "rawDigest": "6c0f7acb76c43445a2a99b97adbe9f2ecf248aa5618e35df2886f84d0b1a3e7d"
+    }
+  ],
+  "pipeline": {
+    "taskId": "cb2451da-c7ca-49f5-a514-74c94d2762ad",
+    "coverage": {
+      "computedAt": "2026-10-30T15:09:45.503Z",
+      "firstFetchedAt": null,
+      "lastFetchedAt": null,
+      "counts": {
+        "campus": 0,
+        "social": 0,
+        "unknown": 0,
+        "fetched": 0,
+        "reviewed": 0,
+        "fresh": 0
+      },
+      "queues": [
+        {
+          "status": "queued",
+          "count": 0
+        },
+        {
+          "status": "running",
+          "count": 0
+        },
+        {
+          "status": "retry_wait",
+          "count": 0
+        },
+        {
+          "status": "paused",
+          "count": 0
+        },
+        {
+          "status": "failed",
+          "count": 0
+        },
+        {
+          "status": "succeeded",
+          "count": 1
+        }
+      ],
+      "pausedSources": [],
+      "coverageWarnings": [
+        "只代表已获取记录，未验证全站覆盖",
+        "外站原文未访问，不作为完整核验依据",
+        "持续来源网络默认关闭"
+      ],
+      "verifiedScope": []
+    },
+    "tasks": [
+      {
+        "id": "cb2451da-c7ca-49f5-a514-74c94d2762ad",
+        "kind": "source.discover",
+        "status": "succeeded",
+        "errorCode": null
+      }
+    ],
+    "exportDigest": "66313edfb70df277c9ca6b0659da6ebca08f3006eba40adc0dbf7643bb807377"
+  },
+  "limitations": [
+    "有限样本，不代表全站范围或更新吞吐已验证",
+    "认证列表只在内存解析，不保存原始HTML",
+    "外站原文未访问，抓取成功不等于资格已核验",
+    "真实持续采集保持关闭"
+  ]
+}

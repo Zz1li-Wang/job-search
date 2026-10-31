@@ -1,0 +1,6 @@
+node_modules
+coverage/
+*.tsbuildinfo
+.env*
+!.env.verification.example
+!.env.source.example

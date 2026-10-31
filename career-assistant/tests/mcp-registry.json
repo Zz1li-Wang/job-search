@@ -1,0 +1,42 @@
+[
+  {
+    "name": "get_profile",
+    "test": "tests/integration/mcp.test.ts",
+    "testName": "MCP-01 get_profile仅读取本人正式画像且拒绝身份参数"
+  },
+  {
+    "name": "search_jobs",
+    "test": "tests/integration/mcp.test.ts",
+    "testName": "MCP-02 search_jobs返回真实候选且不保证资格"
+  },
+  {
+    "name": "get_job_evidence",
+    "test": "tests/integration/mcp.test.ts",
+    "testName": "MCP-03 get_job_evidence返回实际正文观察版本"
+  },
+  {
+    "name": "evaluate_eligibility",
+    "test": "tests/integration/mcp.test.ts",
+    "testName": "MCP-04 evaluate_eligibility保持后端待核验结论"
+  },
+  {
+    "name": "request_job_refresh",
+    "test": "tests/integration/mcp.test.ts",
+    "testName": "MCP-05 request_job_refresh只登记异步任务"
+  },
+  {
+    "name": "get_task_status",
+    "test": "tests/integration/mcp.test.ts",
+    "testName": "MCP-06 get_task_status拒绝未授权任务"
+  },
+  {
+    "name": "read_resume",
+    "test": "tests/integration/mcp.test.ts",
+    "testName": "MCP-07 read_resume拒绝跨资源和未就绪资料"
+  },
+  {
+    "name": "propose_profile_update",
+    "test": "tests/integration/mcp.test.ts",
+    "testName": "MCP-08 propose_profile_update仅产生待确认草稿且幂等"
+  }
+]

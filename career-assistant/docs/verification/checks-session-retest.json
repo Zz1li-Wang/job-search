@@ -1,0 +1,64 @@
+{
+  "test": {
+    "command": [
+      "./node_modules/.bin/vitest",
+      "run",
+      "--reporter=json",
+      "--outputFile=/tmp/career-verification-session-retest-tests.json"
+    ],
+    "exitCode": 0,
+    "output": "JSON report written to /tmp/career-verification-session-retest-tests.json\n"
+  },
+  "typecheck": {
+    "command": [
+      "./node_modules/.bin/tsc",
+      "--noEmit"
+    ],
+    "exitCode": 0,
+    "output": ""
+  },
+  "lint": {
+    "command": [
+      "./node_modules/.bin/eslint",
+      "."
+    ],
+    "exitCode": 0,
+    "output": ""
+  },
+  "format": {
+    "command": [
+      "./node_modules/.bin/prettier",
+      "--check",
+      "**/*.{ts,json,mjs}"
+    ],
+    "exitCode": 0,
+    "output": "All matched files use Prettier code style!\n"
+  },
+  "checkedAt": "2026-10-30T06:41:05.468576+00:00",
+  "tests": {
+    "report": "tests-session-retest.json",
+    "passed": 77,
+    "failed": 0
+  },
+  "sourcePublicRequests": 18,
+  "sessionReservedAttempts": 4,
+  "cumulativeSourceBudgetConsumed": 22,
+  "modelReservedAttempts": 5,
+  "cookieVerdict": "passed_for_page_2_at_verification_time",
+  "retestRequests": 2,
+  "requestStartGapSeconds": 1.164,
+  "sourceCodeSha256": {
+    "tools/verification/session-cli.ts": "393db1a381f483c66d61d3993c5fcf5d09618ef46fd0e800a894ed8e7eb3eeb5",
+    "tools/verification/session-dto.ts": "3ceb6c71b2a29e6a07f6c29c50c6b2d832cbcf3a5abf98c64055cde4c686bcc8",
+    "tools/verification/session-page.ts": "e099109026a9367a5cb04141043ebbe07f594aa53928d06b51da576a0b16d7b5",
+    "tools/verification/session-reader.ts": "6d5828f405a5b9bea0707fa93151bb1d970b462a0908ebf5d835c25a7fe14c24",
+    "tools/verification/session-service.ts": "cb1aa00f6c120e724a0bc09537143458d6a47d1ab0e775ccb196e576b9eae728",
+    "tools/verification/session-store.ts": "1c68f8f371b4c2c81ebba38f1c1def4eeb8cc5b221ccc87fa4ceaa0e33bb6401",
+    "tools/verification/session.test.ts": "5c5fa338536fa9f6e2cd789baa5b57d1f205bf649e929e1a703f8dbd9e89b223"
+  },
+  "limitations": [
+    "仅验证固定第2页，不证明全站、全部分页或长期Cookie有效。",
+    "认证HTML未保存，旧失败报告保留；完整岗位公告关联仍未验证。",
+    "没有有效Git仓库，未执行仓库级git diff --check。"
+  ]
+}

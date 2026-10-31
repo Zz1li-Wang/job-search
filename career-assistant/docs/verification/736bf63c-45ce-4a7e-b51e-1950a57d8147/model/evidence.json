@@ -1,0 +1,169 @@
+{
+  "runId": "736bf63c-45ce-4a7e-b51e-1950a57d8147",
+  "requestedModel": "deepseek-v4-pro",
+  "protocol": "deepseek-chat-completions",
+  "thinkingMode": "disabled",
+  "checks": [
+    {
+      "name": "structured_extraction",
+      "status": "passed",
+      "explanation": "本固定样本的协议与断言均通过。"
+    },
+    {
+      "name": "streaming",
+      "status": "passed",
+      "explanation": "本固定样本的协议与断言均通过。"
+    },
+    {
+      "name": "tool_call",
+      "status": "passed",
+      "explanation": "本固定样本的协议与断言均通过。"
+    },
+    {
+      "name": "tool_result_return",
+      "status": "passed",
+      "explanation": "本固定样本的协议与断言均通过。"
+    },
+    {
+      "name": "field_evidence_audit",
+      "status": "passed",
+      "explanation": "本固定样本的协议与断言均通过。"
+    }
+  ],
+  "requests": [
+    {
+      "sequence": 1,
+      "capability": "structured_extraction",
+      "startedAt": "2026-10-30T05:52:15.602Z",
+      "durationMs": 2623,
+      "httpStatus": 200,
+      "responseModel": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 264,
+        "completion_tokens": 270,
+        "total_tokens": 534
+      }
+    },
+    {
+      "sequence": 2,
+      "capability": "streaming",
+      "startedAt": "2026-10-30T05:52:18.228Z",
+      "durationMs": 793,
+      "httpStatus": 200,
+      "responseModel": "deepseek-v4-pro"
+    },
+    {
+      "sequence": 3,
+      "capability": "tool_call",
+      "startedAt": "2026-10-30T05:52:19.023Z",
+      "durationMs": 961,
+      "httpStatus": 200,
+      "responseModel": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 365,
+        "completion_tokens": 51,
+        "total_tokens": 416
+      }
+    },
+    {
+      "sequence": 4,
+      "capability": "tool_result_return",
+      "startedAt": "2026-10-30T05:52:19.986Z",
+      "durationMs": 1692,
+      "httpStatus": 200,
+      "responseModel": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 461,
+        "completion_tokens": 33,
+        "total_tokens": 494
+      }
+    },
+    {
+      "sequence": 5,
+      "capability": "field_evidence_audit",
+      "startedAt": "2026-10-30T05:52:21.681Z",
+      "durationMs": 848,
+      "httpStatus": 200,
+      "responseModel": "deepseek-v4-pro",
+      "usage": {
+        "prompt_tokens": 229,
+        "completion_tokens": 59,
+        "total_tokens": 288
+      }
+    }
+  ],
+  "outputs": {
+    "extraction": {
+      "name": "Test Student",
+      "degree": "bachelor",
+      "major": "computer_science",
+      "expectedGraduation": "2027-06",
+      "formalExperienceYears": 0,
+      "hasInternship": true,
+      "evidence": [
+        {
+          "field": "name",
+          "locator": "paragraph:2",
+          "quote": "Name: Test Student"
+        },
+        {
+          "field": "degree",
+          "locator": "paragraph:3",
+          "quote": "Bachelor"
+        },
+        {
+          "field": "major",
+          "locator": "paragraph:3",
+          "quote": "Computer Science"
+        },
+        {
+          "field": "expectedGraduation",
+          "locator": "paragraph:3",
+          "quote": "Expected graduation: 2027-06"
+        },
+        {
+          "field": "formalExperienceYears",
+          "locator": "paragraph:6",
+          "quote": "正式工作经历：无"
+        },
+        {
+          "field": "hasInternship",
+          "locator": "paragraph:4",
+          "quote": "Internship: Example Lab, 2026-07 to 2026-08"
+        }
+      ]
+    },
+    "stream": {
+      "content": "stream_ready 中文验证",
+      "chunks": 6,
+      "models": [
+        "deepseek-v4-pro"
+      ]
+    },
+    "toolRequest": {
+      "id": "call_00_s1O4X24TdpV1Q5hF4ylr3564",
+      "type": "function",
+      "function": {
+        "name": "get_probe_fact",
+        "arguments": "{\"probeId\": \"fixture-1\"}"
+      }
+    },
+    "toolReturn": {
+      "status": "pending_verification",
+      "proof": "287cae1f-fc79-49fc-948d-a3b146f55cfc"
+    },
+    "audit": {
+      "school": null,
+      "birthDate": null,
+      "phone": null,
+      "formalExperienceYears": 0,
+      "graduationKind": "expected",
+      "evidenceQuote": "正式工作经历：无。实习不能当作正式工作年限。"
+    }
+  },
+  "limitations": [
+    "固定虚构样本不能证明任意简历和任意场景零幻觉。",
+    "仅验证非思考模式的模型HTTP工具协议，不代表完整业务MCP服务或生产Agent已实现。",
+    "流式token用量未启用usage事件，缺失计量不能据此推算真实费用。"
+  ]
+}

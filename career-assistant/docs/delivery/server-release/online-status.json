@@ -1,0 +1,56 @@
+{
+  "at": "2026-10-31T03:57:48.391Z",
+  "budgets": [
+    {
+      "id": "server-20261031-approved-10",
+      "limit": 10,
+      "used": 10
+    },
+    {
+      "id": "step6-approved-verification",
+      "limit": 40,
+      "used": 39
+    }
+  ],
+  "tasks": [
+    {
+      "status": "paused",
+      "error_code": "SOURCE_BUDGET_EXHAUSTED",
+      "count": 1
+    },
+    {
+      "status": "succeeded",
+      "error_code": null,
+      "count": 26
+    }
+  ],
+  "newObservations": [
+    {
+      "http_status": 200,
+      "count": 9
+    }
+  ],
+  "counts": [
+    {
+      "active_accounts": 1,
+      "jobs": 10,
+      "resumes": 1,
+      "drafts": 1
+    }
+  ],
+  "runs": [
+    {
+      "status": "failed",
+      "count": 9
+    },
+    {
+      "status": "completed",
+      "count": 3
+    }
+  ],
+  "streams": [
+    {
+      "pause_reason": "SOURCE_BUDGET_EXHAUSTED"
+    }
+  ]
+}

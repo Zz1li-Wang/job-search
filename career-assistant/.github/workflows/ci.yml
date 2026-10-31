@@ -1,0 +1,26 @@
+name: 检查与构建
+on: [push, pull_request, workflow_dispatch]
+permissions: { contents: read }
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '24' }
+      - run: npm install --global pnpm@12.4.2
+      - run: pnpm install --frozen-lockfile
+      - run: npm ci --prefix tools/verification/runtime && ln -s runtime/node_modules tools/verification/node_modules
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm check
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: quality-reports
+          path: |
+            .artifacts/checks.json
+            .artifacts/unit.json
+            .artifacts/integration.json
+            .artifacts/playwright.json
+          retention-days: 7

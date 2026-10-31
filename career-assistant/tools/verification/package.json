@@ -1,0 +1,12 @@
+{
+  "name": "career-capability-verification",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format:check": "prettier --check '**/*.{ts,json,mjs}'",
+    "probe": "node --experimental-strip-types cli.ts"
+  }
+}
