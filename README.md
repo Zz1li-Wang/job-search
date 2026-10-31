@@ -8,16 +8,16 @@
 
 ## 评审入口
 
-| 材料         | 位置与说明                                                                                                                                                                                                   |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 在线网站     | [公网入口](https://47.95.166.110)，注册后即可使用                                                                                                                                                            |
-| 项目说明     | [career-assistant/README.md](career-assistant/README.md)，包含可信性证据、投入时间、已知问题和交付缺口                                                                                                       |
-| 应用源码     | [career-assistant/](career-assistant/)，TypeScript Monorepo                                                                                                                                                  |
-| 本地运行     | [本地开发与验证](career-assistant/docs/local-development.md)                                                                                                                                                 |
-| 岗位数据     | [历史岗位 JSON](career-assistant/docs/ingestion/source-data.json)、[采集范围](career-assistant/docs/ingestion/local-worker.md)及[线上快照](career-assistant/docs/delivery/server-release/online-status.json) |
-| 发布与测试   | [服务器交付](career-assistant/docs/delivery/server-release/README.md)，含镜像、迁移、测试及公网验证记录                                                                                                      |
-| 原始协作记录 | [conversation-records/](conversation-records/)，逐会话提供对话、工具记录、来源摘要和脱敏范围                                                                                                                 |
-| 考题原文     | [职点迷津全栈工程师实战考题](职点迷津-全栈工程师实战考题.pdf)                                                                                                                                                |
+| 材料         | 位置与说明                                                                                                                                                                                                                                  |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 在线网站     | [公网入口](https://47.95.166.110)，注册后即可使用                                                                                                                                                                                           |
+| 项目说明     | [career-assistant/README.md](career-assistant/README.md)，包含可信性证据、投入时间、已知问题和交付缺口                                                                                                                                      |
+| 应用源码     | [career-assistant/](career-assistant/)，TypeScript Monorepo                                                                                                                                                                                 |
+| 本地运行     | [本地开发与验证](career-assistant/docs/local-development.md)                                                                                                                                                                                |
+| 岗位数据     | [最新 36 条岗位 JSON](career-assistant/docs/delivery/ingestion-expansion/source-data.json)、[本轮采集范围](career-assistant/docs/delivery/ingestion-expansion/README.md)及[历史岗位 JSON](career-assistant/docs/ingestion/source-data.json) |
+| 发布与测试   | [服务器交付](career-assistant/docs/delivery/server-release/README.md)，含镜像、迁移、测试及公网验证记录                                                                                                                                     |
+| 原始协作记录 | [conversation-records/](conversation-records/)，逐会话提供对话、工具记录、来源摘要和脱敏范围                                                                                                                                                |
+| 考题原文     | [职点迷津全栈工程师实战考题](职点迷津-全栈工程师实战考题.pdf)                                                                                                                                                                               |
 
 ## 功能与使用流程
 
@@ -72,9 +72,9 @@ pnpm check
 
 ## 当前范围与未完成事项
 
-以下状态以 2026 年 10 月 31 日首次发布及采集记录为准：
+以下状态以 2026 年 10 月 31 日发布及最新服务器扩量采集记录为准：
 
-- 线上快照包含 **10 条真实岗位，完整人工条件核验为 0**，尚不足以证明真实岗位的可报名推荐效果。历史 JSON 导出含 5 条岗位，不能当作全部已获取数据；最终统一数据包仍待补齐。
+- 线上已取得正文的真实岗位从 10 条扩充到 **36 条：33 校招、1 社招、2 类型未知**，另有 4 条仅发现链接。完整人工条件核验仍为 0，尚不足以证明真实岗位的可报名推荐效果。当前服务器的 36 条岗位及版本观察已导出；跨历史环境资料的最终统一合并仍待补齐。
 - 网站已完成首次公网部署；代码更新后自动上线尚未接通，连续 7 天可用及首次证书续签尚未完成实测。
 - 来源新增额度已耗尽，相关采集任务暂停；尚未实现全站覆盖和长期实时更新验证。
 - 本仓库收录源码及文档快照。原应用工程的完整 Git 历史包另行保留，尚需作为附件交付；原线上应用提交和镜像对应关系见[发布清单](career-assistant/docs/delivery/server-release/release-manifest.json)。

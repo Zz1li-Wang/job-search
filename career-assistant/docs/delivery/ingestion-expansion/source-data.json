@@ -1,0 +1,4295 @@
+{
+  "format": "career-source-export-1",
+  "exportId": "acec4766-0180-4e48-a3b7-0633aa92f5db",
+  "snapshotAt": "2026-10-31T05:11:14.247Z",
+  "recordCount": 36,
+  "limitations": [
+    "实际已获取范围，非全站覆盖",
+    "认证列表HTML不保存",
+    "条件仍须人工核验"
+  ],
+  "entries": [
+    {
+      "versions": [
+        {
+          "versionId": "807284d1-41f6-4990-8955-a4753441ca59",
+          "materialHash": "7bad0a8e27bf23501f4bf83180e2709cc986ae832362d977f937993c769cf060",
+          "body": {
+            "title": "新媒体运营岗",
+            "company": "中旅国际-江西星子庐山秀峰客运索道有限公司",
+            "cities": [
+              "九江市"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "新媒体运营岗",
+              "中旅国际-江西星子庐山秀峰客运索道有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "九江市",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 大专及以上",
+              "专业 要求 公告未写明",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T05:10:18.846Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "e9171850-05e5-49e3-a911-3604898a6403",
+          "versionId": "807284d1-41f6-4990-8955-a4753441ca59",
+          "fetchedAt": "2026-10-31T05:10:18.836Z",
+          "httpStatus": 200,
+          "rawDigest": "ec81c0c514ebc8ef5ed68816c190a3ad835f49d421b01a33ce511798ef32faa5",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "0d8cb8f1-2580-4aed-8eaa-3cbb0cbdbc92",
+      "kind": "job",
+      "sourceId": "e5cb6865-d2fd-477e-87da-3c431bb2c2a0",
+      "url": "https://www.zhidianmijin.com.cn/jobs/e5cb6865-d2fd-477e-87da-3c431bb2c2a0",
+      "versionId": "807284d1-41f6-4990-8955-a4753441ca59",
+      "body": {
+        "title": "新媒体运营岗",
+        "company": "中旅国际-江西星子庐山秀峰客运索道有限公司",
+        "cities": [
+          "九江市"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "新媒体运营岗",
+          "中旅国际-江西星子庐山秀峰客运索道有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "九江市",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 大专及以上",
+          "专业 要求 公告未写明",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T05:10:18.836Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "4592cb65-1041-4a28-aef0-abfe1b6f70be",
+          "materialHash": "2283b5a2fdb596083190cb0fd38cac089c61b880389a89ed6cef38d7381ba7ae",
+          "body": {
+            "title": "合约物业服务主任",
+            "company": "中旅发展-佳富物业服务有限公司",
+            "cities": [
+              "香港九龙城区"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "合约物业服务主任",
+              "中旅发展-佳富物业服务有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "香港九龙城区",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科及以上",
+              "专业 要求 公告未写明",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T05:10:04.958Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "97da5cc1-184a-4517-95b9-3f05e8854b33",
+          "versionId": "4592cb65-1041-4a28-aef0-abfe1b6f70be",
+          "fetchedAt": "2026-10-31T05:10:04.944Z",
+          "httpStatus": 200,
+          "rawDigest": "c910d2018522dd2c0f1c91ee89027d2723367502e64458f9e33c500f97284f52",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "1018863c-d1a9-498e-af5f-2a1bce01e978",
+      "kind": "job",
+      "sourceId": "8ccfd447-5149-ee96-f8da-e7157fcf8a36",
+      "url": "https://www.zhidianmijin.com.cn/jobs/8ccfd447-5149-ee96-f8da-e7157fcf8a36",
+      "versionId": "4592cb65-1041-4a28-aef0-abfe1b6f70be",
+      "body": {
+        "title": "合约物业服务主任",
+        "company": "中旅发展-佳富物业服务有限公司",
+        "cities": [
+          "香港九龙城区"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "合约物业服务主任",
+          "中旅发展-佳富物业服务有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "香港九龙城区",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科及以上",
+          "专业 要求 公告未写明",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T05:10:04.944Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "ab8461c9-814a-4664-859b-6218a6134bb3",
+          "materialHash": "bafea88f0502fae47df2275f8689887734d7c5b7aa004ad36a8a2674dd2d5bbc",
+          "body": {
+            "title": "文案设计专员",
+            "company": "中旅国际-中旅(宁夏)沙坡头旅游景区有限公司",
+            "cities": [
+              "中卫市"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "文案设计专员",
+              "中旅国际-中旅(宁夏)沙坡头旅游景区有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "中卫市",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科及以上",
+              "专业 要求 公告未写明",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T05:10:15.572Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "9f223bb9-5997-430b-9f47-ef8d62e21433",
+          "versionId": "ab8461c9-814a-4664-859b-6218a6134bb3",
+          "fetchedAt": "2026-10-31T05:10:15.560Z",
+          "httpStatus": 200,
+          "rawDigest": "1434de5f5ac8b4d87c296f24f17801dd1957ed40c9c6ddb3a8469a8156b3f37b",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "12ac6654-e4d1-473b-8177-77c695b3ac11",
+      "kind": "job",
+      "sourceId": "9c8d25c6-4675-c498-dabf-e7a69853fe34",
+      "url": "https://www.zhidianmijin.com.cn/jobs/9c8d25c6-4675-c498-dabf-e7a69853fe34",
+      "versionId": "ab8461c9-814a-4664-859b-6218a6134bb3",
+      "body": {
+        "title": "文案设计专员",
+        "company": "中旅国际-中旅(宁夏)沙坡头旅游景区有限公司",
+        "cities": [
+          "中卫市"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "文案设计专员",
+          "中旅国际-中旅(宁夏)沙坡头旅游景区有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "中卫市",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科及以上",
+          "专业 要求 公告未写明",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T05:10:15.560Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "0f9d4666-87e9-463d-8b57-1373d5e772d3",
+          "materialHash": "36b273352dd040573a654048cebc9ad71737d33894da24ac03ea44c9fdf57f23",
+          "body": {
+            "title": "前厅接待员",
+            "company": "中旅酒店-上海中酒维旅酒店管理有限公司",
+            "cities": [
+              "上海市"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "前厅接待员",
+              "中旅酒店-上海中酒维旅酒店管理有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "上海市",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科及以上",
+              "专业 要求 公告未写明",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T05:09:56.904Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "b9de5ae3-415c-4a07-8f82-14ceb1702083",
+          "versionId": "0f9d4666-87e9-463d-8b57-1373d5e772d3",
+          "fetchedAt": "2026-10-31T05:09:56.889Z",
+          "httpStatus": 200,
+          "rawDigest": "dd05f85ee6cd6b916cfe39dc63af04ecb7cf663a33c3f047aba98875170fd843",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "17019a33-b955-4411-983d-c83145c82bd6",
+      "kind": "job",
+      "sourceId": "77b1e67f-224b-33de-0183-b1cc07a97319",
+      "url": "https://www.zhidianmijin.com.cn/jobs/77b1e67f-224b-33de-0183-b1cc07a97319",
+      "versionId": "0f9d4666-87e9-463d-8b57-1373d5e772d3",
+      "body": {
+        "title": "前厅接待员",
+        "company": "中旅酒店-上海中酒维旅酒店管理有限公司",
+        "cities": [
+          "上海市"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "前厅接待员",
+          "中旅酒店-上海中酒维旅酒店管理有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "上海市",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科及以上",
+          "专业 要求 公告未写明",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T05:09:56.889Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "140db49c-9ace-4cf1-82e1-ce228e0351dd",
+          "materialHash": "f60d6b987c1a4004592cd7ab7b9de50af53195b2d57f6a024dccf0599c8cd0ad",
+          "body": {
+            "title": "电焊工",
+            "company": "中国农业发展集团有限公司",
+            "cities": [
+              "全国"
+            ],
+            "recruitmentType": "social",
+            "blocks": [
+              "电焊工",
+              "中国农业发展集团有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "社招",
+              "工作地点",
+              "全国",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 专业 要求 公告未写明",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://mp.weixin.qq.com/s/uhN6RKJ-eYBnQ6eCByD_0Q"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T05:10:21.079Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "8f98c679-9bc4-49d2-a774-06fcee74a83f",
+          "versionId": "140db49c-9ace-4cf1-82e1-ce228e0351dd",
+          "fetchedAt": "2026-10-31T05:10:21.067Z",
+          "httpStatus": 200,
+          "rawDigest": "b89643e873a2b28f35e0b84dcae94657a7a6c4712373257cd7bfe62a19507773",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "1f2849b7-d49e-47b9-9b7c-ad32c5eb4445",
+      "kind": "job",
+      "sourceId": "e424266b-49e5-fac3-10cd-ad921bfb2502",
+      "url": "https://www.zhidianmijin.com.cn/jobs/e424266b-49e5-fac3-10cd-ad921bfb2502",
+      "versionId": "140db49c-9ace-4cf1-82e1-ce228e0351dd",
+      "body": {
+        "title": "电焊工",
+        "company": "中国农业发展集团有限公司",
+        "cities": [
+          "全国"
+        ],
+        "recruitmentType": "social",
+        "blocks": [
+          "电焊工",
+          "中国农业发展集团有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "社招",
+          "工作地点",
+          "全国",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 专业 要求 公告未写明",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://mp.weixin.qq.com/s/uhN6RKJ-eYBnQ6eCByD_0Q"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T05:10:21.067Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "4615a839-9fc9-4f9c-a23d-c05505949bf5",
+          "materialHash": "56d49789f525ec1e593050fe6d8669f8df7c733073f621811833b2d30efd061e",
+          "body": {
+            "title": "销售岗",
+            "company": "中旅免税-海免(海口)免税店有限公司",
+            "cities": [
+              "海口市"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "销售岗",
+              "中旅免税-海免(海口)免税店有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "海口市",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科及以上",
+              "专业 要求 公告未写明",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T02:20:53.330Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "494d888b-ce2e-4c74-ac40-7f894d4b9701",
+          "versionId": "4615a839-9fc9-4f9c-a23d-c05505949bf5",
+          "fetchedAt": "2026-10-31T02:20:53.304Z",
+          "httpStatus": 200,
+          "rawDigest": "f7bf1564a198d947711b452dedccb1fb932d3fe28be267e17985f1e8dda2e0e5",
+          "parserVersion": "zhidian-html-1"
+        },
+        {
+          "observationId": "6ccf896c-cb91-4c7f-ab16-1c7272a9a596",
+          "versionId": "4615a839-9fc9-4f9c-a23d-c05505949bf5",
+          "fetchedAt": "2026-10-31T03:48:20.159Z",
+          "httpStatus": 200,
+          "rawDigest": "56aafdae2c344e328b7b0130f859a003b80b320bdfc594723af4dddf04c85a2e",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "1f908a57-0116-4628-8e51-fd2bdc1af732",
+      "kind": "job",
+      "sourceId": "4cba79b8-1078-97ec-239e-9d9ec47020a1",
+      "url": "https://www.zhidianmijin.com.cn/jobs/4cba79b8-1078-97ec-239e-9d9ec47020a1",
+      "versionId": "4615a839-9fc9-4f9c-a23d-c05505949bf5",
+      "body": {
+        "title": "销售岗",
+        "company": "中旅免税-海免(海口)免税店有限公司",
+        "cities": [
+          "海口市"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "销售岗",
+          "中旅免税-海免(海口)免税店有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "海口市",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科及以上",
+          "专业 要求 公告未写明",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T03:48:20.159Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "93b765d9-fff8-4230-975f-070a2b64b9b7",
+          "materialHash": "0ea2486955d45ed094e3a413e8d65068fab02a42c5519fc6164841c9ad73748f",
+          "body": {
+            "title": "西餐服务员",
+            "company": "中旅酒店-上海中酒维旅酒店管理有限公司",
+            "cities": [
+              "上海市"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "西餐服务员",
+              "中旅酒店-上海中酒维旅酒店管理有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "上海市",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科及以上",
+              "专业 要求 公告未写明",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T05:10:09.394Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "4faa8346-8dc4-4f92-9536-4e482e4135ea",
+          "versionId": "93b765d9-fff8-4230-975f-070a2b64b9b7",
+          "fetchedAt": "2026-10-31T05:10:09.381Z",
+          "httpStatus": 200,
+          "rawDigest": "a85925b39246f2d8f6348363db410e29908cff0e61cdb9e2108a31527adecbb1",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "23693c1b-a32a-46d5-b854-c4884bf407ec",
+      "kind": "job",
+      "sourceId": "b55a17fd-a47b-3fd3-dc57-f90b682c0db5",
+      "url": "https://www.zhidianmijin.com.cn/jobs/b55a17fd-a47b-3fd3-dc57-f90b682c0db5",
+      "versionId": "93b765d9-fff8-4230-975f-070a2b64b9b7",
+      "body": {
+        "title": "西餐服务员",
+        "company": "中旅酒店-上海中酒维旅酒店管理有限公司",
+        "cities": [
+          "上海市"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "西餐服务员",
+          "中旅酒店-上海中酒维旅酒店管理有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "上海市",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科及以上",
+          "专业 要求 公告未写明",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T05:10:09.381Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "0f196e4e-229f-45b1-bc01-580fccb4ab3e",
+          "materialHash": "02a7948e17a8f2e2194b87aa57ed97d395555fddba246d72d465f63a091f709e",
+          "body": {
+            "title": "中心校招-营销经理-华南",
+            "company": "青岛海信电器营销股份有限公司深圳分公司",
+            "cities": [
+              "深圳市"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "中心校招-营销经理-华南",
+              "青岛海信电器营销股份有限公司深圳分公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "26–27届",
+              "工作地点",
+              "深圳市",
+              "薪资待遇",
+              "8000-10000 元/月",
+              "发布时间",
+              "2026年10月30日",
+              "能不能报",
+              "学历 要求 本科及以上",
+              "专业 要求 公告未写明",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.shixiseng.com/intern/inn_cc0gafafnebx"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T05:10:23.298Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "e7506e2c-984d-43e2-8671-20a417d15750",
+          "versionId": "0f196e4e-229f-45b1-bc01-580fccb4ab3e",
+          "fetchedAt": "2026-10-31T05:10:23.289Z",
+          "httpStatus": 200,
+          "rawDigest": "038f6d82690db38c35ed35083a1fe664c75a4929e97536fcce4e4a708fb9c970",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "2d1b79ab-05b5-459b-9808-629226fd6c6f",
+      "kind": "job",
+      "sourceId": "0cc6220c-bc90-e534-967f-b4a7f2c3779c",
+      "url": "https://www.zhidianmijin.com.cn/jobs/0cc6220c-bc90-e534-967f-b4a7f2c3779c",
+      "versionId": "0f196e4e-229f-45b1-bc01-580fccb4ab3e",
+      "body": {
+        "title": "中心校招-营销经理-华南",
+        "company": "青岛海信电器营销股份有限公司深圳分公司",
+        "cities": [
+          "深圳市"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "中心校招-营销经理-华南",
+          "青岛海信电器营销股份有限公司深圳分公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "26–27届",
+          "工作地点",
+          "深圳市",
+          "薪资待遇",
+          "8000-10000 元/月",
+          "发布时间",
+          "2026年10月30日",
+          "能不能报",
+          "学历 要求 本科及以上",
+          "专业 要求 公告未写明",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.shixiseng.com/intern/inn_cc0gafafnebx"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T05:10:23.289Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "3726d901-0d82-448d-8f45-b556960b6525",
+          "materialHash": "887ac678c9ba24c673eaaf30397f62b24f859e01b52c8f5403a86d205d1f41df",
+          "body": {
+            "title": "客服岗",
+            "company": "中旅国际-中旅(茫崖)旅游开发有限公司",
+            "cities": [
+              "海西蒙古族藏族自治州"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "客服岗",
+              "中旅国际-中旅(茫崖)旅游开发有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "海西蒙古族藏族自治州",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科",
+              "专业 要求 公告未写明",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T05:10:12.323Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "b6e08924-bdc9-4790-816e-d28054b0f071",
+          "versionId": "3726d901-0d82-448d-8f45-b556960b6525",
+          "fetchedAt": "2026-10-31T05:10:12.313Z",
+          "httpStatus": 200,
+          "rawDigest": "b881a193c981efef58bcd297e9196f4a91958cc51313d309459eeb93d65ce779",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "3327ae02-f65e-436b-a669-c65bbcd3a0b9",
+      "kind": "job",
+      "sourceId": "cb9b7c36-5c28-4fcf-5a75-792384487578",
+      "url": "https://www.zhidianmijin.com.cn/jobs/cb9b7c36-5c28-4fcf-5a75-792384487578",
+      "versionId": "3726d901-0d82-448d-8f45-b556960b6525",
+      "body": {
+        "title": "客服岗",
+        "company": "中旅国际-中旅(茫崖)旅游开发有限公司",
+        "cities": [
+          "海西蒙古族藏族自治州"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "客服岗",
+          "中旅国际-中旅(茫崖)旅游开发有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "海西蒙古族藏族自治州",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科",
+          "专业 要求 公告未写明",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T05:10:12.313Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "8c882fcb-627a-4b1c-a893-513cb9017644",
+          "materialHash": "957e68f8acc808c7e7fdf06e56209a885b338962a91229c7bea4b13bee94d5af",
+          "body": {
+            "title": "项目经理岗",
+            "company": "中旅旅行-中旅商务旅行服务有限公司",
+            "cities": [
+              "北京市"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "项目经理岗",
+              "中旅旅行-中旅商务旅行服务有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "北京市",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科及以上",
+              "专业 要求 公告未写明",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T05:09:55.805Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "d66739c8-cfb4-4f8d-9d5c-2b6d9105c88e",
+          "versionId": "8c882fcb-627a-4b1c-a893-513cb9017644",
+          "fetchedAt": "2026-10-31T05:09:55.793Z",
+          "httpStatus": 200,
+          "rawDigest": "81dfa08680ef4ab3534d71ae29e11fee12d8d5cadc786530608cfda5f00e033b",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "3c65ba72-a5fb-4f55-989c-c01b549b058e",
+      "kind": "job",
+      "sourceId": "7f82ee35-4133-cb44-8266-8a9a95dc99c5",
+      "url": "https://www.zhidianmijin.com.cn/jobs/7f82ee35-4133-cb44-8266-8a9a95dc99c5",
+      "versionId": "8c882fcb-627a-4b1c-a893-513cb9017644",
+      "body": {
+        "title": "项目经理岗",
+        "company": "中旅旅行-中旅商务旅行服务有限公司",
+        "cities": [
+          "北京市"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "项目经理岗",
+          "中旅旅行-中旅商务旅行服务有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "北京市",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科及以上",
+          "专业 要求 公告未写明",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T05:09:55.793Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "f79ca07f-c977-4d01-8c11-53d599040292",
+          "materialHash": "47606c4bb25e7889276396f0783d3bd868310e09f67b452410f002d1b157909a",
+          "body": {
+            "title": "售票岗",
+            "company": "中旅国际-中旅(茫崖)旅游开发有限公司",
+            "cities": [
+              "海西蒙古族藏族自治州"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "售票岗",
+              "中旅国际-中旅(茫崖)旅游开发有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "海西蒙古族藏族自治州",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科",
+              "专业 要求 公告未写明",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T05:10:02.782Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "9c2f75de-7ec1-4f5e-a81e-1b7108df6c47",
+          "versionId": "f79ca07f-c977-4d01-8c11-53d599040292",
+          "fetchedAt": "2026-10-31T05:10:02.771Z",
+          "httpStatus": 200,
+          "rawDigest": "df1fa2f226e455244249ef16d41e9d4b16510ef06df6518dfceec1046cce9722",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "3e7f47d4-29bb-4772-b6cb-45b55ba96552",
+      "kind": "job",
+      "sourceId": "73216aab-425b-af9b-3c27-9e255f87ff99",
+      "url": "https://www.zhidianmijin.com.cn/jobs/73216aab-425b-af9b-3c27-9e255f87ff99",
+      "versionId": "f79ca07f-c977-4d01-8c11-53d599040292",
+      "body": {
+        "title": "售票岗",
+        "company": "中旅国际-中旅(茫崖)旅游开发有限公司",
+        "cities": [
+          "海西蒙古族藏族自治州"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "售票岗",
+          "中旅国际-中旅(茫崖)旅游开发有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "海西蒙古族藏族自治州",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科",
+          "专业 要求 公告未写明",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T05:10:02.771Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "265d9614-b664-4caf-90fe-d7f8d7be3581",
+          "materialHash": "447ed302f62f688d9882d3fae9543907ae5c8499351bb2eee2f7c088c394a3d2",
+          "body": {
+            "title": "助理算法工程师",
+            "company": "中国旅游集团中免股份有限公司上海数字科技分公司",
+            "cities": [
+              "上海市"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "助理算法工程师",
+              "中国旅游集团中免股份有限公司上海数字科技分公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "上海市",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科",
+              "专业 要求 计算机、软件工程",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T02:21:07.120Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "40b7ff31-a22d-4da2-a6ef-3929f3f651c1",
+          "versionId": "265d9614-b664-4caf-90fe-d7f8d7be3581",
+          "fetchedAt": "2026-10-31T02:21:07.096Z",
+          "httpStatus": 200,
+          "rawDigest": "7e0a0c206500430d5b6c8b86a14c38297215663871cc0ca1d5d71f55f540fc1e",
+          "parserVersion": "zhidian-html-1"
+        },
+        {
+          "observationId": "9be3f8bd-83d7-4473-9e52-58fb241fc102",
+          "versionId": "265d9614-b664-4caf-90fe-d7f8d7be3581",
+          "fetchedAt": "2026-10-31T03:48:25.137Z",
+          "httpStatus": 200,
+          "rawDigest": "b819c7a3f019c8722cc0bda4ac2e5898a7f94b02c4d0e099ba4de82904c32c62",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "58017157-d408-4010-a248-701624489aac",
+      "kind": "job",
+      "sourceId": "6cf67bd9-cd66-743c-6421-d788b30e5c1b",
+      "url": "https://www.zhidianmijin.com.cn/jobs/6cf67bd9-cd66-743c-6421-d788b30e5c1b",
+      "versionId": "265d9614-b664-4caf-90fe-d7f8d7be3581",
+      "body": {
+        "title": "助理算法工程师",
+        "company": "中国旅游集团中免股份有限公司上海数字科技分公司",
+        "cities": [
+          "上海市"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "助理算法工程师",
+          "中国旅游集团中免股份有限公司上海数字科技分公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "上海市",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科",
+          "专业 要求 计算机、软件工程",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T03:48:25.137Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "c29ce42a-efa1-4362-9846-08dd4b402dea",
+          "materialHash": "7ad650ee8b9e729d16783312f778cf292a83660346b72e825cfd04e229aade0e",
+          "body": {
+            "title": "市场专员",
+            "company": "中旅免税-中免(北京)商贸有限公司上海分公司",
+            "cities": [
+              "上海市"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "市场专员",
+              "中旅免税-中免(北京)商贸有限公司上海分公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "上海市",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科及以上",
+              "专业 要求 公告未写明",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T05:10:08.340Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "04c707bb-f90b-433e-bb46-157962963bb1",
+          "versionId": "c29ce42a-efa1-4362-9846-08dd4b402dea",
+          "fetchedAt": "2026-10-31T05:10:08.296Z",
+          "httpStatus": 200,
+          "rawDigest": "2bc23258b2db519fcf6bc74a18f37d90fbe1eeefe652018cbdeadba24c2756d3",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "6691dca1-34b7-4610-8894-61e1e3b81249",
+      "kind": "job",
+      "sourceId": "ec25a87a-eb39-9b42-80c5-d1e61c44f519",
+      "url": "https://www.zhidianmijin.com.cn/jobs/ec25a87a-eb39-9b42-80c5-d1e61c44f519",
+      "versionId": "c29ce42a-efa1-4362-9846-08dd4b402dea",
+      "body": {
+        "title": "市场专员",
+        "company": "中旅免税-中免(北京)商贸有限公司上海分公司",
+        "cities": [
+          "上海市"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "市场专员",
+          "中旅免税-中免(北京)商贸有限公司上海分公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "上海市",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科及以上",
+          "专业 要求 公告未写明",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T05:10:08.296Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "815eee58-3016-4b50-a08a-a96c9e809638",
+          "materialHash": "fa97d9164d55c6eca0b51fd8f57a14b33f2e4a5959cbb1d06239d4c0a39da0d6",
+          "body": {
+            "title": "中控员",
+            "company": "中旅酒店-丽都饭店有限公司",
+            "cities": [
+              "北京市"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "中控员",
+              "中旅酒店-丽都饭店有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "北京市",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科",
+              "专业 要求 公告未写明",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T05:10:03.870Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "73d9e2ac-6d3d-4270-911a-11f9a2d49583",
+          "versionId": "815eee58-3016-4b50-a08a-a96c9e809638",
+          "fetchedAt": "2026-10-31T05:10:03.855Z",
+          "httpStatus": 200,
+          "rawDigest": "d3430f20fc81db1d27de97f093f0a18ae7b6127c79cf7cd38aa24fadcc2ad152",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "689f9391-b038-4a77-b698-bdff5331187b",
+      "kind": "job",
+      "sourceId": "89de62b6-b4fd-a963-d67d-2f004b4182af",
+      "url": "https://www.zhidianmijin.com.cn/jobs/89de62b6-b4fd-a963-d67d-2f004b4182af",
+      "versionId": "815eee58-3016-4b50-a08a-a96c9e809638",
+      "body": {
+        "title": "中控员",
+        "company": "中旅酒店-丽都饭店有限公司",
+        "cities": [
+          "北京市"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "中控员",
+          "中旅酒店-丽都饭店有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "北京市",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科",
+          "专业 要求 公告未写明",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T05:10:03.855Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "4ab7ba1d-029c-46e4-9277-07f0c14edfbf",
+          "materialHash": "45e3ff415314b1cdc9a2d43522972a00856ac43c3224400065bb218789a3662c",
+          "body": {
+            "title": "会计岗",
+            "company": "中旅免税-中免(北京)商贸有限公司",
+            "cities": [
+              "北京市"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "会计岗",
+              "中旅免税-中免(北京)商贸有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "北京市",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科",
+              "专业 要求 公告未写明",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T05:10:07.211Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "887d0ee5-822e-4ea7-b153-99f766632a88",
+          "versionId": "4ab7ba1d-029c-46e4-9277-07f0c14edfbf",
+          "fetchedAt": "2026-10-31T05:10:07.198Z",
+          "httpStatus": 200,
+          "rawDigest": "b9cecca525bb597cc2062c69c7015369d3428a52981c55e68dd3e729bd82f623",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "6f247742-c064-49ba-a29c-96c734a901e4",
+      "kind": "job",
+      "sourceId": "c71fcc31-bc0a-5075-d43e-10de88e8be84",
+      "url": "https://www.zhidianmijin.com.cn/jobs/c71fcc31-bc0a-5075-d43e-10de88e8be84",
+      "versionId": "4ab7ba1d-029c-46e4-9277-07f0c14edfbf",
+      "body": {
+        "title": "会计岗",
+        "company": "中旅免税-中免(北京)商贸有限公司",
+        "cities": [
+          "北京市"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "会计岗",
+          "中旅免税-中免(北京)商贸有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "北京市",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科",
+          "专业 要求 公告未写明",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T05:10:07.198Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "54f63d37-77fa-4420-8049-3b3c805e2123",
+          "materialHash": "4830f3ba67797c5369f02753dd364bdb71d1c9dc94266964eecb12ca7a3e8f8d",
+          "body": {
+            "title": "销售专员",
+            "company": "中旅免税-中免白云机场免税品(广州)有限公司",
+            "cities": [
+              "广州市"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "销售专员",
+              "中旅免税-中免白云机场免税品(广州)有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "广州市",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科及以上",
+              "专业 要求 不限",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T02:20:57.100Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "8530882b-3175-481e-91d2-fbd95c450147",
+          "versionId": "54f63d37-77fa-4420-8049-3b3c805e2123",
+          "fetchedAt": "2026-10-31T02:20:57.071Z",
+          "httpStatus": 200,
+          "rawDigest": "4796fc347c72229f1e79b0d22b94d99d2cf35d8115d404b9c33c575b81a489f5",
+          "parserVersion": "zhidian-html-1"
+        },
+        {
+          "observationId": "fb5bb10a-f098-4bb2-be0d-5aea2f1e44a3",
+          "versionId": "54f63d37-77fa-4420-8049-3b3c805e2123",
+          "fetchedAt": "2026-10-31T03:48:16.481Z",
+          "httpStatus": 200,
+          "rawDigest": "e8f0ee8ff829cef99b8d0b39e00ae7c4358703927b49c2d6e650f1396828a7e8",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "783991cf-a50b-4e63-a97c-2acf7a5f4606",
+      "kind": "job",
+      "sourceId": "29bd6c6e-763a-f0a3-0a88-be1d2c2cdf28",
+      "url": "https://www.zhidianmijin.com.cn/jobs/29bd6c6e-763a-f0a3-0a88-be1d2c2cdf28",
+      "versionId": "54f63d37-77fa-4420-8049-3b3c805e2123",
+      "body": {
+        "title": "销售专员",
+        "company": "中旅免税-中免白云机场免税品(广州)有限公司",
+        "cities": [
+          "广州市"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "销售专员",
+          "中旅免税-中免白云机场免税品(广州)有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "广州市",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科及以上",
+          "专业 要求 不限",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T03:48:16.481Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "d5bb35e2-d9a6-47c1-a99c-6a8d7e405f52",
+          "materialHash": "517e74b5664aec322f9a7c3e24c568c87380ee2f00389819af3d042b4f6fd7a9",
+          "body": {
+            "title": "助理开发工程师（含前端/后端/质量/运维）",
+            "company": "中国旅游集团中免股份有限公司上海数字科技分公司",
+            "cities": [
+              "上海市"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "助理开发工程师（含前端/后端/质量/运维）",
+              "中国旅游集团中免股份有限公司上海数字科技分公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "上海市",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科及以上",
+              "专业 要求 计算机、软件工程、电子信息",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T05:10:14.483Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "f488ed58-b328-42f1-b3ab-549cd7f7153d",
+          "versionId": "d5bb35e2-d9a6-47c1-a99c-6a8d7e405f52",
+          "fetchedAt": "2026-10-31T05:10:14.473Z",
+          "httpStatus": 200,
+          "rawDigest": "373859086cfa8d49fc0bc4762d353149b10a15171bd7371308d7048ffce1ec72",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "93385f94-700f-4313-b7f5-ca31ffacf2e9",
+      "kind": "job",
+      "sourceId": "a222d41b-c3e3-b612-7f81-ab27a0f15019",
+      "url": "https://www.zhidianmijin.com.cn/jobs/a222d41b-c3e3-b612-7f81-ab27a0f15019",
+      "versionId": "d5bb35e2-d9a6-47c1-a99c-6a8d7e405f52",
+      "body": {
+        "title": "助理开发工程师（含前端/后端/质量/运维）",
+        "company": "中国旅游集团中免股份有限公司上海数字科技分公司",
+        "cities": [
+          "上海市"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "助理开发工程师（含前端/后端/质量/运维）",
+          "中国旅游集团中免股份有限公司上海数字科技分公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "上海市",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科及以上",
+          "专业 要求 计算机、软件工程、电子信息",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T05:10:14.473Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "f9bcfa9b-89b8-4bc6-ba08-e745db99652e",
+          "materialHash": "61385a2ea3f1f6ee3003dafd4a19c325ed6054ad1f17d3e9838fc072ed185287",
+          "body": {
+            "title": "维修工",
+            "company": "中旅酒店-北京广安门维景国际大酒店有限公司",
+            "cities": [
+              "北京市"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "维修工",
+              "中旅酒店-北京广安门维景国际大酒店有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "北京市",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科及以上",
+              "专业 要求 公告未写明",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T05:10:06.085Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "484082cf-6e23-466d-bce7-6ba024c4edf6",
+          "versionId": "f9bcfa9b-89b8-4bc6-ba08-e745db99652e",
+          "fetchedAt": "2026-10-31T05:10:06.075Z",
+          "httpStatus": 200,
+          "rawDigest": "a19926b6b78fec3260838fdc423f773c6323b6ed4af9224ec7ede2adf6f15af1",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "9f05409a-463f-43d8-9bf3-4968c95ec21a",
+      "kind": "job",
+      "sourceId": "87046431-7a4c-1815-28a1-8a4278d15660",
+      "url": "https://www.zhidianmijin.com.cn/jobs/87046431-7a4c-1815-28a1-8a4278d15660",
+      "versionId": "f9bcfa9b-89b8-4bc6-ba08-e745db99652e",
+      "body": {
+        "title": "维修工",
+        "company": "中旅酒店-北京广安门维景国际大酒店有限公司",
+        "cities": [
+          "北京市"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "维修工",
+          "中旅酒店-北京广安门维景国际大酒店有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "北京市",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科及以上",
+          "专业 要求 公告未写明",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T05:10:06.075Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "f4b3bf67-e212-4dc8-8a02-1c3dd3db8b13",
+          "materialHash": "00b8277a09e9adf99ee780c5053bd21fab4b4b873cb09f3b694be054cc5d8f15",
+          "body": {
+            "title": "产品经理专业岗",
+            "company": "中旅免税-中免集团(海南)运营总部有限公司",
+            "cities": [
+              "海口市"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "产品经理专业岗",
+              "中旅免税-中免集团(海南)运营总部有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "海口市",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科及以上",
+              "专业 要求 不限",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T02:21:02.480Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "5a2f7e8a-c72d-47a0-9c26-128424332257",
+          "versionId": "f4b3bf67-e212-4dc8-8a02-1c3dd3db8b13",
+          "fetchedAt": "2026-10-31T02:21:02.467Z",
+          "httpStatus": 200,
+          "rawDigest": "9d650dc15fb59344fa19307f9ec33d499166722f303852931011a78b0a76c804",
+          "parserVersion": "zhidian-html-1"
+        },
+        {
+          "observationId": "b59aa99f-b19b-4e49-a969-6e9dbb54611f",
+          "versionId": "f4b3bf67-e212-4dc8-8a02-1c3dd3db8b13",
+          "fetchedAt": "2026-10-31T03:48:21.607Z",
+          "httpStatus": 200,
+          "rawDigest": "8ba709b72a9e44cfbda09621fc059a704e58076683d83d41ab51bafa22c252c4",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "9f11f26d-06b6-46b3-b813-393c54153724",
+      "kind": "job",
+      "sourceId": "1a5129fe-80f0-a908-c37d-2acc79e09e1d",
+      "url": "https://www.zhidianmijin.com.cn/jobs/1a5129fe-80f0-a908-c37d-2acc79e09e1d",
+      "versionId": "f4b3bf67-e212-4dc8-8a02-1c3dd3db8b13",
+      "body": {
+        "title": "产品经理专业岗",
+        "company": "中旅免税-中免集团(海南)运营总部有限公司",
+        "cities": [
+          "海口市"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "产品经理专业岗",
+          "中旅免税-中免集团(海南)运营总部有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "海口市",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科及以上",
+          "专业 要求 不限",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T03:48:21.607Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "3a0c610c-35f4-4a5f-bd57-58b60562dca2",
+          "materialHash": "3b71364f20e6aa9d062436ab52e11af0401593ce7de85ab19d7f9d5d34a33e5b",
+          "body": {
+            "title": "仓储服务部未来之星",
+            "company": "中旅发展-香港中旅协记货仓有限公司",
+            "cities": [
+              "九龙城区"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "仓储服务部未来之星",
+              "中旅发展-香港中旅协记货仓有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "九龙城区",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科",
+              "专业 要求 公告未写明",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T05:10:00.610Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "b723530b-6b31-48aa-84ba-49dd55bd4f38",
+          "versionId": "3a0c610c-35f4-4a5f-bd57-58b60562dca2",
+          "fetchedAt": "2026-10-31T05:10:00.598Z",
+          "httpStatus": 200,
+          "rawDigest": "7184dff0d3970841e211b422cf8133aed4b1e7e64861f599c77d7c6ca9a8da1c",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "a32c7710-2137-4cdc-921b-218d0a2241cc",
+      "kind": "job",
+      "sourceId": "82f780fa-34c5-df1d-9a6e-f90b90e7484a",
+      "url": "https://www.zhidianmijin.com.cn/jobs/82f780fa-34c5-df1d-9a6e-f90b90e7484a",
+      "versionId": "3a0c610c-35f4-4a5f-bd57-58b60562dca2",
+      "body": {
+        "title": "仓储服务部未来之星",
+        "company": "中旅发展-香港中旅协记货仓有限公司",
+        "cities": [
+          "九龙城区"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "仓储服务部未来之星",
+          "中旅发展-香港中旅协记货仓有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "九龙城区",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科",
+          "专业 要求 公告未写明",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T05:10:00.598Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "7627cc11-ec22-40c0-a55c-a44572022e3e",
+          "materialHash": "6c7a87c1c6926756a5f81c0f72775367ba2e2e381567cdb115e3c92258fb2aa1",
+          "body": {
+            "title": "产品策划岗",
+            "company": "中旅投资-宁波杭州湾新区港中旅实业投资有限公司",
+            "cities": [
+              "慈溪市"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "产品策划岗",
+              "中旅投资-宁波杭州湾新区港中旅实业投资有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "慈溪市",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科及以上",
+              "专业 要求 不限",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T05:10:01.691Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "13cfc245-789a-43b6-b586-68d6f9e44730",
+          "versionId": "7627cc11-ec22-40c0-a55c-a44572022e3e",
+          "fetchedAt": "2026-10-31T05:10:01.678Z",
+          "httpStatus": 200,
+          "rawDigest": "675db06e49ad98e2f7433c02543319b350eaaf92adb16fc6e60050a46e9e2463",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "a3e24cb6-f033-4677-b70f-aa37ff88213c",
+      "kind": "job",
+      "sourceId": "78f20449-8bd1-1620-46e0-5d0ed8b74205",
+      "url": "https://www.zhidianmijin.com.cn/jobs/78f20449-8bd1-1620-46e0-5d0ed8b74205",
+      "versionId": "7627cc11-ec22-40c0-a55c-a44572022e3e",
+      "body": {
+        "title": "产品策划岗",
+        "company": "中旅投资-宁波杭州湾新区港中旅实业投资有限公司",
+        "cities": [
+          "慈溪市"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "产品策划岗",
+          "中旅投资-宁波杭州湾新区港中旅实业投资有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "慈溪市",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科及以上",
+          "专业 要求 不限",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T05:10:01.678Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "a542b8c5-5dd3-402c-8f1f-542ca03b9c6b",
+          "materialHash": "8cf859bbd3152914e3a211c86520e6fe3514307628b378d4f81390c67bcbef5f",
+          "body": {
+            "title": "【2027实习生计划-质量岗】",
+            "company": "均胜集团",
+            "cities": [
+              "安徽合肥市肥西县"
+            ],
+            "recruitmentType": "unknown",
+            "blocks": [
+              "【2027实习生计划-质量岗】",
+              "均胜集团 民营企业",
+              "报名截止",
+              "长期招聘，无固定截止日期",
+              "招聘类型",
+              "实习",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "安徽合肥市肥西县",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科",
+              "专业 要求 公告未写明",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件",
+              "岗位介绍",
+              "1、学习并了解公司的质量管理体系，参与质量控制的相关工作； 2、协助团队完成其他日常运营任务； 3、完成领导交代的其他工作； 4、27届毕业生，电子科学与技术、电子信息工程、质量管理专业或中国计量大学质量管理专业； 5、有较强的责任心和沟通能力； 6、每周保证到岗5天。"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://app.mokahr.com/campus-recruitment/joyson/94374"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T05:10:22.183Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "251fa62b-3008-49c4-a50b-4a33c87028a5",
+          "versionId": "a542b8c5-5dd3-402c-8f1f-542ca03b9c6b",
+          "fetchedAt": "2026-10-31T05:10:22.173Z",
+          "httpStatus": 200,
+          "rawDigest": "1f12b3af7625a0267a5eb383b52eafb9b47ceb533e45922a28f423ac2a535dc7",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "a5a0c9cb-378d-4d62-a4d3-988c6bf977f6",
+      "kind": "job",
+      "sourceId": "3707f925-ad27-6f78-ee89-0895141a73ad",
+      "url": "https://www.zhidianmijin.com.cn/jobs/3707f925-ad27-6f78-ee89-0895141a73ad",
+      "versionId": "a542b8c5-5dd3-402c-8f1f-542ca03b9c6b",
+      "body": {
+        "title": "【2027实习生计划-质量岗】",
+        "company": "均胜集团",
+        "cities": [
+          "安徽合肥市肥西县"
+        ],
+        "recruitmentType": "unknown",
+        "blocks": [
+          "【2027实习生计划-质量岗】",
+          "均胜集团 民营企业",
+          "报名截止",
+          "长期招聘，无固定截止日期",
+          "招聘类型",
+          "实习",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "安徽合肥市肥西县",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科",
+          "专业 要求 公告未写明",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件",
+          "岗位介绍",
+          "1、学习并了解公司的质量管理体系，参与质量控制的相关工作； 2、协助团队完成其他日常运营任务； 3、完成领导交代的其他工作； 4、27届毕业生，电子科学与技术、电子信息工程、质量管理专业或中国计量大学质量管理专业； 5、有较强的责任心和沟通能力； 6、每周保证到岗5天。"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://app.mokahr.com/campus-recruitment/joyson/94374"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T05:10:22.173Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "ff4a37a6-6a54-4ab0-80e1-351ce2aa8874",
+          "materialHash": "4d7a48a647ed90aa1587d920502b608405e77505130c1a80729385e602f161c0",
+          "body": {
+            "title": "产品规划设计岗",
+            "company": "中旅国际-深圳锦绣中华发展有限公司",
+            "cities": [
+              "深圳市"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "产品规划设计岗",
+              "中旅国际-深圳锦绣中华发展有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "26–28届",
+              "工作地点",
+              "深圳市",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科及以上",
+              "专业 要求 风景园林、环境艺术、建筑学、城乡规划、工业设计、展示设计、土木工程、工程管理、所属单位",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T05:10:24.380Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "6896335f-431e-4fa6-af18-9ea2677604fb",
+          "versionId": "ff4a37a6-6a54-4ab0-80e1-351ce2aa8874",
+          "fetchedAt": "2026-10-31T05:10:24.372Z",
+          "httpStatus": 200,
+          "rawDigest": "67e4da78c19b462a232af483047b3815ae16782c21acbc52f861ac90eec2df67",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "a5ef6023-1925-4bff-86be-8c39875ab515",
+      "kind": "job",
+      "sourceId": "c510188f-1013-dba7-ada8-b6a78d1f6056",
+      "url": "https://www.zhidianmijin.com.cn/jobs/c510188f-1013-dba7-ada8-b6a78d1f6056",
+      "versionId": "ff4a37a6-6a54-4ab0-80e1-351ce2aa8874",
+      "body": {
+        "title": "产品规划设计岗",
+        "company": "中旅国际-深圳锦绣中华发展有限公司",
+        "cities": [
+          "深圳市"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "产品规划设计岗",
+          "中旅国际-深圳锦绣中华发展有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "26–28届",
+          "工作地点",
+          "深圳市",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科及以上",
+          "专业 要求 风景园林、环境艺术、建筑学、城乡规划、工业设计、展示设计、土木工程、工程管理、所属单位",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T05:10:24.372Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "acbcb8b5-e96d-4ada-bb38-dfc36545cae1",
+          "materialHash": "a07a3b31cf7b3cc465f9bbe097e9aebded1fb711da68f47c2cbf6b7d79cebf24",
+          "body": {
+            "title": "【2027校招计划-工艺岗】",
+            "company": "均胜集团",
+            "cities": [
+              "安徽合肥市肥西县"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "【2027校招计划-工艺岗】",
+              "均胜集团 民营企业",
+              "报名截止",
+              "长期招聘，无固定截止日期",
+              "招聘类型",
+              "校招",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "安徽合肥市肥西县",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科",
+              "专业 要求 公告未写明",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件",
+              "岗位介绍",
+              "1、学习并了解公司的质量管理体系，参与质量控制的相关工作； 2、协助团队完成其他日常运营任务； 3、完成领导交代的其他工作； 4、27届毕业生，机械工程、智能制造工程、自动化、人机工程专业； 5、有较强的责任心和沟通能力； 6、每周保证到岗5天。"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://app.mokahr.com/campus-recruitment/joyson/94374"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T05:10:25.460Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "325f5e70-f06b-44e5-97c2-a3dbd6835905",
+          "versionId": "acbcb8b5-e96d-4ada-bb38-dfc36545cae1",
+          "fetchedAt": "2026-10-31T05:10:25.450Z",
+          "httpStatus": 200,
+          "rawDigest": "538b1e870432ca53225a6f754e50caf69bc6b5e691144c7e46ed4b7ece20351c",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "a5faf29a-821a-4d59-9528-ddc016c5aad0",
+      "kind": "job",
+      "sourceId": "94f46326-9657-f43a-fbc2-508e418acb82",
+      "url": "https://www.zhidianmijin.com.cn/jobs/94f46326-9657-f43a-fbc2-508e418acb82",
+      "versionId": "acbcb8b5-e96d-4ada-bb38-dfc36545cae1",
+      "body": {
+        "title": "【2027校招计划-工艺岗】",
+        "company": "均胜集团",
+        "cities": [
+          "安徽合肥市肥西县"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "【2027校招计划-工艺岗】",
+          "均胜集团 民营企业",
+          "报名截止",
+          "长期招聘，无固定截止日期",
+          "招聘类型",
+          "校招",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "安徽合肥市肥西县",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科",
+          "专业 要求 公告未写明",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件",
+          "岗位介绍",
+          "1、学习并了解公司的质量管理体系，参与质量控制的相关工作； 2、协助团队完成其他日常运营任务； 3、完成领导交代的其他工作； 4、27届毕业生，机械工程、智能制造工程、自动化、人机工程专业； 5、有较强的责任心和沟通能力； 6、每周保证到岗5天。"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://app.mokahr.com/campus-recruitment/joyson/94374"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T05:10:25.450Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "cdf51168-bdd7-449f-a2e0-74376cc2fdd3",
+          "materialHash": "d5ed80465b73c6a057d22b9a94ff55f2a6574f98667dc989ec2fa0dd284f79cd",
+          "body": {
+            "title": "销售岗",
+            "company": "中旅国际-中旅(茫崖)旅游开发有限公司",
+            "cities": [
+              "海西蒙古族藏族自治州"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "销售岗",
+              "中旅国际-中旅(茫崖)旅游开发有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "海西蒙古族藏族自治州",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科",
+              "专业 要求 公告未写明",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T02:20:55.893Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "05d707e6-866c-4909-a1d7-c2c7c8e5eb1f",
+          "versionId": "cdf51168-bdd7-449f-a2e0-74376cc2fdd3",
+          "fetchedAt": "2026-10-31T02:20:55.878Z",
+          "httpStatus": 200,
+          "rawDigest": "9b2fb479439d8c3148fde33f5deefcaeb7f7dff9c7a294ce5be38742ab7db8e6",
+          "parserVersion": "zhidian-html-1"
+        },
+        {
+          "observationId": "eb66b0bf-a049-4b9f-82aa-52e5973dadd0",
+          "versionId": "cdf51168-bdd7-449f-a2e0-74376cc2fdd3",
+          "fetchedAt": "2026-10-31T03:48:26.234Z",
+          "httpStatus": 200,
+          "rawDigest": "80e7286b6b9454e12c195b4550cd758c66936df666bac59ed8abfd9ece9cc2e9",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "a76480dd-942c-47da-9a52-b3afa5a76168",
+      "kind": "job",
+      "sourceId": "0d7bce18-387c-5248-ee57-0e3b0b1918c2",
+      "url": "https://www.zhidianmijin.com.cn/jobs/0d7bce18-387c-5248-ee57-0e3b0b1918c2",
+      "versionId": "cdf51168-bdd7-449f-a2e0-74376cc2fdd3",
+      "body": {
+        "title": "销售岗",
+        "company": "中旅国际-中旅(茫崖)旅游开发有限公司",
+        "cities": [
+          "海西蒙古族藏族自治州"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "销售岗",
+          "中旅国际-中旅(茫崖)旅游开发有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "海西蒙古族藏族自治州",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科",
+          "专业 要求 公告未写明",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T03:48:26.234Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "f35f21d7-5594-4384-9d8e-6bd70caeb3db",
+          "materialHash": "f45a925854b6bb339e296a032f577a250bc0d6adc8b8514548a50338316f4f15",
+          "body": {
+            "title": "检票岗",
+            "company": "中旅国际-中旅(茫崖)旅游开发有限公司",
+            "cities": [
+              "海西蒙古族藏族自治州"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "检票岗",
+              "中旅国际-中旅(茫崖)旅游开发有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "海西蒙古族藏族自治州",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科",
+              "专业 要求 公告未写明",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T02:21:05.890Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "a846164a-860d-4514-9415-717867834476",
+          "versionId": "f35f21d7-5594-4384-9d8e-6bd70caeb3db",
+          "fetchedAt": "2026-10-31T02:21:05.876Z",
+          "httpStatus": 200,
+          "rawDigest": "dc1708d7e3249404c9a6521c3f81f4a192d1b845c4b8d0204db182518db9e383",
+          "parserVersion": "zhidian-html-1"
+        },
+        {
+          "observationId": "a5bfb75e-992f-45a5-a0c3-1d768421c0e2",
+          "versionId": "f35f21d7-5594-4384-9d8e-6bd70caeb3db",
+          "fetchedAt": "2026-10-31T03:48:17.618Z",
+          "httpStatus": 200,
+          "rawDigest": "06edda314fbd2500f8ad80afeb3b0c18fa61130e6d7175080dd0aaa58b92eccb",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "b0fc0c5d-7b29-49f2-8c47-b834d365b108",
+      "kind": "job",
+      "sourceId": "66c4683a-1b1b-48ba-4a83-9428d989719d",
+      "url": "https://www.zhidianmijin.com.cn/jobs/66c4683a-1b1b-48ba-4a83-9428d989719d",
+      "versionId": "f35f21d7-5594-4384-9d8e-6bd70caeb3db",
+      "body": {
+        "title": "检票岗",
+        "company": "中旅国际-中旅(茫崖)旅游开发有限公司",
+        "cities": [
+          "海西蒙古族藏族自治州"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "检票岗",
+          "中旅国际-中旅(茫崖)旅游开发有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "海西蒙古族藏族自治州",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科",
+          "专业 要求 公告未写明",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T03:48:17.618Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "1902ca83-993e-4a79-b743-83d131ab459b",
+          "materialHash": "e218dad2f89c625867a00a73b8f5eee027f52f60d58db20f8162a9d6be2abd34",
+          "body": {
+            "title": "中心校招-营销经理-华南",
+            "company": "青岛海信电器营销股份有限公司深圳分公司",
+            "cities": [
+              "福州市"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "中心校招-营销经理-华南",
+              "青岛海信电器营销股份有限公司深圳分公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "26–27届",
+              "工作地点",
+              "福州市",
+              "薪资待遇",
+              "6000-9000 元/月",
+              "发布时间",
+              "2026年10月30日",
+              "能不能报",
+              "学历 要求 本科及以上",
+              "专业 要求 公告未写明",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.shixiseng.com/intern/inn_uriwqheqbaii"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T05:10:19.973Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "ece1a77d-fc80-4e84-8c66-e984c1a1096a",
+          "versionId": "1902ca83-993e-4a79-b743-83d131ab459b",
+          "fetchedAt": "2026-10-31T05:10:19.961Z",
+          "httpStatus": 200,
+          "rawDigest": "8e33c4c068e83502e5268bc479ed92b25cad6ecd3cb763ec7053c458a9828d07",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "b49abb08-f56a-45f7-8664-fd45f7f8450f",
+      "kind": "job",
+      "sourceId": "1c3c6d80-ac3f-00a4-e54a-8de6eeba1e3d",
+      "url": "https://www.zhidianmijin.com.cn/jobs/1c3c6d80-ac3f-00a4-e54a-8de6eeba1e3d",
+      "versionId": "1902ca83-993e-4a79-b743-83d131ab459b",
+      "body": {
+        "title": "中心校招-营销经理-华南",
+        "company": "青岛海信电器营销股份有限公司深圳分公司",
+        "cities": [
+          "福州市"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "中心校招-营销经理-华南",
+          "青岛海信电器营销股份有限公司深圳分公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "26–27届",
+          "工作地点",
+          "福州市",
+          "薪资待遇",
+          "6000-9000 元/月",
+          "发布时间",
+          "2026年10月30日",
+          "能不能报",
+          "学历 要求 本科及以上",
+          "专业 要求 公告未写明",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.shixiseng.com/intern/inn_uriwqheqbaii"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T05:10:19.961Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "eaa5365e-eaab-423e-b3df-e2173a77d4cb",
+          "materialHash": "4b9b7bdf8ec9b0f13dcf3983addee44a4b18c68e727b6ab5ffa70be5fdce2342",
+          "body": {
+            "title": "销售专员",
+            "company": "中旅免税-中免集团三亚市内免税店有限公司",
+            "cities": [
+              "三亚市"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "销售专员",
+              "中旅免税-中免集团三亚市内免税店有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "三亚市",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科及以上",
+              "专业 要求 不限",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T02:21:08.298Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "a52a155d-6d51-400c-b9fa-c24770ae7907",
+          "versionId": "eaa5365e-eaab-423e-b3df-e2173a77d4cb",
+          "fetchedAt": "2026-10-31T02:21:08.285Z",
+          "httpStatus": 200,
+          "rawDigest": "b048a683e3d54629beb862d92222f3a35a7dfc47a6a9ed31df279b3c2598dfcb",
+          "parserVersion": "zhidian-html-1"
+        },
+        {
+          "observationId": "5cf590d8-ebe4-492b-920c-bbb89adb2aa7",
+          "versionId": "eaa5365e-eaab-423e-b3df-e2173a77d4cb",
+          "fetchedAt": "2026-10-31T03:48:23.680Z",
+          "httpStatus": 200,
+          "rawDigest": "2bdb0940ff6fd61abb7e8320a0d5572f190702d56272466a355cdfc7294a19d6",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "bdad3916-d876-4e87-9296-38d38f16ec3b",
+      "kind": "job",
+      "sourceId": "6054383d-36a6-4c0f-85c8-0bf1a335e48e",
+      "url": "https://www.zhidianmijin.com.cn/jobs/6054383d-36a6-4c0f-85c8-0bf1a335e48e",
+      "versionId": "eaa5365e-eaab-423e-b3df-e2173a77d4cb",
+      "body": {
+        "title": "销售专员",
+        "company": "中旅免税-中免集团三亚市内免税店有限公司",
+        "cities": [
+          "三亚市"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "销售专员",
+          "中旅免税-中免集团三亚市内免税店有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "三亚市",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科及以上",
+          "专业 要求 不限",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T03:48:23.680Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "41e9f784-5dff-451d-ba7c-1037e436bc0c",
+          "materialHash": "269a64815d95655a5330bb65b4621a901d4332613a3d42704fb1e8465b478dad",
+          "body": {
+            "title": "财务岗",
+            "company": "中旅免税-中免(海南)数字科技有限公司",
+            "cities": [
+              "海口市"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "财务岗",
+              "中旅免税-中免(海南)数字科技有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "海口市",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科及以上",
+              "专业 要求 财务、会计、财务管理、税务",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T02:21:04.395Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "828a8d9e-da8b-4b3b-b43a-5ee5ae2b4bac",
+          "versionId": "41e9f784-5dff-451d-ba7c-1037e436bc0c",
+          "fetchedAt": "2026-10-31T02:21:04.383Z",
+          "httpStatus": 200,
+          "rawDigest": "18763fb48d15181b9caca095801f51bb4850b28e0e0688075130d8f1def0338d",
+          "parserVersion": "zhidian-html-1"
+        },
+        {
+          "observationId": "5d313da5-1c56-462c-aa03-aea4afc59afa",
+          "versionId": "41e9f784-5dff-451d-ba7c-1037e436bc0c",
+          "fetchedAt": "2026-10-31T03:48:15.359Z",
+          "httpStatus": 200,
+          "rawDigest": "bdce3807ab6108d99c83d9664ecc346bb6fb4550327a84c60ad14e3d8178689e",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "c33d7a96-2359-47e3-9155-7775973d5b07",
+      "kind": "job",
+      "sourceId": "3e04f0e5-2c66-959e-134c-878ac9825616",
+      "url": "https://www.zhidianmijin.com.cn/jobs/3e04f0e5-2c66-959e-134c-878ac9825616",
+      "versionId": "41e9f784-5dff-451d-ba7c-1037e436bc0c",
+      "body": {
+        "title": "财务岗",
+        "company": "中旅免税-中免(海南)数字科技有限公司",
+        "cities": [
+          "海口市"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "财务岗",
+          "中旅免税-中免(海南)数字科技有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "海口市",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科及以上",
+          "专业 要求 财务、会计、财务管理、税务",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T03:48:15.359Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "68b6f499-a3fa-4b97-8ae2-7b8779991515",
+          "materialHash": "c31f79da8c0027b8eb29b31e37b0c6b3a652f8ddfbf8599f77066e11f1a3306d",
+          "body": {
+            "title": "资金岗",
+            "company": "中旅免税-中免投资发展有限公司",
+            "cities": [
+              "北京市"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "资金岗",
+              "中旅免税-中免投资发展有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "北京市",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科及以上",
+              "专业 要求 财务、会计",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T05:09:59.538Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "f8b0b9fb-e707-4b0e-9adb-ab5178d0e9c5",
+          "versionId": "68b6f499-a3fa-4b97-8ae2-7b8779991515",
+          "fetchedAt": "2026-10-31T05:09:59.523Z",
+          "httpStatus": 200,
+          "rawDigest": "e44e7724b95cce96d896a6ca25ec5903a71c64bf945909f6580e0ab475a44037",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "cfcd73b0-2eb5-48ae-b279-074142a330f7",
+      "kind": "job",
+      "sourceId": "8ad89998-4a66-97fc-17c6-bec078ba1321",
+      "url": "https://www.zhidianmijin.com.cn/jobs/8ad89998-4a66-97fc-17c6-bec078ba1321",
+      "versionId": "68b6f499-a3fa-4b97-8ae2-7b8779991515",
+      "body": {
+        "title": "资金岗",
+        "company": "中旅免税-中免投资发展有限公司",
+        "cities": [
+          "北京市"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "资金岗",
+          "中旅免税-中免投资发展有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "北京市",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科及以上",
+          "专业 要求 财务、会计",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T05:09:59.523Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "8ab595b3-5d67-4253-aab1-24d9b1011a6d",
+          "materialHash": "81766ba447c51acfc2359dcd5e94dafe5e8f17932d43af8f0a04fed79087bf44",
+          "body": {
+            "title": "助理会所主任",
+            "company": "中旅发展-博朗康乐文化管理有限公司",
+            "cities": [
+              "九龙城区"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "助理会所主任",
+              "中旅发展-博朗康乐文化管理有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "九龙城区",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科",
+              "专业 要求 公告未写明",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T05:09:54.672Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "ab049f16-adc5-46d4-a114-c145ae85ebca",
+          "versionId": "8ab595b3-5d67-4253-aab1-24d9b1011a6d",
+          "fetchedAt": "2026-10-31T05:09:54.658Z",
+          "httpStatus": 200,
+          "rawDigest": "33a14dff57f61ea2293c5c6da19d5582327629cb21ed8d7a8ffd0d7bad5f55a0",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "d15038d4-d263-4693-8ec2-d940e2d62024",
+      "kind": "job",
+      "sourceId": "83874dcd-4313-aecb-4666-88d77086266a",
+      "url": "https://www.zhidianmijin.com.cn/jobs/83874dcd-4313-aecb-4666-88d77086266a",
+      "versionId": "8ab595b3-5d67-4253-aab1-24d9b1011a6d",
+      "body": {
+        "title": "助理会所主任",
+        "company": "中旅发展-博朗康乐文化管理有限公司",
+        "cities": [
+          "九龙城区"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "助理会所主任",
+          "中旅发展-博朗康乐文化管理有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "九龙城区",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科",
+          "专业 要求 公告未写明",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T05:09:54.658Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "5af7d0da-ed12-440a-9d86-6880dc0b8e95",
+          "materialHash": "db4efa8dbef97441a941857db0d6790b754e3e26c4f55854f155e419b68a5d55",
+          "body": {
+            "title": "信息化工程师",
+            "company": "美埃(中国)环境科技股份有限公司",
+            "cities": [
+              "江苏南京市江宁区"
+            ],
+            "recruitmentType": "unknown",
+            "blocks": [
+              "信息化工程师",
+              "美埃(中国)环境科技股份有限公司 民营企业",
+              "报名截止",
+              "2026年12月30日",
+              "招聘类型",
+              "实习",
+              "工作地点",
+              "江苏南京市江宁区",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科",
+              "专业 要求 计算机类",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件",
+              "岗位介绍",
+              "岗位职责： 1、负责公司办公计算机及其他办公自动化设备的日常桌面维护和管理；解决用户日常使用中与信息设备相关的问题； 2、负责企业信息系统机房（服务器、防火墙、UPS、交换机、VPN设备、存储设备、机房网络、空调等)的日常运维管理工作； 3、负责WINDOWS,Linux、数据库（Oracle、SQLServer、MySQL之一）系统运维，包括但不限于设备管理、系统维护、支撑平台建设、软件安装及升级、系统优化等； 4、负责企业系统数据信息安全、备份等管理工作 ； 5、负责公司网络管理、维护，解决网络系统运行故障和排除故障隐患；负责制定网络系统规划方案及技术实施方案等； 6、负责信息化设备预算，组织企业相关IT设备(电脑、打印机、耗材等）的选型、预算、验收、维护、发放、报废、调配和资料登记归档； 7、负责企业信息系统硬件设施相关档案的管理 ； 8、上级领导交办事项 。 任职要求： 1、全日制本科以上学历，计算机相关专业； 2、有相关信息化运维经验；制造业信息化运维经验优先考虑； 3、熟练配置WINDOWS,Linux、数据库（Oracle、SQLServer、MySQL之一）系统和服务器，熟悉TCP/IP,HTTP,VPN相关配置、管理，熟练架设文件服务器、WEB服务器等，熟悉shell脚本编程；熟练配置及管理三层交换机、路由器、防火墙等，熟悉常用网络路由协议及网络设备工作原理；熟悉网络综合布线、机房管理，并具备一定的网络规划能力；熟悉Windows域管理与各类服务的搭建；熟悉服务器虚拟化的应用管理；容灾备份的管理和维护；熟悉HelpDesk桌面运维管理工作，能够快速的排除计算机设备故障； 4、HCIA、HCIP、HCIE 、CCNA、CCNP、CCIE、H3CNE、H3CSE相关证书优先考虑； 5、学习能力强，工作认真主动，责任心强，具备良好的服务意识，有良好的沟通能力和团队合作精神。",
+              "任职要求",
+              "1、全日制本科以上学历，计算机相关专业； 2、有相关信息化运维经验；制造业信息化运维经验优先考虑； 3、熟练配置WINDOWS,Linux、数据库（Oracle、SQLServer、MySQL之一）系统和服务器，熟悉TCP/IP,HTTP,VPN相关配置、管理，熟练架设文件服务器、WEB服务器等，熟悉shell脚本编程；熟练配置及管理三层交换机、路由器、防火墙等，熟悉常用网络路由协议及网络设备工作原理；熟悉网络综合布线、机房管理，并具备一定的网络规划能力；熟悉Windows域管理与各类服务的搭建；熟悉服务器虚拟化的应用管理；容灾备份的管理和维护；熟悉HelpDesk桌面运维管理工作，能够快速的排除计算机设备故障； 4、HCIA、HCIP、HCIE 、CCNA、CCNP、CCIE、H3CNE、H3CSE相关证书优先考虑； 5、学习能力强，工作认真主动，责任心强，具备良好的服务意识，有良好的沟通能力和团队合作精神。"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://app.mokahr.com/campus-recruitment/mayair/142334"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T02:20:59.991Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "ae9168ca-bafb-4a61-8826-e7ea8bd2d9b6",
+          "versionId": "5af7d0da-ed12-440a-9d86-6880dc0b8e95",
+          "fetchedAt": "2026-10-31T02:20:59.974Z",
+          "httpStatus": 200,
+          "rawDigest": "4a320d84be964d875064b411955ac003dbbf161295bb9a5542e5bda2c352482a",
+          "parserVersion": "zhidian-html-1"
+        },
+        {
+          "observationId": "5c93cb36-a68c-4beb-b5f3-1abb04fc71ad",
+          "versionId": "5af7d0da-ed12-440a-9d86-6880dc0b8e95",
+          "fetchedAt": "2026-10-31T05:09:49.079Z",
+          "httpStatus": 200,
+          "rawDigest": "74eeb6b1534c07ff6a6c71a1184ca15fe29fecfedbed8e97563d3be995e099d4",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "e777d489-3bd5-4bc5-bbfc-c02d5cdc9cf6",
+      "kind": "job",
+      "sourceId": "83257c0e-6805-a054-f75f-53d126a7ed5b",
+      "url": "https://www.zhidianmijin.com.cn/jobs/83257c0e-6805-a054-f75f-53d126a7ed5b",
+      "versionId": "5af7d0da-ed12-440a-9d86-6880dc0b8e95",
+      "body": {
+        "title": "信息化工程师",
+        "company": "美埃(中国)环境科技股份有限公司",
+        "cities": [
+          "江苏南京市江宁区"
+        ],
+        "recruitmentType": "unknown",
+        "blocks": [
+          "信息化工程师",
+          "美埃(中国)环境科技股份有限公司 民营企业",
+          "报名截止",
+          "2026年12月30日",
+          "招聘类型",
+          "实习",
+          "工作地点",
+          "江苏南京市江宁区",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科",
+          "专业 要求 计算机类",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件",
+          "岗位介绍",
+          "岗位职责： 1、负责公司办公计算机及其他办公自动化设备的日常桌面维护和管理；解决用户日常使用中与信息设备相关的问题； 2、负责企业信息系统机房（服务器、防火墙、UPS、交换机、VPN设备、存储设备、机房网络、空调等)的日常运维管理工作； 3、负责WINDOWS,Linux、数据库（Oracle、SQLServer、MySQL之一）系统运维，包括但不限于设备管理、系统维护、支撑平台建设、软件安装及升级、系统优化等； 4、负责企业系统数据信息安全、备份等管理工作 ； 5、负责公司网络管理、维护，解决网络系统运行故障和排除故障隐患；负责制定网络系统规划方案及技术实施方案等； 6、负责信息化设备预算，组织企业相关IT设备(电脑、打印机、耗材等）的选型、预算、验收、维护、发放、报废、调配和资料登记归档； 7、负责企业信息系统硬件设施相关档案的管理 ； 8、上级领导交办事项 。 任职要求： 1、全日制本科以上学历，计算机相关专业； 2、有相关信息化运维经验；制造业信息化运维经验优先考虑； 3、熟练配置WINDOWS,Linux、数据库（Oracle、SQLServer、MySQL之一）系统和服务器，熟悉TCP/IP,HTTP,VPN相关配置、管理，熟练架设文件服务器、WEB服务器等，熟悉shell脚本编程；熟练配置及管理三层交换机、路由器、防火墙等，熟悉常用网络路由协议及网络设备工作原理；熟悉网络综合布线、机房管理，并具备一定的网络规划能力；熟悉Windows域管理与各类服务的搭建；熟悉服务器虚拟化的应用管理；容灾备份的管理和维护；熟悉HelpDesk桌面运维管理工作，能够快速的排除计算机设备故障； 4、HCIA、HCIP、HCIE 、CCNA、CCNP、CCIE、H3CNE、H3CSE相关证书优先考虑； 5、学习能力强，工作认真主动，责任心强，具备良好的服务意识，有良好的沟通能力和团队合作精神。",
+          "任职要求",
+          "1、全日制本科以上学历，计算机相关专业； 2、有相关信息化运维经验；制造业信息化运维经验优先考虑； 3、熟练配置WINDOWS,Linux、数据库（Oracle、SQLServer、MySQL之一）系统和服务器，熟悉TCP/IP,HTTP,VPN相关配置、管理，熟练架设文件服务器、WEB服务器等，熟悉shell脚本编程；熟练配置及管理三层交换机、路由器、防火墙等，熟悉常用网络路由协议及网络设备工作原理；熟悉网络综合布线、机房管理，并具备一定的网络规划能力；熟悉Windows域管理与各类服务的搭建；熟悉服务器虚拟化的应用管理；容灾备份的管理和维护；熟悉HelpDesk桌面运维管理工作，能够快速的排除计算机设备故障； 4、HCIA、HCIP、HCIE 、CCNA、CCNP、CCIE、H3CNE、H3CSE相关证书优先考虑； 5、学习能力强，工作认真主动，责任心强，具备良好的服务意识，有良好的沟通能力和团队合作精神。"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://app.mokahr.com/campus-recruitment/mayair/142334"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T05:09:49.079Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "3b80e7ee-6dc9-491a-91f1-78c8e66fa121",
+          "materialHash": "6155bba6e56f303f136f0c75d670b5ba5e325076baf0d481570ef5bc64b4f37c",
+          "body": {
+            "title": "销售岗",
+            "company": "中旅免税-中免集团(上海)免税品有限公司",
+            "cities": [
+              "上海市"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "销售岗",
+              "中旅免税-中免集团(上海)免税品有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "上海市",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科",
+              "专业 要求 不限",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T05:10:16.654Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "d3ac968b-a14d-432b-a567-4d5881cc88c9",
+          "versionId": "3b80e7ee-6dc9-491a-91f1-78c8e66fa121",
+          "fetchedAt": "2026-10-31T05:10:16.645Z",
+          "httpStatus": 200,
+          "rawDigest": "f04e5f8a1b8778de6b034bbf1e547c3500bea1bfe5ec6f20c1564c6d3162cb56",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "e8c5e90b-7e09-4962-b398-7de1b952e09a",
+      "kind": "job",
+      "sourceId": "8f03f563-fe7c-1877-9603-7fabffd06186",
+      "url": "https://www.zhidianmijin.com.cn/jobs/8f03f563-fe7c-1877-9603-7fabffd06186",
+      "versionId": "3b80e7ee-6dc9-491a-91f1-78c8e66fa121",
+      "body": {
+        "title": "销售岗",
+        "company": "中旅免税-中免集团(上海)免税品有限公司",
+        "cities": [
+          "上海市"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "销售岗",
+          "中旅免税-中免集团(上海)免税品有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "上海市",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科",
+          "专业 要求 不限",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T05:10:16.645Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "d7ca48a5-adb1-429d-a7b4-94dd62357a65",
+          "materialHash": "fd49fce480242d23f595e579b4816b9452eca146afd94a60ade0fc5b5378b8c1",
+          "body": {
+            "title": "项目专员",
+            "company": "中旅数智科技(深圳)有限公司",
+            "cities": [
+              "深圳市"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "项目专员",
+              "中旅数智科技(深圳)有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "深圳市",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科及以上",
+              "专业 要求 公告未写明",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T05:10:17.745Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "77debc08-9e41-4838-9fa7-8651fbade15e",
+          "versionId": "d7ca48a5-adb1-429d-a7b4-94dd62357a65",
+          "fetchedAt": "2026-10-31T05:10:17.734Z",
+          "httpStatus": 200,
+          "rawDigest": "a796746a06827c38bba196755aa98a67dde8ed470d9050c369849d0f97f6b1ee",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "ed447bc1-5779-4ed9-93f4-df1badbb6ab6",
+      "kind": "job",
+      "sourceId": "a728a63d-cbcc-09b2-7992-9e14c7411159",
+      "url": "https://www.zhidianmijin.com.cn/jobs/a728a63d-cbcc-09b2-7992-9e14c7411159",
+      "versionId": "d7ca48a5-adb1-429d-a7b4-94dd62357a65",
+      "body": {
+        "title": "项目专员",
+        "company": "中旅数智科技(深圳)有限公司",
+        "cities": [
+          "深圳市"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "项目专员",
+          "中旅数智科技(深圳)有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "深圳市",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科及以上",
+          "专业 要求 公告未写明",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T05:10:17.734Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "a124de42-279a-4f58-85a4-1ffba4e442bf",
+          "materialHash": "56d49789f525ec1e593050fe6d8669f8df7c733073f621811833b2d30efd061e",
+          "body": {
+            "title": "销售岗",
+            "company": "中旅免税-海免(海口)免税店有限公司",
+            "cities": [
+              "海口市"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "销售岗",
+              "中旅免税-海免(海口)免税店有限公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "海口市",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科及以上",
+              "专业 要求 公告未写明",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T02:21:01.196Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "7320aec1-0842-4537-9a7c-1da3cffa0883",
+          "versionId": "a124de42-279a-4f58-85a4-1ffba4e442bf",
+          "fetchedAt": "2026-10-31T02:21:01.178Z",
+          "httpStatus": 200,
+          "rawDigest": "5e11ab3acc547505c26ff864f48252a530abdae3f3d03bab51c03f513223f315",
+          "parserVersion": "zhidian-html-1"
+        },
+        {
+          "observationId": "9c7ffe05-629c-43ca-964e-57581e962728",
+          "versionId": "a124de42-279a-4f58-85a4-1ffba4e442bf",
+          "fetchedAt": "2026-10-31T03:48:18.745Z",
+          "httpStatus": 200,
+          "rawDigest": "052a90ae98367acaef06a80e7cc4bbab00ac0d85ab348b4d2ad7345b753a53c0",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "f5ebcb1f-6422-4368-b956-8d143cf18133",
+      "kind": "job",
+      "sourceId": "31064444-d0c1-e286-32a4-6a0a0d833954",
+      "url": "https://www.zhidianmijin.com.cn/jobs/31064444-d0c1-e286-32a4-6a0a0d833954",
+      "versionId": "a124de42-279a-4f58-85a4-1ffba4e442bf",
+      "body": {
+        "title": "销售岗",
+        "company": "中旅免税-海免(海口)免税店有限公司",
+        "cities": [
+          "海口市"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "销售岗",
+          "中旅免税-海免(海口)免税店有限公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "海口市",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科及以上",
+          "专业 要求 公告未写明",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T03:48:18.745Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    },
+    {
+      "versions": [
+        {
+          "versionId": "cc2df332-b3dd-4a8a-9635-e906f14d7c29",
+          "materialHash": "754f5fddaf1461aedb0a2d16e5b457438cd341b6a00ab7b57ca36640f84de5f7",
+          "body": {
+            "title": "产品经理",
+            "company": "中国旅游集团中免股份有限公司上海数字科技分公司",
+            "cities": [
+              "上海市"
+            ],
+            "recruitmentType": "campus",
+            "blocks": [
+              "产品经理",
+              "中国旅游集团中免股份有限公司上海数字科技分公司",
+              "报名截止",
+              "公告未写明",
+              "招聘类型",
+              "校招",
+              "经验要求",
+              "经验不限",
+              "适用届别",
+              "27届",
+              "工作地点",
+              "上海市",
+              "薪资待遇",
+              "公告未写明",
+              "发布时间",
+              "2026年10月31日",
+              "能不能报",
+              "学历 要求 本科及以上",
+              "专业 要求 计算机科学、软件工程、电子信息、心理学、社会学、工业设计、交互设计、数字媒体技术",
+              "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+            ],
+            "deadline": {
+              "value": null,
+              "precision": "unknown",
+              "timezone": null
+            },
+            "availability": "unknown",
+            "links": [
+              {
+                "kind": "external",
+                "sourceId": null,
+                "url": "https://www.iguopin.com/job/detail"
+              }
+            ],
+            "parserVersion": "zhidian-html-1"
+          },
+          "createdAt": "2026-10-31T05:10:13.416Z"
+        }
+      ],
+      "observations": [
+        {
+          "observationId": "cd320478-51ff-4faa-8e52-e1cad8f7e804",
+          "versionId": "cc2df332-b3dd-4a8a-9635-e906f14d7c29",
+          "fetchedAt": "2026-10-31T05:10:13.406Z",
+          "httpStatus": 200,
+          "rawDigest": "31bf52a9bb0359ee2b460415dbd9420a6b15fdfcd94619fd3fbe727e49ffd9bb",
+          "parserVersion": "zhidian-html-1"
+        }
+      ],
+      "reviews": [],
+      "resourceId": "fdc5f2c7-1ace-4d57-9b38-c724790ec5ac",
+      "kind": "job",
+      "sourceId": "cdefd139-03ba-2636-f476-e943349a3394",
+      "url": "https://www.zhidianmijin.com.cn/jobs/cdefd139-03ba-2636-f476-e943349a3394",
+      "versionId": "cc2df332-b3dd-4a8a-9635-e906f14d7c29",
+      "body": {
+        "title": "产品经理",
+        "company": "中国旅游集团中免股份有限公司上海数字科技分公司",
+        "cities": [
+          "上海市"
+        ],
+        "recruitmentType": "campus",
+        "blocks": [
+          "产品经理",
+          "中国旅游集团中免股份有限公司上海数字科技分公司",
+          "报名截止",
+          "公告未写明",
+          "招聘类型",
+          "校招",
+          "经验要求",
+          "经验不限",
+          "适用届别",
+          "27届",
+          "工作地点",
+          "上海市",
+          "薪资待遇",
+          "公告未写明",
+          "发布时间",
+          "2026年10月31日",
+          "能不能报",
+          "学历 要求 本科及以上",
+          "专业 要求 计算机科学、软件工程、电子信息、心理学、社会学、工业设计、交互设计、数字媒体技术",
+          "选好学历和专业，这里会逐项判断能不能报。 在列表里为这个岗位选条件"
+        ],
+        "deadline": {
+          "value": null,
+          "precision": "unknown",
+          "timezone": null
+        },
+        "availability": "unknown",
+        "links": [
+          {
+            "kind": "external",
+            "sourceId": null,
+            "url": "https://www.iguopin.com/job/detail"
+          }
+        ],
+        "parserVersion": "zhidian-html-1"
+      },
+      "fetchedAt": "2026-10-31T05:10:13.406Z",
+      "reviewedAt": null,
+      "verifiedAt": null,
+      "isComplete": false
+    }
+  ]
+}

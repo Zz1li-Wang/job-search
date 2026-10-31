@@ -1,0 +1,122 @@
+{
+  "at": "2026-10-31T05:11:09.31072+00:00",
+  "budgets": [
+    {
+      "id": "server-20261031-approved-10",
+      "limit": 40,
+      "used": 40
+    },
+    {
+      "id": "step6-approved-verification",
+      "limit": 40,
+      "used": 39
+    }
+  ],
+  "discoveredJobs": 40,
+  "fetchedJobs": 36,
+  "types": [
+    {
+      "type": "unknown",
+      "count": 2
+    },
+    {
+      "type": "campus",
+      "count": 33
+    },
+    {
+      "type": "social",
+      "count": 1
+    }
+  ],
+  "taskStates": [
+    {
+      "status": "succeeded",
+      "error_code": null,
+      "count": 51
+    },
+    {
+      "status": "queued",
+      "error_code": null,
+      "count": 2
+    },
+    {
+      "status": "paused",
+      "error_code": "SOURCE_BUDGET_EXHAUSTED",
+      "count": 2
+    }
+  ],
+  "streams": [
+    {
+      "stream_key": "backfill",
+      "checkpoint": 5,
+      "pause_reason": null,
+      "next_discovery_at": "2026-10-31T07:09:29.972+00:00"
+    },
+    {
+      "stream_key": "new",
+      "checkpoint": 2,
+      "pause_reason": "SOURCE_BUDGET_EXHAUSTED",
+      "next_discovery_at": "2026-10-31T07:09:26.728+00:00"
+    }
+  ],
+  "completeReviews": 0,
+  "activeModelRuns": 0,
+  "unfetchedJobs": [
+    {
+      "source_id": "f40e2bea-ea0c-5b17-b0c7-d219cc8d7943",
+      "canonical_url": "https://www.zhidianmijin.com.cn/jobs/f40e2bea-ea0c-5b17-b0c7-d219cc8d7943"
+    },
+    {
+      "source_id": "335fb019-55e8-be8a-dc9d-e4d34ff5a698",
+      "canonical_url": "https://www.zhidianmijin.com.cn/jobs/335fb019-55e8-be8a-dc9d-e4d34ff5a698"
+    },
+    {
+      "source_id": "4bf48597-6cf8-53e0-bc90-a32d171994e2",
+      "canonical_url": "https://www.zhidianmijin.com.cn/jobs/4bf48597-6cf8-53e0-bc90-a32d171994e2"
+    },
+    {
+      "source_id": "96b63d9c-1095-2850-2a52-fad467a441ef",
+      "canonical_url": "https://www.zhidianmijin.com.cn/jobs/96b63d9c-1095-2850-2a52-fad467a441ef"
+    }
+  ],
+  "export": {
+    "exportId": "acec4766-0180-4e48-a3b7-0633aa92f5db",
+    "snapshotAt": "2026-10-31T05:11:14.247Z",
+    "status": "completed",
+    "manifestDigest": "291cbff3b894b2b1cd9dd4c612eb59ab32ad5a6b067c6482a80240d6433988a0",
+    "recordCount": 36,
+    "fileName": "acec4766-0180-4e48-a3b7-0633aa92f5db.json"
+  },
+  "operation": {
+    "at": "2026-10-31T05:09:34.138052+00:00",
+    "budgetId": "server-20261031-approved-10",
+    "previousLimit": 10,
+    "newLimit": 40,
+    "usedPreserved": 10,
+    "additionalRequestAllowance": 30,
+    "backfillStartingPage": 2,
+    "backfillMaximumPages": 3,
+    "discovery": {
+      "taskId": "cf3ee1eb-9355-4a09-bfb9-663c40024510",
+      "generation": 1,
+      "checkpointVersion": 1
+    },
+    "recoveredTasks": [
+      {
+        "id": "c52df019-977b-471d-9def-96da2ca6068a",
+        "kind": "source.fetch",
+        "status": "queued",
+        "attempt": 1,
+        "updatedAt": "2026-10-31T05:09:33.215Z",
+        "relatedResourceId": "e777d489-3bd5-4bc5-bbfc-c02d5cdc9cf6"
+      }
+    ],
+    "workerRestarted": true,
+    "newDiscoveryDeferredHours": 2,
+    "modelCallsStartedByOperation": 0
+  },
+  "publicHealthStatus": 200,
+  "sourceRequestLimit": 40,
+  "originalRequestUsePreserved": true,
+  "modelCallsStartedByOperation": 0
+}
