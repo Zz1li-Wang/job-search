@@ -1,0 +1,29 @@
+{
+  "deployed": true,
+  "repository": "https://github.com/Zz1li-Wang/job-search",
+  "sourceCommit": "2b51c4d2a454d073081f66ff1b4acb9956926b32",
+  "publicUrl": "https://47.95.166.110",
+  "releaseDirectory": "/opt/career-assistant/releases/tool-budget-20261031-2b51c4d",
+  "previousDirectory": "/opt/career-assistant/releases/server-20261031",
+  "composeProject": "career-assistant-server",
+  "runtimeImage": "career-assistant@sha256:dfee224e1c168409ba5efe759ea1f6b0be68a0aa51acf3a518c454bca14c8876",
+  "webImage": "career-assistant-web@sha256:2964a973e3790f4d20301660fba4d281628f0a66b63afed7437ede847f80590a",
+  "sourceArchiveSha256": "84c6200d85a8892edd82e470f5b9dd570aec6864718486c6de0c07225f4a9c04",
+  "imageArchiveSha256": "0c1ea530d3d04beae67d1a176f30f425b62a5f161c47f46c6428d60f588f861c",
+  "backupDirectory": "/opt/career-assistant/backups/tool-budget-20261031-2b51c4d",
+  "operationDirectory": "/opt/career-assistant/operations/tool-budget-20261031-2b51c4d",
+  "dataIntegrity": {
+    "unchangedBusinessTables": 34,
+    "unchangedFiles": 52,
+    "migrationTableChanged": true,
+    "success": true
+  },
+  "firstAttempt": {
+    "outcome": "automatically rolled back before migration",
+    "reason": "POSIX shell did not expand wildcard in backup verification input redirection",
+    "corrected": "Enumerate backup files in a for loop before redirecting each filename; second deployment succeeded."
+  },
+  "newExternalModelCalls": 0,
+  "newExternalSourceRequests": 0,
+  "userAcceptance": "pending"
+}

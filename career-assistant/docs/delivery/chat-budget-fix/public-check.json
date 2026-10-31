@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-31T05:51:03.572Z",
+  "checks": [
+    "Public login page renders with verified HTTPS",
+    "Deployed frontend contains new budget and distinct context error messages",
+    "Internal endpoints remain blocked",
+    "Public readiness returns 200"
+  ],
+  "externalModelCalls": 0,
+  "success": true
+}

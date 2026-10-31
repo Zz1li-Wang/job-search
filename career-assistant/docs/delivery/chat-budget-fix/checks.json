@@ -24,5 +24,7 @@
     "Initial full integration run had one authentication cleanup failure; focused authentication rerun and final full run passed without changing authentication code.",
     "Focused MCP testing exposed an existing dependency on previously seeded jobs; MCP-04 now creates its own jobs.",
     "Canonical Docker build could not reach its configured loopback proxy. Release images reuse verified prior runtime dependencies with unchanged lockfile and compile current source directly using TypeScript/Vite."
-  ]
+  ],
+  "dependencyLockSha256": "dd4f650ee3761250030dcebff5f0d74e68ef3a749d12902178c45198c4dcc2da",
+  "releaseCommit": "2b51c4d2a454d073081f66ff1b4acb9956926b32"
 }

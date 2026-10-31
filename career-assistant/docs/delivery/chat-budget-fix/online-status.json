@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-10-31T05:52:22.319Z",
+  "maxToolCalls": 25,
+  "budgets": [
+    {
+      "id": "server-20261031-approved-10",
+      "used": 40,
+      "limit": 40
+    },
+    {
+      "id": "step6-approved-verification",
+      "used": 39,
+      "limit": 40
+    }
+  ],
+  "constraint": "CHECK (((attempt > 0) AND (version > 0) AND (last_sequence >= 0) AND (tool_calls >= 0) AND (tool_calls <= 25)))",
+  "counts": {
+    "discovered_jobs": 40,
+    "fetched_jobs": 36,
+    "ready_resumes": 1
+  },
+  "migration": {
+    "migration_name": "202610310009_tool_budget",
+    "finished_at": "2026-10-31T05:50:33.963Z"
+  }
+}
